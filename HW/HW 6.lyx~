@@ -1,0 +1,247 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 0.4in
+\topmargin 0.75in
+\rightmargin 0.4in
+\bottommargin 0.5in
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Math 320 HW 6
+\end_layout
+
+\begin_layout Section*
+1)
+\end_layout
+
+\begin_layout Standard
+Let 
+\begin_inset Formula $n\mathbb{Z}=\left\{ 0,\pm n,\pm2n,\dots\right\} $
+\end_inset
+
+ for some 
+\begin_inset Formula $n\in\mathbb{Z}$
+\end_inset
+
+ such that 
+\begin_inset Formula $n>0$
+\end_inset
+
+ and let 
+\begin_inset Formula $G$
+\end_inset
+
+ be the group of integers under addition.
+\end_layout
+
+\begin_layout Subsection*
+a)
+\end_layout
+
+\begin_layout Standard
+Show 
+\begin_inset Formula $n\mathbb{Z}\leq G$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+b)
+\end_layout
+
+\begin_layout Standard
+Show 
+\begin_inset Formula $n\mathbb{Z}\approx G$
+\end_inset
+
+ by finding an isomorphism.
+ 
+\end_layout
+
+\begin_layout Section*
+2)
+\end_layout
+
+\begin_layout Standard
+Find the automorphism group of 
+\begin_inset Formula $\mathbb{Z}_{12}$
+\end_inset
+
+.
+ (Hint: Recall that isomorphisms map generators to generators).
+\end_layout
+
+\begin_layout Section*
+3)
+\end_layout
+
+\begin_layout Standard
+Find the inner automorphism group of 
+\begin_inset Formula $D_{4}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section*
+4)
+\end_layout
+
+\begin_layout Standard
+Let 
+\begin_inset Formula $G=\left(\mathbb{Q}^{+},*\right)$
+\end_inset
+
+ be the group of positive rational numbers under multiplication.
+ Let 
+\begin_inset Formula $\phi:G\rightarrow G$
+\end_inset
+
+ be given as 
+\begin_inset Formula $\phi\left(x\right)=x^{3}$
+\end_inset
+
+.
+ Determine if 
+\begin_inset Formula $\phi$
+\end_inset
+
+ is an automorphism.
+ If it is, prove this.
+ If it isn't explain why not.
+ 
+\end_layout
+
+\begin_layout Section*
+5)
+\end_layout
+
+\begin_layout Standard
+Recall the center of a group 
+\begin_inset Formula $G$
+\end_inset
+
+ is 
+\begin_inset Formula $Z\left(G\right)=\left\{ x\in G|ax=xa\ \forall a\in G\right\} $
+\end_inset
+
+.
+ Let 
+\begin_inset Formula $\phi:G\rightarrow H$
+\end_inset
+
+ be an isomorphism.
+ Show 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\phi\left(Z\left(G\right)\right)=Z\left(H\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+6)
+\end_layout
+
+\begin_layout Standard
+Let 
+\begin_inset Formula $G$
+\end_inset
+
+ be a group.
+ Show 
+\begin_inset Formula $\left|\text{Inn}\left(G\right)\right|=1$
+\end_inset
+
+ if and only if 
+\begin_inset Formula $G$
+\end_inset
+
+ is abelian.
+ 
+\end_layout
+
+\end_body
+\end_document

@@ -1,0 +1,1212 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 0.4in
+\topmargin 0.75in
+\rightmargin 0.4in
+\bottommargin 0.5in
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Class 13
+\end_layout
+
+\begin_layout Section*
+Automorphism Group Examples
+\end_layout
+
+\begin_layout Subsection*
+Ex 1
+\end_layout
+
+\begin_layout Standard
+Let 
+\begin_inset Formula $G=\mathbb{Z}_{8}$
+\end_inset
+
+.
+ Let 
+\begin_inset Formula $\phi_{a}\left(x\right)$
+\end_inset
+
+ be the unique automorphism sending 
+\begin_inset Formula $1\rightarrow a$
+\end_inset
+
+.
+ For example, 
+\begin_inset Formula 
+\[
+\phi_{3}\left(1\right)=3
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\phi_{3}\left(2\right)=\phi_{3}\left(1\right)+\phi_{3}\left(1\right)=3+3=6
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\dots
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\phi_{3}\left(7\right)=\phi_{3}\left(-1\right)=-\phi_{3}\left(1\right)=5
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+(As we are in the integers mod 
+\begin_inset Formula $8$
+\end_inset
+
+).
+ Then the automorphism group 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\text{Aut}\left(\mathbb{Z}_{8}\right)=\left\{ \phi_{1},\phi_{3},\phi_{5},\phi_{7}\right\} 
+\]
+
+\end_inset
+
+ as 
+\begin_inset Formula $\mathbb{Z}_{8}$
+\end_inset
+
+ is cyclic, and any automorphism must send a generator to another generator.
+\end_layout
+
+\begin_layout Subsection*
+Ex 2
+\end_layout
+
+\begin_layout Standard
+Let 
+\begin_inset Formula $G=\left\{ 1,-1,i,-i\right\} $
+\end_inset
+
+ under multiplication.
+ Then 
+\begin_inset Formula $i$
+\end_inset
+
+ is a generator of 
+\begin_inset Formula $G$
+\end_inset
+
+, so using the same notation as above,
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\phi_{i}\left(i\right)=i
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\phi_{i}\left(-1\right)=\phi_{i}\left(i*i\right)=\phi_{i}\left(i\right)*\phi_{i}\left(i\right)=i*i=-1
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\phi_{i}\left(-i\right)=\phi_{i}\left(-1*i\right)=\phi_{i}\left(-1\right)*\phi_{i}\left(i\right)=-1*i=-i
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\phi_{i}\left(1\right)=1
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+as 
+\begin_inset Formula $1$
+\end_inset
+
+ is the identity.
+ Thus 
+\begin_inset Formula $\phi_{i}\left(x\right)=x$
+\end_inset
+
+.
+ Similarly, we have 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\phi_{-i}\left(i\right)=-i
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\phi_{-i}\left(-1\right)=\phi_{-i}\left(i*i\right)=\phi_{-i}\left(i\right)*\phi_{-i}\left(i\right)=\left(-i\right)\left(-i\right)=-1
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\phi_{-i}\left(-i\right)=\phi_{-i}\left(-1*i\right)=\phi_{-i}\left(-1\right)*\phi_{-i}\left(i\right)=-1*-i=i
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\phi_{-i}\left(1\right)=1
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Thus 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\phi_{-i}\left(x\right)=\frac{1}{x}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+as 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\frac{1}{i}=\frac{1}{i}*\frac{i}{i}=\frac{i}{-1}=-i
+\]
+
+\end_inset
+
+Further, as 
+\begin_inset Formula $-1$
+\end_inset
+
+ is not a generator of 
+\begin_inset Formula $G$
+\end_inset
+
+, then these must be the only two automorphisms, so 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\text{Aut}\left(G\right)=\left\{ \phi_{i},\phi_{-i}\right\} \approx\mathbb{Z}_{2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+Inner Automorphism Group Examples
+\end_layout
+
+\begin_layout Subsection*
+Ex 1
+\end_layout
+
+\begin_layout Standard
+Suppose 
+\begin_inset Formula $G=U\left(5\right)$
+\end_inset
+
+.
+ Let 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\phi_{a}\left(x\right)=axa^{-1}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Then
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\phi_{1}\left(x\right)=1x1^{-1}=x
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\phi_{2}\left(x\right)=2*x*2^{-1}=2*x*3=2*3*x=x
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+(As we are working mod 
+\begin_inset Formula $5$
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\phi_{3}\left(x\right)=3*x*3^{-1}=3*x*2=3*2*x=x
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\phi_{4}\left(x\right)=4*x*4^{-1}=4*x*4=4*4*x=x
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+So each 
+\begin_inset Formula $\phi_{a}\left(x\right)=x$
+\end_inset
+
+, and we are left with
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\text{Inn}\left(G\right)=\left\{ \phi_{1},\phi_{2},\phi_{3},\phi_{4}\right\} =\left\{ e\right\} 
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+as each of these inner automorphisms gives the exact same identity function.
+ 
+\end_layout
+
+\begin_layout Subsection*
+Ex 2
+\end_layout
+
+\begin_layout Standard
+Let 
+\begin_inset Formula $G=A_{4}$
+\end_inset
+
+, the group of all even permutations on 
+\begin_inset Formula $4$
+\end_inset
+
+ objects.
+ Then there are at most 
+\begin_inset Formula $12$
+\end_inset
+
+ possible inner automorphisms, as 
+\begin_inset Formula $A_{4}$
+\end_inset
+
+ has 
+\begin_inset Formula $12$
+\end_inset
+
+ elements:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+A_{4}=\left\{ \left(1\right),\left(123\right),\left(124\right),\left(134\right),\left(234\right),\left(213\right),\left(214\right),\left(314\right),\left(324\right),\left(12\right)\left(34\right),\left(13\right)\left(24\right),\left(14\right)\left(23\right)\right\} 
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+So we have the inner automorphisms defined as 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\phi_{\left(1\right)}\left(x\right)=\left(1\right)x\left(1\right)^{-1}=x
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\phi_{\left(123\right)}\left(x\right)=\left(123\right)x\left(123\right)^{-1}=\left(123\right)x\left(213\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\phi_{\left(124\right)}\left(x\right)=\left(124\right)x\left(124\right)^{-1}=\left(124\right)x\left(214\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\phi_{\left(134\right)}\left(x\right)=\left(134\right)x\left(134\right)^{-1}=\left(134\right)x\left(314\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\phi_{\left(234\right)}\left(x\right)=\left(234\right)x\left(234\right)^{-1}=\left(234\right)x\left(324\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\phi_{\left(213\right)}\left(x\right)=\left(213\right)x\left(213\right)^{-1}=\left(213\right)x\left(123\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\phi_{\left(214\right)}\left(x\right)=\left(214\right)x\left(214\right)^{-1}=\left(214\right)x\left(124\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\phi_{\left(314\right)}\left(x\right)=\left(314\right)x\left(314\right)^{-1}=\left(314\right)x\left(134\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\phi_{\left(324\right)}\left(x\right)=\left(324\right)x\left(324\right)^{-1}=\left(324\right)x\left(234\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\phi_{\left(12\right)\left(34\right)}\left(x\right)=\left(12\right)\left(34\right)x\left(\left(12\right)\left(34\right)\right)^{-1}=\left(12\right)\left(34\right)x\left(12\right)\left(34\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\phi_{\left(13\right)\left(24\right)}\left(x\right)=\left(13\right)\left(24\right)x\left(\left(13\right)\left(24\right)\right)^{-1}=\left(13\right)\left(24\right)x\left(13\right)\left(24\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\phi_{\left(14\right)\left(23\right)}\left(x\right)=\left(14\right)\left(23\right)x\left(\left(14\right)\left(23\right)\right)^{-1}=\left(14\right)\left(23\right)x\left(14\right)\left(23\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+While we listed all of these out, some of these might describe the same
+ function.
+ This can be checked either by plugging in each 
+\begin_inset Formula $x$
+\end_inset
+
+ into each of these functions (to see which functions are the same), or
+ by noticing particular patterns to see which functions cannot possibly
+ be the same.
+ Checking this can be tedious for non-abelian groups.
+ 
+\end_layout
+
+\begin_layout Section*
+Homomorphisms
+\end_layout
+
+\begin_layout Standard
+A function 
+\begin_inset Formula $\phi:G\rightarrow H$
+\end_inset
+
+ is a homomorphism if 
+\begin_inset Formula $\phi\left(ab\right)=\phi\left(a\right)\phi\left(b\right)$
+\end_inset
+
+ 
+\begin_inset Formula $\forall a,b\in G$
+\end_inset
+
+.
+ Notice this is a less restrictive function than an isomorphism, as we no
+ longer require 
+\begin_inset Formula $\phi$
+\end_inset
+
+ be a bijection.
+ Even without a bijection, homomorphisms share many of the same properties
+ that isomorphisms do, such as:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\phi\left(e_{G}\right)=e_{H}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\phi\left(a^{n}\right)=\phi\left(a\right)^{n}\ \forall n\in\mathbb{Z}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+The composition of homomorphisms is a homomorphism
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\dots$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+If you check the properties of isomorphisms, very few of the properties
+ required us to use that 
+\begin_inset Formula $\phi$
+\end_inset
+
+ be a bijection.
+ As such, most of them still apply to homomorphisms.
+\end_layout
+
+\begin_layout Subsection*
+Ex 1
+\end_layout
+
+\begin_layout Standard
+Let 
+\begin_inset Formula $G=\mathbb{Z}_{6}$
+\end_inset
+
+, 
+\begin_inset Formula $H=\mathbb{Z}_{3}$
+\end_inset
+
+.
+ Take 
+\begin_inset Formula $\phi\left(x\right)=x\ \text{mod}3$
+\end_inset
+
+.
+ So
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\phi\left(0\right)=0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\phi\left(1\right)=1
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\phi\left(2\right)=2
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\phi\left(3\right)=0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\phi\left(4\right)=1
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\phi\left(5\right)=2
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+To show this is a homomorphism, let 
+\begin_inset Formula $x,y\in\mathbb{Z}_{6}$
+\end_inset
+
+.
+ Then
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\phi\left(x+y\right)=\left(x+y\right)\ \text{mod}3=x\ \mod3+y\ \mod3=\phi\left(x\right)+\phi\left(y\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+In particular, note that homomorphism 
+\begin_inset Formula $\phi$
+\end_inset
+
+ need not be 
+\begin_inset Formula $1$
+\end_inset
+
+-to-
+\begin_inset Formula $1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection*
+Ex 2
+\end_layout
+
+\begin_layout Standard
+If 
+\begin_inset Formula $K\leq G$
+\end_inset
+
+, then 
+\begin_inset Formula $\phi:K\rightarrow G$
+\end_inset
+
+ given by 
+\begin_inset Formula $\phi\left(x\right)=x$
+\end_inset
+
+ is a homomorphism.
+ This is the case, as 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\phi\left(xy\right)=xy=\phi\left(x\right)\phi\left(y\right)\ \forall x,y\in K
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+In particular, note that homomorphism 
+\begin_inset Formula $\phi$
+\end_inset
+
+ need not be onto.
+\end_layout
+
+\begin_layout Subsection*
+Ex 3
+\end_layout
+
+\begin_layout Standard
+Let 
+\begin_inset Formula $G=\left(\mathbb{R}^{3},+\right)$
+\end_inset
+
+, 
+\begin_inset Formula $H=\left(\mathbb{R}^{2},+\right)$
+\end_inset
+
+.
+ Then 
+\begin_inset Formula $\phi:G\rightarrow H$
+\end_inset
+
+ given by
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\phi\left(\vec{x}\right)=\left(\begin{array}{ccc}
+1 & 2 & 1\\
+2 & 4 & 2
+\end{array}\right)\vec{x}=A\vec{x}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+is a homomorphism as 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\phi\left(\vec{x}+\vec{y}\right)=A\left(\vec{x}+\vec{y}\right)=A\vec{x}+A\vec{y}=\phi\left(\vec{x}\right)+\phi\left(\vec{y}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+Kernel
+\end_layout
+
+\begin_layout Standard
+For a homomorphism 
+\begin_inset Formula $\phi$
+\end_inset
+
+, 
+\begin_inset Formula 
+\[
+\text{Ker}\left(\phi\right)=\left\{ x\in G|\phi\left(x\right)=e_{H}\right\} 
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+That is, the kernel is the set of all elements in 
+\begin_inset Formula $G$
+\end_inset
+
+ that map to the identity in 
+\begin_inset Formula $H$
+\end_inset
+
+.
+ Let's find the kernel for each of the homomorphisms from the previous examples:
+\end_layout
+
+\begin_layout Subsection*
+Ex 1
+\end_layout
+
+\begin_layout Standard
+As 
+\begin_inset Formula $\phi\left(0\right)=\phi\left(3\right)=0$
+\end_inset
+
+ are the times when 
+\begin_inset Formula $\phi\left(x\right)=0$
+\end_inset
+
+, then 
+\begin_inset Formula 
+\[
+\text{Ker}\left(\phi\right)=\left\{ 0,3\right\} 
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+Ex 2
+\end_layout
+
+\begin_layout Standard
+As each element in 
+\begin_inset Formula $K$
+\end_inset
+
+ maps to itself with 
+\begin_inset Formula $\phi$
+\end_inset
+
+, then 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\phi\left(e\right)=e
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+only for 
+\begin_inset Formula $e$
+\end_inset
+
+, so
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\text{Ker}\left(\phi\right)=\left\{ e\right\} 
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+Ex 3
+\end_layout
+
+\begin_layout Standard
+In linear algebra, the kernel and the null space are the same.
+ We can find the null space of the transformation by finding all vectors
+ 
+\begin_inset Formula $\vec{x}$
+\end_inset
+
+ such that 
+\begin_inset Formula $A\vec{x}=\vec{0}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\left(\begin{array}{ccc}
+1 & 2 & 1\\
+2 & 4 & 2
+\end{array}\right)\left(\begin{array}{c}
+x\\
+y\\
+z
+\end{array}\right)=\left(\begin{array}{c}
+0\\
+0
+\end{array}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+using row reduction:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\left(\begin{array}{ccc}
+1 & 2 & 1\\
+2 & 4 & 2
+\end{array}\right)\rightarrow\left(\begin{array}{ccc}
+1 & 2 & 1\\
+0 & 0 & 0
+\end{array}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Thus 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+x+2y+z=0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+and we have 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\text{Ker}\left(\phi\right)=\left\{ s\left(\begin{array}{c}
+2\\
+-1\\
+0
+\end{array}\right)+t\left(\begin{array}{c}
+1\\
+0\\
+-1
+\end{array}\right)|s,t\in\mathbb{R}\right\} =\text{Span}\left\{ \left(\begin{array}{c}
+2\\
+-1\\
+0
+\end{array}\right),\left(\begin{array}{c}
+1\\
+0\\
+-1
+\end{array}\right)\right\} 
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+Thm
+\end_layout
+
+\begin_layout Standard
+For homomorphism 
+\begin_inset Formula $\phi:G\rightarrow H$
+\end_inset
+
+, 
+\begin_inset Formula $\text{Ker}\left(\phi\right)\leq G$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection*
+Proof
+\end_layout
+
+\begin_layout Standard
+Let 
+\begin_inset Formula $a,b\in\text{Ker}\left(\phi\right)$
+\end_inset
+
+.
+ First, to show 
+\begin_inset Formula $\text{Ker}\left(\phi\right)$
+\end_inset
+
+ is non-empty:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\phi\left(e\right)=e\in\text{Ker}\left(\phi\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Now, suppose we wish to use the first subgroup test to show this:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\phi\left(ab^{-1}\right)=\phi\left(a\right)\phi\left(b^{-1}\right)=\phi\left(a\right)\phi\left(b\right)^{-1}=e\left(e\right)^{-1}=ee=e
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+so 
+\begin_inset Formula 
+\[
+ab^{-1}\in\text{Ker}\left(\phi\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\end_layout
+
+\end_body
+\end_document

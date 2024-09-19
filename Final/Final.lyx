@@ -1,0 +1,543 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 0.4in
+\topmargin 0.75in
+\rightmargin 0.4in
+\bottommargin 0.5in
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Math 320 Take Home Final
+\end_layout
+
+\begin_layout Standard
+You will have from the start of class until midnight on May 1st to work
+ on and submit the take home final.
+ Please clearly number the start of a problem for your scratch work and
+ for your solution.
+ You are welcome to use any class notes and previous homework assignments
+ when working on this exam.
+ If you use any other resources (which is discouraged, but still allowed),
+ please cite your sources.
+ 
+\end_layout
+
+\begin_layout Section*
+Computation
+\end_layout
+
+\begin_layout Standard
+Each of these questions will be worth 
+\begin_inset Formula $10$
+\end_inset
+
+ points.
+ Show your work to receive full credit.
+\end_layout
+
+\begin_layout Section*
+1.
+\end_layout
+
+\begin_layout Standard
+Write the elements of 
+\begin_inset Formula $\mathbb{Z}_{3}\times D_{3}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Section*
+2.
+\end_layout
+
+\begin_layout Standard
+Let 
+\begin_inset Formula $G=\mathbb{Z},H=4\mathbb{Z}$
+\end_inset
+
+.
+ Find all of the cosets in 
+\begin_inset Formula $G\slash H$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section*
+3.
+\end_layout
+
+\begin_layout Standard
+Let 
+\begin_inset Formula $G=\left(\mathbb{R}^{+},*\right)$
+\end_inset
+
+ be the group of positive real numbers under multiplication.
+ Show 
+\begin_inset Formula $\phi:G\rightarrow G$
+\end_inset
+
+ given by 
+\begin_inset Formula $\phi\left(x\right)=\sqrt{x}$
+\end_inset
+
+ is an automorphism.
+ 
+\end_layout
+
+\begin_layout Section*
+4.
+\end_layout
+
+\begin_layout Standard
+For 
+\begin_inset Formula $R=\mathbb{C}\left[x\right]$
+\end_inset
+
+.
+ Find 
+\begin_inset Formula $q\left(x\right),r\left(x\right)$
+\end_inset
+
+ such that 
+\begin_inset Formula $2x^{2}+ix+1-i=\left(x+1\right)q\left(x\right)+r\left(x\right)$
+\end_inset
+
+ and such that 
+\begin_inset Formula $\text{deg}\left(r\left(x\right)\right)=0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section*
+5.
+ 
+\end_layout
+
+\begin_layout Standard
+Let 
+\begin_inset Formula $x^{3}+4x+3,4x^{3}+2x^{2}+1\in\mathbb{Z}_{7}\left[x\right]$
+\end_inset
+
+.
+ Compute the product
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\left(x^{3}+4x+3\right)\left(4x^{3}+2x^{2}+1\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+Proofs
+\end_layout
+
+\begin_layout Standard
+Your lowest scoring response to the next 
+\begin_inset Formula $6$
+\end_inset
+
+ questions will be dropped.
+ Each question is worth 
+\begin_inset Formula $10$
+\end_inset
+
+ points.
+\end_layout
+
+\begin_layout Section*
+6.
+\end_layout
+
+\begin_layout Standard
+Consider the set of even real-valued functions 
+\begin_inset Formula $E=\left\{ f:\mathbb{R}\rightarrow\mathbb{R}|f\left(-x\right)=f\left(x\right)\right\} $
+\end_inset
+
+.
+ Let 
+\begin_inset Formula $f,g\in E$
+\end_inset
+
+ and define addition 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\left(f+g\right)\left(x\right)=f\left(x\right)+g\left(x\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+and multiplication
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\left(f*g\right)\left(x\right)=f\left(x\right)g\left(x\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Show 
+\begin_inset Formula $\left(E,+,*\right)$
+\end_inset
+
+ forms a ring.
+\end_layout
+
+\begin_layout Section*
+7.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+a) 
+\series default
+Consider the integral domain 
+\begin_inset Formula $\mathbb{Q}\left[x\right]$
+\end_inset
+
+.
+ Show 
+\begin_inset Formula 
+\[
+\left\langle x^{2}-n\right\rangle =\left\{ r\left(x\right)\left(x^{2}-n\right)|r\left(x\right)\in\mathbb{Q}\left[x\right],n\in\mathbb{Z}^{+}\right\} 
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+is an ideal of 
+\begin_inset Formula $\mathbb{Q}\left[x\right]$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+b)
+\series default
+ Show 
+\begin_inset Formula $\mathbb{Q}\left[x\right]\slash\left\langle x^{2}-n\right\rangle \approx\mathbb{Q}\left[\sqrt{n}\right]$
+\end_inset
+
+ when 
+\begin_inset Formula $n$
+\end_inset
+
+ is not a perfect square.
+\end_layout
+
+\begin_layout Section*
+8.
+\end_layout
+
+\begin_layout Standard
+Consider 
+\begin_inset Formula $\mathbb{Q}\left[x\right]$
+\end_inset
+
+ and the ideal 
+\begin_inset Formula $\left\langle x^{2}-n\right\rangle $
+\end_inset
+
+ from problem 
+\begin_inset Formula $\boldsymbol{7\text{a)}}$
+\end_inset
+
+.
+ If 
+\begin_inset Formula $n\in\mathbb{Z}^{+}$
+\end_inset
+
+, then for what values of 
+\begin_inset Formula $n$
+\end_inset
+
+ will 
+\begin_inset Formula $\left\langle x^{2}-n\right\rangle $
+\end_inset
+
+ be 
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+a)
+\series default
+ A prime ideal
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+b)
+\series default
+ A maximal ideal
+\end_layout
+
+\begin_layout Standard
+(Note: 
+\begin_inset Formula $n$
+\end_inset
+
+ may be a perfect square in this problem.)
+\end_layout
+
+\begin_layout Section*
+9.
+\end_layout
+
+\begin_layout Standard
+Suppose 
+\begin_inset Formula $H=\left\{ z\in\mathbb{C}\backslash\left\{ 0\right\} |\left|z\right|=1\right\} $
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+a)
+\series default
+ Show 
+\begin_inset Formula $H$
+\end_inset
+
+ is a normal subgroup of 
+\begin_inset Formula $G=\left(\mathbb{C}\backslash\left\{ 0\right\} ,*\right)$
+\end_inset
+
+ the group of non-zero complex numbers under multiplication (Recall 
+\begin_inset Formula $\left|ab\right|=\left|a\right|\left|b\right|$
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+b)
+\series default
+ Show 
+\begin_inset Formula $G\slash H\approx\left(\mathbb{R}^{+},*\right)$
+\end_inset
+
+, the group of positive real numbers under multiplication.
+\end_layout
+
+\begin_layout Section*
+10.
+\end_layout
+
+\begin_layout Standard
+Let 
+\begin_inset Formula $R$
+\end_inset
+
+ be a commutative ring.
+ An 
+\begin_inset Formula $x\in R$
+\end_inset
+
+ is said to be nilpotent if 
+\begin_inset Formula $\exists n\in\mathbb{Z}^{+}$
+\end_inset
+
+ such that 
+\begin_inset Formula $x^{n}=0$
+\end_inset
+
+.
+ Show the set of all nilpotent elements of 
+\begin_inset Formula $R$
+\end_inset
+
+ form a subring of 
+\begin_inset Formula $R$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Section*
+11.
+\end_layout
+
+\begin_layout Standard
+Let 
+\begin_inset Formula $R$
+\end_inset
+
+ be a ring.
+ An element 
+\begin_inset Formula $a\in R$
+\end_inset
+
+ is said to be idempotent if 
+\begin_inset Formula $a^{2}=a$
+\end_inset
+
+.
+ Let 
+\begin_inset Formula $\phi:R\rightarrow S$
+\end_inset
+
+ be a ring homomorphism.
+ Show that 
+\begin_inset Formula $\phi\left(a\right)$
+\end_inset
+
+ is idempotent in 
+\begin_inset Formula $S$
+\end_inset
+
+ if 
+\begin_inset Formula $a$
+\end_inset
+
+ is idempotent in 
+\begin_inset Formula $R$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Section*
+Bonus Question
+\end_layout
+
+\begin_layout Standard
+If you answer this question, you will get 
+\begin_inset Formula $3$
+\end_inset
+
+ bonus points.
+ If you do not wish to answer this question, write 
+\begin_inset Quotes eld
+\end_inset
+
+no response
+\begin_inset Quotes erd
+\end_inset
+
+ and you will still get full credit for this question.
+\end_layout
+
+\begin_layout Section*
+12.
+\end_layout
+
+\begin_layout Standard
+What is your favorite topic we covered in this semester?
+\end_layout
+
+\end_body
+\end_document

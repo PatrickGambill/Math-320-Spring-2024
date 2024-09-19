@@ -1,0 +1,342 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 0.4in
+\topmargin 0.75in
+\rightmargin 0.4in
+\bottommargin 0.5in
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Math 320 HW 2
+\end_layout
+
+\begin_layout Date
+Due: Jan.
+ 23, 2023 at Midnight
+\end_layout
+
+\begin_layout Section*
+1)
+\end_layout
+
+\begin_layout Standard
+For the following functions, determine if the function ais onto, one-to-one,
+ both, or neither.
+ Provide an argument for your reasoning.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $f:\mathbb{R}^{+}\rightarrow\mathbb{R}$
+\end_inset
+
+, 
+\begin_inset Formula $f\left(x\right)=x^{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $f:\mathbb{R}\rightarrow\mathbb{R}$
+\end_inset
+
+, 
+\begin_inset Formula $f\left(x\right)=x^{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $f:\mathbb{R}^{+}\rightarrow\mathbb{R}^{+}$
+\end_inset
+
+, 
+\begin_inset Formula $f\left(x\right)=x^{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $f:\mathbb{R}^{4}\rightarrow\mathbb{R}^{4},f\left(\begin{array}{c}
+a\\
+b\\
+c\\
+d
+\end{array}\right)=\left(\begin{array}{c}
+c\\
+a\\
+d\\
+b
+\end{array}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+2)
+\end_layout
+
+\begin_layout Standard
+Let 
+\begin_inset Formula $f:A\rightarrow B$
+\end_inset
+
+ and 
+\begin_inset Formula $A_{0},A_{1}\subseteq A$
+\end_inset
+
+.
+ Show the following:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $f\left(A_{0}\right)\subseteq f\left(A\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $f\left(A_{0}\cup A_{1}\right)=f\left(A_{0}\right)\cup f\left(A_{1}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $f\left(A_{0}\cap A_{1}\right)\subseteq f\left(A_{0}\right)\cap f\left(A_{1}\right)$
+\end_inset
+
+ in general and 
+\begin_inset Formula $f\left(A_{0}\cap A_{1}\right)=f\left(A_{0}\right)\cap f\left(A_{1}\right)$
+\end_inset
+
+ if 
+\begin_inset Formula $f$
+\end_inset
+
+ is one-to-one (injective).
+\end_layout
+
+\begin_layout Section*
+3)
+\end_layout
+
+\begin_layout Standard
+Determine if the following relations are equivalence relations, anti-symmetric
+ relations, asymmetric relations, or neither.
+ Provide an explanation for each claim.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $R=\subseteq$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $R=\subsetneq$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $x,y\in\left\{ \text{triangles in }\mathbb{R}^{2}\right\} $
+\end_inset
+
+, 
+\begin_inset Formula $xRy\iff x,y\ \text{are similar triangles}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+4)
+\end_layout
+
+\begin_layout Standard
+Determine if each of the given functions are binary operations.
+ If a given function is a binary operation, determine if the binary operation
+ is associative and commutative.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $a-b$
+\end_inset
+
+ for positive integers 
+\begin_inset Formula $a,b$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $a*b$
+\end_inset
+
+ for rational 
+\begin_inset Formula $a,b$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $AB$
+\end_inset
+
+ for invertible 
+\begin_inset Formula $n\times n$
+\end_inset
+
+ matrices 
+\begin_inset Formula $A,B$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\frac{a}{b}$
+\end_inset
+
+ for rational 
+\begin_inset Formula $a,b$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\left|a\right|\left|b\right|$
+\end_inset
+
+ for complex numbers 
+\begin_inset Formula $a,b$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+5)
+\end_layout
+
+\begin_layout Standard
+Let 
+\begin_inset Formula $X$
+\end_inset
+
+ be a set.
+ How many binary operations 
+\begin_inset Formula $f:X\times X\rightarrow X$
+\end_inset
+
+ are there if:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $|X|=2$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $|X|=3$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $|X|=4$
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

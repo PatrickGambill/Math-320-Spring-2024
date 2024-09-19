@@ -1,0 +1,1353 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 0.4in
+\topmargin 0.75in
+\rightmargin 0.4in
+\bottommargin 0.5in
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Class 19
+\end_layout
+
+\begin_layout Section*
+Rings
+\end_layout
+
+\begin_layout Standard
+Now we are going to talk about rings.
+ The algebra of rings will probably be more familiar than the algebra of
+ groups, as you have worked with rings many times throughout previous math
+ classes.
+ The name ring comes from David Hilbert.
+ He meant the word ring as in a spy ring, rather than as the geometric object.
+ 
+\end_layout
+
+\begin_layout Subsection*
+Def
+\end_layout
+
+\begin_layout Standard
+A Ring 
+\begin_inset Formula $R$
+\end_inset
+
+ is a set with two binary operations, addition 
+\begin_inset Formula $\left(a+b\right)$
+\end_inset
+
+ and multiplication 
+\begin_inset Formula $\left(ab\ \text{or\ }a*b\right)$
+\end_inset
+
+, that obey the following axioms 
+\begin_inset Formula $\forall a,b,c\in R$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $a+b=b+a$
+\end_inset
+
+ (Commutativity of Addition)
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\left(a+b\right)+c=a+\left(b+c\right)$
+\end_inset
+
+ (Associativity of Addition)
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\exists0\in R$
+\end_inset
+
+ such that 
+\begin_inset Formula $a+0=a\ \forall a\in R$
+\end_inset
+
+ (Identity under Addition)
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\exists-a\in R$
+\end_inset
+
+ such that 
+\begin_inset Formula $a+\left(-a\right)=0$
+\end_inset
+
+ (Inverses under Addition)
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $a\left(bc\right)=\left(ab\right)c$
+\end_inset
+
+ (Associativity of Multiplication)
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $a\left(b+c\right)=ab+ac$
+\end_inset
+
+ and 
+\begin_inset Formula $\left(b+c\right)a=ba+ca$
+\end_inset
+
+ (Distributive Laws)
+\end_layout
+
+\begin_layout Standard
+Note that the addition and multiplication rules need not be the standard
+ addition and multiplication rules.
+ These binary operations will be defined for the specific ring.
+ Equivalently, 
+\begin_inset Formula $R$
+\end_inset
+
+ is an abelian group under addition and obeys 5 and 6.
+ 
+\end_layout
+
+\begin_layout Subsection*
+Examples
+\end_layout
+
+\begin_layout Standard
+Here are some examples of rings.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+1) 
+\series default
+
+\begin_inset Formula $R_{1}=\mathbb{Z}$
+\end_inset
+
+ under the usual rules of addition and multiplication (We know 
+\begin_inset Formula $\mathbb{Z}$
+\end_inset
+
+ is an abelian group under addition already.
+ The real numbers are associative and distributive, so the integers must
+ be too).
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+2)
+\series default
+ 
+\begin_inset Formula $R_{2}=M_{2\times2}\left(\mathbb{R}\right)$
+\end_inset
+
+ the set of 
+\begin_inset Formula $2\times2$
+\end_inset
+
+ matrices under the usual rules of matrix addition and multiplication.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+3)
+\series default
+ 
+\begin_inset Formula $R_{3}=\mathbb{Z}\left[x\right]$
+\end_inset
+
+ the set of all polynomials with variable 
+\begin_inset Formula $x$
+\end_inset
+
+ and integer coefficients under the usual rules of addition and multiplication
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+4)
+\series default
+ 
+\begin_inset Formula $R_{4}=3\mathbb{Z}$
+\end_inset
+
+ the set of all integers divisible by 
+\begin_inset Formula $3$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection*
+Pf 
+\end_layout
+
+\begin_layout Standard
+We will prove that 
+\series bold
+3)
+\series default
+ and 
+\series bold
+4)
+\series default
+ are rings.
+ 
+\end_layout
+
+\begin_layout Subsection*
+3)
+\end_layout
+
+\begin_layout Standard
+Let 
+\begin_inset Formula $a,b,c\in R_{3}$
+\end_inset
+
+.
+ For convenience, suppose 
+\begin_inset Formula $a=\sum_{k=0}^{\infty}a_{k}x^{k}$
+\end_inset
+
+, 
+\begin_inset Formula $b=\sum_{k=0}^{\infty}b_{k}x^{k}$
+\end_inset
+
+, 
+\begin_inset Formula $c=\sum_{k=0}^{\infty}c_{k}x^{k}$
+\end_inset
+
+ where 
+\begin_inset Formula $a_{k},b_{k},c_{k}\in\mathbb{Z}$
+\end_inset
+
+.
+ Let's show each axiom! First, let's show 
+\begin_inset Formula $+$
+\end_inset
+
+ and 
+\begin_inset Formula $*$
+\end_inset
+
+ are binary operations.
+ 
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Binary Operations 
+\series default
+
+\begin_inset Formula $a+b=\sum_{k=0}^{\infty}a_{k}x^{k}+\sum_{k=0}^{\infty}b_{k}x^{k}=\sum_{k=0}^{\infty}\left(a_{k}+b_{k}\right)x^{k}\in R_{3}$
+\end_inset
+
+ as 
+\begin_inset Formula $a_{k}+b_{k}\in\mathbb{Z}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $ab=\left(\sum_{k=0}^{\infty}a_{k}x^{k}\right)\left(\sum_{k=0}^{\infty}b_{k}x^{k}\right)=\sum_{k=0}^{\infty}\sum_{i=0}^{k}\left(a_{l}b_{k-l}\right)x^{k}\in R_{3}$
+\end_inset
+
+ as 
+\begin_inset Formula $\sum_{i=0}^{k}\left(a_{l}b_{k-l}\right)\in\mathbb{Z}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+1)
+\series default
+ 
+\begin_inset Formula $a+b=\sum_{k=0}^{\infty}a_{k}x^{k}+\sum_{k=0}^{\infty}b_{k}x^{k}=\sum_{k=0}^{\infty}b_{k}x^{k}+\sum_{k=0}^{\infty}a_{k}x^{k}=b+a$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+2)
+\series default
+ 
+\begin_inset Formula $\left(a+b\right)+c=\left(\sum_{k=0}^{\infty}a_{k}x^{k}+\sum_{k=0}^{\infty}b_{k}x^{k}\right)+\sum_{k=0}^{\infty}c_{k}x^{k}=\sum_{k=0}^{\infty}a_{k}x^{k}+\left(\sum_{k=0}^{\infty}b_{k}x^{k}+\sum_{k=0}^{\infty}c_{k}x^{k}\right)=a+\left(b+c\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+3)
+\series default
+ 
+\begin_inset Formula $a+0=\sum_{k=0}^{\infty}a_{k}x^{k}+0=\sum_{k=0}^{\infty}a_{k}x^{k}=a$
+\end_inset
+
+ (here, 
+\begin_inset Formula $0$
+\end_inset
+
+ is the polynomial where each coefficient is 
+\begin_inset Formula $0\in\mathbb{Z}$
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+4)
+\series default
+ 
+\begin_inset Formula $-a=-\sum_{k=0}^{\infty}a_{k}x^{k}=\sum_{k=0}^{\infty}-a_{k}x^{k}$
+\end_inset
+
+.
+ As each 
+\begin_inset Formula $-a_{k}\in\mathbb{Z}$
+\end_inset
+
+, then 
+\begin_inset Formula $-a\in R_{3}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+5)
+\series default
+ 
+\begin_inset Formula $\left(ab\right)c=\left(\left(\sum_{k=0}^{\infty}a_{k}x^{k}\right)\left(\sum_{k=0}^{\infty}b_{k}x^{k}\right)\right)\left(\sum_{k=0}^{\infty}c_{k}x^{k}\right)=\left(\sum_{k=0}^{\infty}a_{k}x^{k}\right)\left(\left(\sum_{k=0}^{\infty}b_{k}x^{k}\right)\left(\sum_{k=0}^{\infty}c_{k}x^{k}\right)\right)=a\left(bc\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+6)
+\series default
+ 
+\begin_inset Formula $a\left(b+c\right)=\left(\sum_{k=0}^{\infty}a_{k}x^{k}\right)\left(\left(\sum_{k=0}^{\infty}b_{k}x^{k}\right)+\left(\sum_{k=0}^{\infty}c_{k}x^{k}\right)\right)=\left(\sum_{k=0}^{\infty}a_{k}x^{k}\right)\left(\sum_{k=0}^{\infty}b_{k}x^{k}\right)+\left(\sum_{k=0}^{\infty}a_{k}x^{k}\right)\left(\sum_{k=0}^{\infty}c_{k}x^{k}\right)=ab+ac$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\left(b+c\right)a=\left(\left(\sum_{k=0}^{\infty}b_{k}x^{k}\right)+\left(\sum_{k=0}^{\infty}c_{k}x^{k}\right)\right)\left(\sum_{k=0}^{\infty}a_{k}x^{k}\right)=\left(\sum_{k=0}^{\infty}b_{k}x^{k}\right)\left(\sum_{k=0}^{\infty}a_{k}x^{k}\right)+\left(\sum_{k=0}^{\infty}c_{k}x^{k}\right)\left(\sum_{k=0}^{\infty}a_{k}x^{k}\right)=ba+ca$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+4)
+\end_layout
+
+\begin_layout Standard
+Let 
+\begin_inset Formula $a,b,c\in R_{4}$
+\end_inset
+
+.
+ For convenience, suppose 
+\begin_inset Formula $a=3n$
+\end_inset
+
+, 
+\begin_inset Formula $b=3m$
+\end_inset
+
+, 
+\begin_inset Formula $c=3k$
+\end_inset
+
+ where 
+\begin_inset Formula $n,m,k\in\mathbb{Z}$
+\end_inset
+
+.
+ Let's show each axiom! First, let's show 
+\begin_inset Formula $+$
+\end_inset
+
+ and 
+\begin_inset Formula $*$
+\end_inset
+
+ are binary operations.
+ 
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Binary Operations 
+\series default
+
+\begin_inset Formula $a+b=3n+3m=3\left(n+m\right)\in R_{4}$
+\end_inset
+
+ as 
+\begin_inset Formula $n+m\in\mathbb{Z}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $ab=\left(3n\right)\left(3m\right)=9nm=3\left(3mn\right)\in R_{4}$
+\end_inset
+
+ as 
+\begin_inset Formula $\left(3mn\right)\in\mathbb{Z}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+1)
+\series default
+ 
+\begin_inset Formula $a+b=3n+3m=3m+3n=b+a$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+2)
+\series default
+ 
+\begin_inset Formula $\left(a+b\right)+c=\left(3n+3m\right)+3k=3n+\left(3m+3k\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+3)
+\series default
+ 
+\begin_inset Formula $a+0=3n+0=3n=a$
+\end_inset
+
+ (here, 
+\begin_inset Formula $0=3*0$
+\end_inset
+
+ so 
+\begin_inset Formula $0\in R_{4}$
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+4)
+\series default
+ 
+\begin_inset Formula $-a=-3n=3\left(-n\right)$
+\end_inset
+
+.
+ As 
+\begin_inset Formula $-3\in\mathbb{Z}$
+\end_inset
+
+, then 
+\begin_inset Formula $-a\in R_{4}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+5)
+\series default
+ 
+\begin_inset Formula $\left(ab\right)c=\left(3n*3m\right)3k=3n\left(3m*3k\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+6)
+\series default
+ 
+\begin_inset Formula $a\left(b+c\right)=3n\left(3m+3k\right)=3n*3m+3n*3k=ab+ac$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\left(b+c\right)a=\left(3m+3k\right)3n=3m*3n+3k*3n=ba+ca$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+Properties of Rings
+\end_layout
+
+\begin_layout Standard
+Notice that rings are not required to have a multiplicative identity.
+ If a ring has a multiplicative identity, we usually denote this element
+ as 
+\begin_inset Formula $1$
+\end_inset
+
+.
+ The multiplicative identity is also called a unity and a ring with a multiplica
+tive identity is also called a ring with unity.
+ Any element that has a multiplicative inverse is called a unit (note 
+\begin_inset Formula $R$
+\end_inset
+
+ needs a unity for 
+\begin_inset Formula $R$
+\end_inset
+
+ to have units).
+ Not every ring is commutative under multiplication.
+ Rings that are commutative under multiplication are called commutative
+ rings.
+ Let's see which of our example rings have which properties:
+\end_layout
+
+\begin_layout Subsection*
+Examples
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+1) 
+\series default
+
+\begin_inset Formula $R_{1}$
+\end_inset
+
+ is a commutative ring with unity.
+ The unity is 
+\begin_inset Formula $1$
+\end_inset
+
+ and the units are 
+\begin_inset Formula $1,-1$
+\end_inset
+
+ as 
+\begin_inset Formula $1*1=1,\left(-1\right)*\left(-1\right)=1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+2)
+\series default
+ 
+\begin_inset Formula $R_{2}$
+\end_inset
+
+ is non-commutative ring with unity.
+ The unity is the identity matrix 
+\begin_inset Formula $I$
+\end_inset
+
+ and the units are all invertible matrices.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+3)
+\series default
+ 
+\begin_inset Formula $R_{3}$
+\end_inset
+
+ is a commutative ring with unity.
+ The unity is 
+\begin_inset Formula $1$
+\end_inset
+
+ and the units are 
+\begin_inset Formula $1,-1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+4)
+\series default
+ 
+\begin_inset Formula $R_{4}$
+\end_inset
+
+ is a commutative ring without unity.
+ The is not a unity as for any 
+\begin_inset Formula $a=3n,b=3m$
+\end_inset
+
+ 
+\begin_inset Formula $ab=9nm=3\left(3nm\right)\neq3n$
+\end_inset
+
+ for all 
+\begin_inset Formula $n\neq0$
+\end_inset
+
+ for any 
+\begin_inset Formula $m$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection*
+More Properties of Rings
+\end_layout
+
+\begin_layout Standard
+If 
+\begin_inset Formula $R$
+\end_inset
+
+ is a ring, then for all 
+\begin_inset Formula $a,b,c\in R$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $a*0=0*a=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $a\left(-b\right)=\left(-a\right)b=-\left(ab\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\left(-a\right)\left(-b\right)=ab$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $a\left(b-c\right)=ab-ac$
+\end_inset
+
+ and 
+\begin_inset Formula $\left(b-c\right)a=ba-ca$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+If 
+\begin_inset Formula $R$
+\end_inset
+
+ has unity 
+\begin_inset Formula $1$
+\end_inset
+
+, we also have
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\left(-1\right)a=-a$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\left(-1\right)\left(-1\right)=1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $1$
+\end_inset
+
+ is unique
+\end_layout
+
+\begin_layout Subsection*
+Pf
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+1) 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+a*0=a*\left(0+0\right)=a*0+a*0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+a*0-a*0=a*0+a*0-a*0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+0=a*0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Similarly
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+0*a=\left(0+0\right)*a=0*a+0*a
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+0*a-0*a=0*a+0*a-0*a
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+0=0*a
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+2)
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+a\left(-b\right)+ab=a\left(-b+b\right)=a*0=0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Thus 
+\begin_inset Formula $a\left(-b\right)=-ab$
+\end_inset
+
+.
+ Similarly
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\left(-a\right)b+ab=\left(-a+a\right)b=0*b=0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Thus 
+\begin_inset Formula $\left(-a\right)b=a\left(-b\right)=-ab$
+\end_inset
+
+ as inverses are unique in a group.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+3)
+\end_layout
+
+\begin_layout Standard
+Using 
+\series bold
+2)
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\left(-a\right)\left(-b\right)=-\left(\left(-a\right)b\right)=--\left(ab\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Recall for any group 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+--a=a
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+thus 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\left(-a\right)\left(-b\right)=--\left(ab\right)=ab
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+4)
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+a\left(b-c\right)=ab+a\left(-c\right)=ab+-ac=ab-ac
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\left(b-c\right)a=ba+\left(-c\right)a=ba+-ca=ba-ca
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Now for the unity properties:
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+1)
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\left(-1\right)a=-\left(1a\right)=-\left(a\right)=-a
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+2)
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\left(-1\right)\left(-1\right)=-\left(-1*1\right)=-\left(-1\right)=--\left(1\right)=1
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+3)
+\end_layout
+
+\begin_layout Standard
+Let 
+\begin_inset Formula $1,1'$
+\end_inset
+
+ be unities.
+ Then 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+1=1*1'=1'
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Thus 
+\begin_inset Formula $1=1'$
+\end_inset
+
+ for all unities and 
+\begin_inset Formula $1$
+\end_inset
+
+ is unique.
+\end_layout
+
+\begin_layout Subsection*
+Subrings
+\end_layout
+
+\begin_layout Standard
+A ring contained entirely within another ring (under the same binary operations)
+ is called a subring.
+ This is analogous to how a subgroup is contained entirely within another
+ group (assuming both share the same binary operation).
+ There is a subring test: 
+\begin_inset Formula $S\subseteq R$
+\end_inset
+
+ is a subring of 
+\begin_inset Formula $R$
+\end_inset
+
+ if 
+\begin_inset Formula $S$
+\end_inset
+
+ is closed under subtraction and multiplication.
+ Symbolically, if 
+\begin_inset Formula $a,b\in S$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $a-b\in S$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $ab\in S$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+There is not a common symbol for subrings, but in class, it was proposed
+ that we use the symbol 
+\begin_inset Formula $S<\underline{\circledcirc}R$
+\end_inset
+
+ if 
+\begin_inset Formula $S$
+\end_inset
+
+ is a subring of 
+\begin_inset Formula $R$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection*
+Pf
+\end_layout
+
+\begin_layout Standard
+If 
+\begin_inset Formula $a-b\in S$
+\end_inset
+
+ this implies that 
+\begin_inset Formula $S$
+\end_inset
+
+ is a subgroup of 
+\begin_inset Formula $R$
+\end_inset
+
+ under addition, as this is the same as subgroup test 1.
+ Ring axioms 5 and 6 are inherited from 
+\begin_inset Formula $R$
+\end_inset
+
+ as each element of 
+\begin_inset Formula $S$
+\end_inset
+
+ is an element of 
+\begin_inset Formula $R$
+\end_inset
+
+ and all elements of 
+\begin_inset Formula $R$
+\end_inset
+
+ obey ring axioms 5 and 6.
+ The closure under multiplication of 
+\begin_inset Formula $S$
+\end_inset
+
+ implies that multiplication is a valid binary operation on 
+\begin_inset Formula $S$
+\end_inset
+
+, thus our subring test is valid.
+ 
+\end_layout
+
+\begin_layout Subsection*
+Examples
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $S_{1}$
+\end_inset
+
+ From the earlier rings, 
+\begin_inset Formula $R_{4}$
+\end_inset
+
+ is a subring of 
+\begin_inset Formula $R_{1}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $S_{2}$
+\end_inset
+
+ The set of all diagonal matrices is a subring of 
+\begin_inset Formula $R_{2}$
+\end_inset
+
+ (but the set of all invertible matrices is not)
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $S_{3}$
+\end_inset
+
+ The set of all polynomials 
+\begin_inset Formula $\mathbb{Z}\left[x^{2}\right]\subseteq Z\left[x\right]$
+\end_inset
+
+ is a subring of 
+\begin_inset Formula $R_{3}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+Pf
+\end_layout
+
+\begin_layout Standard
+We will show 2.
+ and 3.
+ are indeed subrings.
+ 
+\end_layout
+
+\begin_layout Subsection*
+2)
+\end_layout
+
+\begin_layout Standard
+Using the subring test, let 
+\begin_inset Formula $A,B$
+\end_inset
+
+ be diagonal matrices.
+ Then 
+\begin_inset Formula $A-B$
+\end_inset
+
+ is diagonal (proof from linear algebra class).
+ We also know 
+\begin_inset Formula $AB$
+\end_inset
+
+ is diagonal (proof from a linear algebra class).
+ As 
+\begin_inset Formula $S_{2}$
+\end_inset
+
+ is closed under subtraction and multiplication, it is a subring of 
+\begin_inset Formula $R_{2}$
+\end_inset
+
+.
+ Consider the invertible matrix 
+\begin_inset Formula $A=\left(\begin{array}{cc}
+1 & 0\\
+0 & 1
+\end{array}\right)$
+\end_inset
+
+.
+ 
+\begin_inset Formula $A-A=\left(\begin{array}{cc}
+0 & 0\\
+0 & 0
+\end{array}\right)$
+\end_inset
+
+ but 
+\begin_inset Formula $\left(\begin{array}{cc}
+0 & 0\\
+0 & 0
+\end{array}\right)$
+\end_inset
+
+ is not invertible, so 
+\begin_inset Formula $S$
+\end_inset
+
+ is not closed under subtraction.
+\end_layout
+
+\begin_layout Subsection*
+3)
+\end_layout
+
+\begin_layout Standard
+Let 
+\begin_inset Formula $a=\sum_{k=0}^{\infty}a_{2k}x^{2k},b=\sum_{k=0}^{\infty}b_{2k}x^{2k}$
+\end_inset
+
+.
+ Then 
+\begin_inset Formula $a-b=\sum_{k=0}^{\infty}a_{2k}x^{2k}-\sum_{k=0}^{\infty}b_{2k}x^{2k}=\sum_{k=0}^{\infty}\left(a_{2k}-b_{2k}\right)x^{2k}$
+\end_inset
+
+.
+ As 
+\begin_inset Formula $a_{2k}-b_{2k}\in\mathbb{Z},$
+\end_inset
+
+then 
+\begin_inset Formula $a-b\in S_{3}$
+\end_inset
+
+.
+ For multiplication 
+\begin_inset Formula $ab=\sum_{k=0}^{\infty}\sum_{i=0}^{k}\left(a_{2l}b_{2k-2l}\right)x^{2k}\in S_{3}$
+\end_inset
+
+ as 
+\begin_inset Formula $\sum_{i=0}^{k}\left(a_{2l}b_{2k-2l}\right)\in\mathbb{Z}$
+\end_inset
+
+.
+\end_layout
+
+\end_body
+\end_document

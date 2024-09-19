@@ -1,0 +1,1985 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 0.4in
+\topmargin 0.75in
+\rightmargin 0.4in
+\bottommargin 0.5in
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Class 1
+\end_layout
+
+\begin_layout Section*
+Shorthand and Symbols
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\wedge$
+\end_inset
+
+: And
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\vee$
+\end_inset
+
+: Or
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\neg$
+\end_inset
+
+: Not, negation
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\forall$
+\end_inset
+
+: For all
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\exists$
+\end_inset
+
+: There exists
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $A\implies B$
+\end_inset
+
+: 
+\begin_inset Formula $A$
+\end_inset
+
+ implies 
+\begin_inset Formula $B$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $A\impliedby B$
+\end_inset
+
+: 
+\begin_inset Formula $A$
+\end_inset
+
+ implied by 
+\begin_inset Formula $B$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $A\iff B$
+\end_inset
+
+: 
+\begin_inset Formula $A$
+\end_inset
+
+ if and only if 
+\begin_inset Formula $B$
+\end_inset
+
+, 
+\begin_inset Formula $A,B$
+\end_inset
+
+ are logically equivalent
+\end_layout
+
+\begin_layout Standard
+iff: If and only if
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $A\nRightarrow B$
+\end_inset
+
+: 
+\begin_inset Formula $A$
+\end_inset
+
+ does not imply by 
+\begin_inset Formula $B$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $A\nLeftarrow B$
+\end_inset
+
+: 
+\begin_inset Formula $A$
+\end_inset
+
+ is not implied by 
+\begin_inset Formula $B$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $A\Rightarrow\Leftarrow B$
+\end_inset
+
+: 
+\begin_inset Formula $A$
+\end_inset
+
+ and 
+\begin_inset Formula $B$
+\end_inset
+
+ are contradictory
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $P!$
+\end_inset
+
+: Statement 
+\begin_inset Formula $P$
+\end_inset
+
+ is a contradiction
+\end_layout
+
+\begin_layout Standard
+s.t.: Such that 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\therefore$
+\end_inset
+
+ : Therefore
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\mathbb{N}$
+\end_inset
+
+: Natural numbers
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\mathbb{Z}:$
+\end_inset
+
+ Integers
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\mathbb{Q}:$
+\end_inset
+
+ Rational numbers
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\mathbb{R}:$
+\end_inset
+
+ Real numbers
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\mathbb{C}:$
+\end_inset
+
+ Complex numbers
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\mathbb{Z}^{+}:$
+\end_inset
+
+ Positive integers
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\mathbb{R}^{+}$
+\end_inset
+
+: Positive real numbers
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\mathbb{R}^{n}$
+\end_inset
+
+: 
+\begin_inset Formula $n$
+\end_inset
+
+ dimensional real space
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\mathbb{R}^{n\times m}$
+\end_inset
+
+: 
+\begin_inset Formula $n\times m$
+\end_inset
+
+ matrices with real entries
+\end_layout
+
+\begin_layout Standard
+pf : Proof
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\square$
+\end_inset
+
+: End of proof
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\blacksquare$
+\end_inset
+
+: End of proof
+\end_layout
+
+\begin_layout Standard
+Q.E.D.
+ : End of proof
+\end_layout
+
+\begin_layout Standard
+WTS : Want to show
+\end_layout
+
+\begin_layout Standard
+NTS : Need to show
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $a|b$
+\end_inset
+
+: 
+\begin_inset Formula $a$
+\end_inset
+
+ divides 
+\begin_inset Formula $b$
+\end_inset
+
+ or 
+\begin_inset Formula $b$
+\end_inset
+
+ is divisible by 
+\begin_inset Formula $a$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Section*
+Proof Methods
+\end_layout
+
+\begin_layout Standard
+The best proofs are as 
+\end_layout
+
+\begin_layout Enumerate
+Unambiguous
+\end_layout
+
+\begin_layout Enumerate
+Simple
+\end_layout
+
+\begin_layout Enumerate
+Explanatory
+\end_layout
+
+\begin_layout Enumerate
+Clear
+\end_layout
+
+\begin_layout Standard
+as possible.
+ A correct proof will get full credit, but the best proof will also be elegant.
+\end_layout
+
+\begin_layout Subsection*
+Direct Proof
+\end_layout
+
+\begin_layout Standard
+Prove the desired claim by a sequence of logical statements.
+ 
+\end_layout
+
+\begin_layout Subsubsection*
+Example
+\end_layout
+
+\begin_layout Standard
+Prove that if 
+\begin_inset Formula $3x+1$
+\end_inset
+
+ is odd and 
+\begin_inset Formula $x$
+\end_inset
+
+ is an integer, then 
+\begin_inset Formula $x$
+\end_inset
+
+ must be even.
+\end_layout
+
+\begin_layout Subsubsection*
+pf
+\end_layout
+
+\begin_layout Standard
+If 
+\begin_inset Formula $3x+1$
+\end_inset
+
+ is odd, then 
+\begin_inset Formula $3x+1=2n+1$
+\end_inset
+
+ for some integer 
+\begin_inset Formula $n$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+3x+1=2n+1
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+3x=2n
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+x=\frac{2n}{3}=2\left(\frac{n}{3}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+As 
+\begin_inset Formula $x$
+\end_inset
+
+ is an integer, 
+\begin_inset Formula $\frac{n}{3}$
+\end_inset
+
+ must be as well, thus 
+\begin_inset Formula $x$
+\end_inset
+
+ is an even integer.
+ 
+\begin_inset Formula $\blacksquare$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+Proof By Contrapositive
+\end_layout
+
+\begin_layout Standard
+Prove the desired claim by proving the contrapositive of the original claim.
+ This works since the contrapositive is logically equivalent to the original
+ claim.
+ Suppose we wish to prove
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+P\implies Q
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The contrapositive is 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\neg Q\implies\neg P
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+Example
+\end_layout
+
+\begin_layout Standard
+Prove that if 
+\begin_inset Formula $3x+1$
+\end_inset
+
+ is odd and 
+\begin_inset Formula $x$
+\end_inset
+
+ is an integer, then 
+\begin_inset Formula $x$
+\end_inset
+
+ must be even.
+\end_layout
+
+\begin_layout Subsubsection*
+pf
+\end_layout
+
+\begin_layout Standard
+The contrapositive of this claim is if 
+\begin_inset Formula $x$
+\end_inset
+
+ is an odd integer, then 
+\begin_inset Formula $3x+1$
+\end_inset
+
+ must be even.
+ If 
+\begin_inset Formula $x$
+\end_inset
+
+ is odd, then 
+\begin_inset Formula $x=2n+1$
+\end_inset
+
+ for some 
+\begin_inset Formula $n\in\mathbb{Z}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+3\left(2n+1\right)+1=6n+3+1
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+=6n+4=2\left(3n+2\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Since 
+\begin_inset Formula $3n+2\in\mathbb{Z}$
+\end_inset
+
+, then 
+\begin_inset Formula $3x+1$
+\end_inset
+
+ is even.
+ Thus the contrapositive must also hold.
+ 
+\begin_inset Formula $\blacksquare$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Was the first proof of the second proof more elegant? Which was easier to
+ follow?
+\end_layout
+
+\begin_layout Subsection*
+Proof By Contradiction
+\end_layout
+
+\begin_layout Standard
+Suppose the claim were false.
+ Show this leads to absurd results.
+\end_layout
+
+\begin_layout Subsubsection*
+Example
+\end_layout
+
+\begin_layout Standard
+Prove 
+\begin_inset Formula $\sqrt{2}$
+\end_inset
+
+ is irrational
+\end_layout
+
+\begin_layout Subsubsection*
+pf
+\end_layout
+
+\begin_layout Standard
+Suppose 
+\begin_inset Formula $\sqrt{2}$
+\end_inset
+
+ were rational.
+ Then there would exist 
+\begin_inset Formula $a,b\in\mathbb{Z}$
+\end_inset
+
+ st 
+\begin_inset Formula $b\neq0$
+\end_inset
+
+ and 
+\begin_inset Formula $\frac{a}{b}$
+\end_inset
+
+ is fully reduced.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\sqrt{2}=\frac{a}{b}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+2=\frac{a^{2}}{b^{2}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+2b^{2}=a^{2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+As 
+\begin_inset Formula $a,b$
+\end_inset
+
+ are integers, this implies 
+\begin_inset Formula $a^{2}$
+\end_inset
+
+ is divisible by 
+\begin_inset Formula $2$
+\end_inset
+
+, as is 
+\begin_inset Formula $a$
+\end_inset
+
+.
+ In other words, 
+\begin_inset Formula $a=2c$
+\end_inset
+
+ for some 
+\begin_inset Formula $c\in\mathbb{Z}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+2b^{2}=\left(2c\right)^{2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+2b^{2}=4c^{2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+b^{2}=2c^{2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+This implies 
+\begin_inset Formula $b^{2}$
+\end_inset
+
+ is also divisible by 
+\begin_inset Formula $2$
+\end_inset
+
+ and therefore 
+\begin_inset Formula $b$
+\end_inset
+
+ is as well.
+ As 
+\begin_inset Formula $a,b$
+\end_inset
+
+ are both divisible by 
+\begin_inset Formula $2$
+\end_inset
+
+, this contradicts our earlier assumption that 
+\begin_inset Formula $\frac{a}{b}$
+\end_inset
+
+ is fully simplified! Thus to avoid contradiction, we must allow 
+\begin_inset Formula $\sqrt{2}$
+\end_inset
+
+ to be irrational.
+ 
+\begin_inset Formula $\blacksquare$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+Proof By Induction
+\end_layout
+
+\begin_layout Standard
+These proofs work best when we have a claim that holds over some countable
+ set (usually the natural numbers or a subset of the natural numbers).
+ Start by taking the lowest number the claim holds for.
+ Prove the claim for this number.
+ This is called the base case.
+ Now, prove that if the claim holds for 
+\begin_inset Formula $k$
+\end_inset
+
+, it must also hold for 
+\begin_inset Formula $k+1$
+\end_inset
+
+.
+ This is the induction step.
+ If both the base case and induction step hold, so must the original claim.
+ 
+\end_layout
+
+\begin_layout Subsubsection*
+Example
+\end_layout
+
+\begin_layout Standard
+Prove the formula for the triangle numbers
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+T_{n}=\sum_{i=1}^{n}i=\frac{n\left(n+1\right)}{2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+pf
+\end_layout
+
+\begin_layout Standard
+First start with the base case when 
+\begin_inset Formula $n=1$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\sum_{i=1}^{1}i=1=\frac{2}{2}=\frac{1\left(1+1\right)}{2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Now that the base case holds, we will perform the induction step.
+ Suppose the formula for 
+\begin_inset Formula $T_{n}$
+\end_inset
+
+ holds whenever 
+\begin_inset Formula $1\leq n\leq k$
+\end_inset
+
+.
+ This implies 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+T_{k}=\sum_{i=1}^{k}i=\frac{k\left(k+1\right)}{2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+If we add 
+\begin_inset Formula $k+1$
+\end_inset
+
+ to both sides, we get
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\sum_{i=1}^{k}i+\left(k+1\right)=\frac{k\left(k+1\right)}{2}+\left(k+1\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\sum_{i=1}^{k+1}i=\frac{k\left(k+1\right)}{2}+\left(k+1\right)=\left(k+1\right)\left(\frac{k}{2}+1\right)=\left(k+1\right)\left(\frac{k}{2}+\frac{2}{2}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\sum_{i=1}^{k+1}i=\frac{\left(k+1\right)\left(k+2\right)}{2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+As we expected.
+ As both the base case and induction step holds, we have proven our claim
+ by induction.
+ 
+\begin_inset Formula $\blacksquare$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+Practice Problems
+\end_layout
+
+\begin_layout Standard
+Try these problems on your own for practice.
+ What proof methods did you use?
+\end_layout
+
+\begin_layout Enumerate
+Show 
+\begin_inset Formula $\sum_{i=1}^{n}i^{2}=\frac{n\left(n+1\right)\left(2n+1\right)}{6}$
+\end_inset
+
+ for 
+\begin_inset Formula $n\in\mathbb{Z}^{+}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+Show 
+\begin_inset Formula $n^{3}-n$
+\end_inset
+
+ is divisible by 
+\begin_inset Formula $6$
+\end_inset
+
+ for 
+\begin_inset Formula $n\in\mathbb{Z}^{+}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+Show 
+\begin_inset Formula $3n+5$
+\end_inset
+
+ is even if and only if 
+\begin_inset Formula $n$
+\end_inset
+
+ is odd.
+\end_layout
+
+\begin_layout Enumerate
+Show there are infinitely many prime numbers.
+\end_layout
+
+\begin_layout Enumerate
+Show 
+\begin_inset Formula $\sqrt{p}$
+\end_inset
+
+ is irrational for any prime number 
+\begin_inset Formula $p$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+Show 
+\begin_inset Formula $x$
+\end_inset
+
+ is divisible by 
+\begin_inset Formula $9$
+\end_inset
+
+ if and only if the sum of its digits is divisible by 
+\begin_inset Formula $9$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+If 
+\begin_inset Formula $p$
+\end_inset
+
+,
+\begin_inset Formula $q$
+\end_inset
+
+ are rational, show 
+\begin_inset Formula $p+q$
+\end_inset
+
+ and 
+\begin_inset Formula $p-q$
+\end_inset
+
+ are rational.
+ Further show if 
+\begin_inset Formula $q\neq0$
+\end_inset
+
+, then 
+\begin_inset Formula $\frac{p}{q}$
+\end_inset
+
+ is rational.
+ 
+\end_layout
+
+\begin_layout Section*
+Practice Solutions
+\end_layout
+
+\begin_layout Standard
+Here are some possible solutions.
+ Other proofs also exist.
+ 
+\end_layout
+
+\begin_layout Subsection*
+1)
+\end_layout
+
+\begin_layout Standard
+A proof by induction is helpful here.
+ For the base case, consider 
+\begin_inset Formula $n=1$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\sum_{i=1}^{1}i^{2}=1=\frac{1*2*3}{6}=\frac{1\left(1+1\right)\left(2*1+1\right)}{6}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+For the induction step, suppose 
+\begin_inset Formula $\sum_{i=1}^{n}i^{2}=\frac{n\left(n+1\right)\left(2n+1\right)}{6}$
+\end_inset
+
+.
+ Then 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\sum_{i=1}^{n+1}i^{2}=\sum_{i=1}^{n}i^{2}+\left(n+1\right)^{2}=\frac{n\left(n+1\right)\left(2n+1\right)}{6}+\left(n+1\right)^{2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+=\frac{n\left(n+1\right)\left(2n+1\right)}{6}+\frac{6\left(n+1\right)^{2}}{6}=\frac{\left(n+1\right)}{6}\left(n\left(2n+1\right)+6\left(n+1\right)\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+=\frac{\left(n+1\right)}{6}\left(2n^{2}+n+6n+6\right)=\frac{\left(n+1\right)}{6}\left(2n^{2}+7n+6\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+=\frac{\left(n+1\right)}{6}\left(2n+3\right)\left(n+2\right)=\frac{\left(n+1\right)\left(n+2\right)\left(2\left(n+1\right)+1\right)}{6}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\blacksquare$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+2)
+\end_layout
+
+\begin_layout Standard
+There are a few ways to do this.
+ Which proof is a better proof? First, I will show a direct proof:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+n^{3}-n=n\left(n^{2}-1\right)=n\left(n+1\right)\left(n-1\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+we know 
+\begin_inset Formula $2|n$
+\end_inset
+
+ or 
+\begin_inset Formula $2|n+1$
+\end_inset
+
+ 
+\begin_inset Formula $\forall n\in\mathbb{N}$
+\end_inset
+
+.
+ Thus 
+\begin_inset Formula $2|n^{3}-n$
+\end_inset
+
+.
+ We also know 
+\begin_inset Formula $3|n$
+\end_inset
+
+, 
+\begin_inset Formula $3|n+1$
+\end_inset
+
+, or 
+\begin_inset Formula $3|n-1$
+\end_inset
+
+ 
+\begin_inset Formula $\forall n\in\mathbb{N}$
+\end_inset
+
+.
+ Thus 
+\begin_inset Formula $3|n^{3}-n$
+\end_inset
+
+.
+ As 
+\begin_inset Formula $2|n^{3}-n$
+\end_inset
+
+ and 
+\begin_inset Formula $3|n^{3}-n$
+\end_inset
+
+, then 
+\begin_inset Formula $\text{LCM}\left(2,3\right)=6$
+\end_inset
+
+ also divides 
+\begin_inset Formula $n^{3}-n$
+\end_inset
+
+, thus 
+\begin_inset Formula $6|n^{3}-n$
+\end_inset
+
+.
+ 
+\begin_inset Formula $\blacksquare$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Now, let's do the proof by induction.
+ Base case: 
+\begin_inset Formula $n=1$
+\end_inset
+
+: 
+\begin_inset Formula 
+\[
+1^{3}-1=0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+and 
+\begin_inset Formula $6|0$
+\end_inset
+
+ as 
+\begin_inset Formula $0=6*0$
+\end_inset
+
+.
+ Induction step: Suppose 
+\begin_inset Formula $6|n^{3}-n$
+\end_inset
+
+.
+ Consider 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\left(n+1\right)^{3}-\left(n+1\right)=n^{3}+3n^{2}+3n+1-n-1=n^{3}+3n^{2}+3n-n
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+=\left(n^{3}-n\right)+3n\left(n+1\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+As 
+\begin_inset Formula $2|n$
+\end_inset
+
+ or 
+\begin_inset Formula $2|n+1$
+\end_inset
+
+, then 
+\begin_inset Formula $2|n\left(n+1\right)$
+\end_inset
+
+.
+ Thus 
+\begin_inset Formula $2|3n\left(n+1\right)$
+\end_inset
+
+.
+ As 
+\begin_inset Formula $3|3n\left(n+1\right)$
+\end_inset
+
+ as well, then 
+\begin_inset Formula $6|3n\left(n+1\right)$
+\end_inset
+
+.
+ By the induction hypothesis, 
+\begin_inset Formula $6|\left(n^{3}-n\right)$
+\end_inset
+
+.
+ So 
+\begin_inset Formula $6|\left(n^{3}-n\right)+3n\left(n+1\right)$
+\end_inset
+
+ and therefore 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $6|\left(n+1\right)^{3}-\left(n+1\right)$
+\end_inset
+
+ as desired.
+ 
+\begin_inset Formula $\blacksquare$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+3)
+\end_layout
+
+\begin_layout Standard
+We will use a combination of direct proof and proof by contrapositive.
+ First, let's show 
+\begin_inset Formula $3n+5$
+\end_inset
+
+ is even if 
+\begin_inset Formula $n$
+\end_inset
+
+ is odd.
+ Suppose 
+\begin_inset Formula $n$
+\end_inset
+
+ is odd.
+ Then 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+n=2k+1
+\]
+
+\end_inset
+
+ for some 
+\begin_inset Formula $k\in\mathbb{Z}.$
+\end_inset
+
+ Thus 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+3n+5=3\left(2k+1\right)+5=6k+3+5=6k+8=2\left(3k+4\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+as 
+\begin_inset Formula $3k+4\in\mathbb{Z}$
+\end_inset
+
+, then 
+\begin_inset Formula $3n+5$
+\end_inset
+
+ is even.
+ To show 
+\begin_inset Formula $n$
+\end_inset
+
+ must be odd if 
+\begin_inset Formula $3n+5$
+\end_inset
+
+ is even, we will show the contrapositive holds.
+ The contrapositive states if 
+\begin_inset Formula $n$
+\end_inset
+
+ is even, 
+\begin_inset Formula $2n+5$
+\end_inset
+
+ is odd.
+ Suppose 
+\begin_inset Formula $n$
+\end_inset
+
+ is even.
+ Then 
+\begin_inset Formula 
+\[
+n=2k
+\]
+
+\end_inset
+
+ for some 
+\begin_inset Formula $k\in\mathbb{Z}.$
+\end_inset
+
+Thus 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+3n+5=3\left(2k\right)+5=6k+4+1=2\left(3k+2\right)+1
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+as 
+\begin_inset Formula $3k+2\in\mathbb{Z}$
+\end_inset
+
+, then 
+\begin_inset Formula $3n+5$
+\end_inset
+
+ is odd.
+ As we have proven the contrapositive, we know that the original statement
+ also holds.
+ 
+\begin_inset Formula $\blacksquare$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+4)
+\end_layout
+
+\begin_layout Standard
+Here, a proof by contradiction helps.
+ Suppose there are finitely many primes.
+ We will number them 
+\begin_inset Formula $p_{1},p_{2},\dots,p_{n}$
+\end_inset
+
+.
+ Then 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+p_{i}|\prod_{k=1}^{n}p_{k}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+in other words, each prime number divides the product of all of the primes.
+ As a prime number must be larger than 
+\begin_inset Formula $1$
+\end_inset
+
+, then 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+p_{i}\not|\prod_{k=1}^{n}\left(p_{k}\right)+1
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+As there are no primes in our list that divide 
+\begin_inset Formula $\prod_{k=1}^{n}\left(p_{k}\right)+1$
+\end_inset
+
+, then 
+\begin_inset Formula $\prod_{k=1}^{n}\left(p_{k}\right)+1$
+\end_inset
+
+ contains no prime factors! This is a contradiction as every integer greater
+ than one contains a unique prime factorization.
+ Thus to avoid contradiction there must be infinitely many prime numbers.
+ 
+\end_layout
+
+\begin_layout Subsection*
+5)
+\end_layout
+
+\begin_layout Standard
+We will do a proof by contradiction using the same reasoning as the 
+\begin_inset Formula $\sqrt{2}$
+\end_inset
+
+ irrationality proof.
+ 
+\end_layout
+
+\begin_layout Standard
+Suppose 
+\begin_inset Formula $\sqrt{p}$
+\end_inset
+
+ were rational.
+ Then there would exist 
+\begin_inset Formula $a,b\in\mathbb{Z}$
+\end_inset
+
+ st 
+\begin_inset Formula $b\neq0$
+\end_inset
+
+ and 
+\begin_inset Formula $\frac{a}{b}$
+\end_inset
+
+ is fully reduced.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\sqrt{p}=\frac{a}{b}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+p=\frac{a^{2}}{b^{2}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+pb^{2}=a^{2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+As 
+\begin_inset Formula $a,b$
+\end_inset
+
+ are integers, this implies 
+\begin_inset Formula $a^{2}$
+\end_inset
+
+ is divisible by 
+\begin_inset Formula $p$
+\end_inset
+
+, as is 
+\begin_inset Formula $a$
+\end_inset
+
+.
+ In other words, 
+\begin_inset Formula $a=pc$
+\end_inset
+
+ for some 
+\begin_inset Formula $c\in\mathbb{Z}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+pb^{2}=\left(pc\right)^{2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+pb^{2}=p^{2}c^{2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+b^{2}=pc^{2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+This implies 
+\begin_inset Formula $b^{2}$
+\end_inset
+
+ is also divisible by 
+\begin_inset Formula $p$
+\end_inset
+
+ and therefore 
+\begin_inset Formula $b$
+\end_inset
+
+ is as well.
+ As 
+\begin_inset Formula $a,b$
+\end_inset
+
+ are both divisible by 
+\begin_inset Formula $p$
+\end_inset
+
+, this contradicts our earlier assumption that 
+\begin_inset Formula $\frac{a}{b}$
+\end_inset
+
+ is fully simplified! Thus to avoid contradiction, we must allow 
+\begin_inset Formula $\sqrt{2}$
+\end_inset
+
+ to be irrational.
+ 
+\begin_inset Formula $\blacksquare$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+6)
+\end_layout
+
+\begin_layout Standard
+Suppose the 
+\begin_inset Formula $x$
+\end_inset
+
+ is an 
+\begin_inset Formula $n$
+\end_inset
+
+ digit number of the form 
+\begin_inset Formula $x=a_{n}a_{n-1}\dots a_{0}$
+\end_inset
+
+ where each 
+\begin_inset Formula $a_{i}\in\left\{ 0,1,2,\dots,9\right\} $
+\end_inset
+
+, and each 
+\begin_inset Formula $a_{i}$
+\end_inset
+
+ represents a digit of 
+\begin_inset Formula $x$
+\end_inset
+
+.
+ Then we can write 
+\begin_inset Formula $x$
+\end_inset
+
+ as 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+x=\sum_{i=0}^{n}a_{i}\left(10\right)^{i}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+For convenience, we will also define the sum of the digits as 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+s=\sum_{i=0}^{n}a_{i}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Then 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+x-s=\sum_{i=0}^{n}a_{i}\left(10\right)^{i}-\sum_{i=0}^{n}a_{i}=\sum_{i=0}^{n}a_{i}\left(\left(10\right)^{i}-1\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+As 
+\begin_inset Formula $\left(10\right)^{i}-1=999\dots999$
+\end_inset
+
+, then 
+\begin_inset Formula $9|\left(10\right)^{i}-1$
+\end_inset
+
+ for each 
+\begin_inset Formula $i\geq0$
+\end_inset
+
+.
+ As such, 
+\begin_inset Formula $9|a_{i}\left(\left(10\right)^{i}-1\right)$
+\end_inset
+
+ for each 
+\begin_inset Formula $i$
+\end_inset
+
+ and thus 
+\begin_inset Formula $9|x-s$
+\end_inset
+
+.
+ This implies that 
+\begin_inset Formula $\frac{x}{9}$
+\end_inset
+
+ and 
+\begin_inset Formula $\frac{s}{9}$
+\end_inset
+
+ have the same remainder.
+ If 
+\begin_inset Formula $9|x$
+\end_inset
+
+, then the remainder is 
+\begin_inset Formula $0$
+\end_inset
+
+, so 
+\begin_inset Formula $9|s$
+\end_inset
+
+.
+ And similarly, if 
+\begin_inset Formula $9|s$
+\end_inset
+
+, then the remainder is 
+\begin_inset Formula $0$
+\end_inset
+
+, so 
+\begin_inset Formula $9|x$
+\end_inset
+
+.
+ 
+\begin_inset Formula $\blacksquare$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+7)
+\end_layout
+
+\begin_layout Standard
+Suppose 
+\begin_inset Formula $p=\frac{a}{b}$
+\end_inset
+
+, 
+\begin_inset Formula $q=\frac{c}{d}$
+\end_inset
+
+ for 
+\begin_inset Formula $a,b,c,d\in\mathbb{Z}$
+\end_inset
+
+ and with 
+\begin_inset Formula $b,d\neq0$
+\end_inset
+
+.
+ Then 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+p+q=\frac{a}{b}+\frac{c}{d}=\frac{ad}{bd}+\frac{bc}{bd}=\frac{ab+bc}{bd}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+as 
+\begin_inset Formula $ab+bc,bd\in\mathbb{Z}$
+\end_inset
+
+ and 
+\begin_inset Formula $bd\neq0$
+\end_inset
+
+, then 
+\begin_inset Formula $p+q\in\mathbb{Q}$
+\end_inset
+
+.
+ Similarly, 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+p-q=\frac{a}{b}-\frac{c}{d}=\frac{ad}{bd}-\frac{bc}{bd}=\frac{ab-bc}{bd}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+as 
+\begin_inset Formula $ab-bc,bd\in\mathbb{Z}$
+\end_inset
+
+ and 
+\begin_inset Formula $bd\neq0$
+\end_inset
+
+, then 
+\begin_inset Formula $p-q\in\mathbb{Q}$
+\end_inset
+
+.
+ If we add the restriction that 
+\begin_inset Formula $q\neq0$
+\end_inset
+
+, then 
+\begin_inset Formula $c\neq0$
+\end_inset
+
+.
+ Thus 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\frac{p}{q}=\frac{\left(\frac{a}{b}\right)}{\left(\frac{c}{d}\right)}=\frac{a}{b}*\frac{d}{c}=\frac{ad}{bc}
+\]
+
+\end_inset
+
+ as 
+\begin_inset Formula $ad,bc\in\mathbb{Z}$
+\end_inset
+
+ and 
+\begin_inset Formula $bc\neq0$
+\end_inset
+
+, then 
+\begin_inset Formula $\frac{p}{q}\in\mathbb{Q}$
+\end_inset
+
+.
+ 
+\begin_inset Formula $\blacksquare$
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

@@ -1,0 +1,976 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 0.4in
+\topmargin 0.75in
+\rightmargin 0.4in
+\bottommargin 0.5in
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Class 14
+\end_layout
+
+\begin_layout Section*
+Direct Products of Groups
+\end_layout
+
+\begin_layout Standard
+We have seen many examples of small groups.
+ Now, we will build bigger groups using smaller groups.
+ One such method is the direct product (often called the product).
+\end_layout
+
+\begin_layout Subsection*
+Def
+\end_layout
+
+\begin_layout Standard
+Let 
+\begin_inset Formula $\left(G,*_{G}\right)$
+\end_inset
+
+ and 
+\begin_inset Formula $\left(H,*_{H}\right)$
+\end_inset
+
+ be groups.
+ Then 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+G\times H=\left\{ \left(g,h\right)|g\in G,h\in H\right\} 
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+under the binary operation 
+\begin_inset Formula $*$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\left(g_{1},h_{1}\right)*\left(g_{2},h_{2}\right)=\left(g_{1}*_{G}g_{2},h_{1}*_{H}h_{2}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+forms a group.
+\end_layout
+
+\begin_layout Subsection*
+Pf
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Closure: 
+\series default
+First, let's show closure.
+ Let 
+\begin_inset Formula $\left(g_{1},h_{1}\right),\left(g_{2},h_{2}\right)\in G\times H$
+\end_inset
+
+.
+ Then 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\left(g_{1},h_{1}\right)*\left(g_{2},h_{2}\right)=\left(g_{1}*_{G}g_{2},h_{1}*_{H}h_{2}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+and as 
+\begin_inset Formula $G,H$
+\end_inset
+
+ are groups, then they are closed under their respective binary operations,
+ thus
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+g_{1}*_{G}g_{2}\in G,h_{1}*_{H}h_{2}\in H
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+thus
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\left(g_{1},h_{1}\right)*\left(g_{2},h_{2}\right)=\left(g_{1}*_{G}g_{2},h_{1}*_{H}h_{2}\right)\in G\times H
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Identity: 
+\series default
+Now to show identity: Let 
+\begin_inset Formula $e_{G}$
+\end_inset
+
+ and 
+\begin_inset Formula $e_{H}$
+\end_inset
+
+ be the identity elements in 
+\begin_inset Formula $G$
+\end_inset
+
+ and 
+\begin_inset Formula $H$
+\end_inset
+
+ respectively.
+ Let 
+\begin_inset Formula $\left(g,h\right)\in G\times H$
+\end_inset
+
+.
+ Then
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\left(e_{G},e_{H}\right)*\left(g,h\right)=\left(e_{G}*_{G}g,e_{H}*_{H}h\right)=\left(g,h\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+So 
+\begin_inset Formula $\left(e_{G},e_{H}\right)$
+\end_inset
+
+ is the identity in 
+\begin_inset Formula $G\times H$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Inverses: 
+\series default
+Let 
+\begin_inset Formula $\left(g,h\right)\in G\times H$
+\end_inset
+
+.
+ Then 
+\begin_inset Formula $\left(g^{-1},h^{-1}\right)\in G\times H$
+\end_inset
+
+ as 
+\begin_inset Formula $G$
+\end_inset
+
+ and 
+\begin_inset Formula $H$
+\end_inset
+
+ are groups and each element will have an inverse in the corresponding group.
+ Thus
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\left(g,h\right)*\left(g^{-1},h^{-1}\right)=\left(g*_{G}g^{-1},h*_{H}h^{-1}\right)=\left(e_{G},e_{H}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Thus 
+\begin_inset Formula $\left(g,h\right)^{-1}=\left(g^{-1},h^{-1}\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Associativity:
+\series default
+ Let 
+\begin_inset Formula $\left(g_{1},h_{1}\right),\left(g_{2},h_{2}\right),\left(g_{3},h_{3}\right)\in G\times H$
+\end_inset
+
+.
+ Then
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\left(\left(g_{1},h_{1}\right)*\left(g_{2},h_{2}\right)\right)*\left(g_{3},h_{3}\right)=\left(\left(g_{1}*_{G}g_{2},h_{1}*_{H}h_{2}\right)\right)*\left(g_{3},h_{3}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+=\left(\left(g_{1}*_{G}g_{2}\right)*_{G}g_{3},\left(h_{1}*_{H}h_{2}\right)*_{H}h_{3}\right)=\left(g_{1}*_{G}\left(g_{2}*_{G}g_{3}\right),h_{1}*_{H}\left(h_{2}*_{H}h_{3}\right)\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+=\left(g_{1},h_{1}\right)*\left(g_{2}*_{G}g_{3},h_{2}*_{H}h_{3}\right)=\left(g_{1},h_{1}\right)*\left(\left(g_{2},h_{2}\right)*\left(g_{3},h_{3}\right)\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+As we have shown all of the required properties, then 
+\begin_inset Formula $G\times H$
+\end_inset
+
+ is a group.
+ 
+\end_layout
+
+\begin_layout Subsection*
+Example 1
+\end_layout
+
+\begin_layout Standard
+Let 
+\begin_inset Formula $G=\left(\mathbb{Z},+\right)$
+\end_inset
+
+, 
+\begin_inset Formula $H=\left(\mathbb{Z},+\right)$
+\end_inset
+
+.
+ Then 
+\begin_inset Formula 
+\[
+G\times H=\left\{ \left(a,b\right)|a,b\in\mathbb{Z}\right\} =\mathbb{Z}^{2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+We add these ordered pairs element-wise.
+ We also may use 
+\begin_inset Formula $+$
+\end_inset
+
+ rather than 
+\begin_inset Formula $*$
+\end_inset
+
+ for the binary operation as this is unambiguous.
+ For example:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\left(1,3\right)+\left(2,4\right)=\left(1+2,3+4\right)=\left(3,7\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+Example 2
+\end_layout
+
+\begin_layout Standard
+Let 
+\begin_inset Formula $G=\mathbb{Z}_{2}$
+\end_inset
+
+, 
+\begin_inset Formula $H=D_{3}$
+\end_inset
+
+.
+ Then 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+G\times H=\left\{ \left(0,e\right),\left(0,r\right),\left(0,r^{2}\right),\left(0,f\right),\left(0,fr\right),\left(0,fr^{2}\right),\left(1,e\right),\left(1,r\right),\left(1,r^{2}\right),\left(1,f\right),\left(1,fr\right),\left(1,fr^{2}\right)\right\} 
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+We can combine elements as is done in the example below:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\left(0,f\right)*\left(1,fr\right)=\left(0+1,f*fr\right)=\left(1,r\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\left(1,r^{2}\right)*\left(1,r^{2}\right)=\left(1+1,r^{2}*r^{2}\right)=\left(0,r\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+Example 3
+\end_layout
+
+\begin_layout Standard
+Let 
+\begin_inset Formula $G=\mathbb{Z}_{2}$
+\end_inset
+
+, 
+\begin_inset Formula $H=\mathbb{Z}_{3}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+G\times H=\left\{ \left(0,0\right),\left(0,1\right),\left(0,2\right),\left(1,0\right),\left(1,1\right),\left(1,2\right)\right\} 
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Here, we need to be careful when combining elements of 
+\begin_inset Formula $G\times H$
+\end_inset
+
+.
+ We need to respect the modular arithmetic for each coordinate.
+ For example,
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\left(1,1\right)+\left(1,1\right)=\left(0,2\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+as the first coordinate is modulo 
+\begin_inset Formula $2$
+\end_inset
+
+ and the second coordinate is modulo 
+\begin_inset Formula $3$
+\end_inset
+
+.
+ Similarly, 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\left(0,2\right)+\left(1,1\right)=\left(1,0\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+Comment
+\end_layout
+
+\begin_layout Standard
+Sometimes we may wish to take the product of multiple groups.
+ We often use the shorthand below:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\times_{i=1}^{n}G_{i}=G_{1}\times G_{2}\times\dots\times G_{n}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+When we take this product, we will use the convention below for a generic
+ element of 
+\begin_inset Formula $\times_{i=1}^{n}G_{i}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\left(g_{1},g_{2},\dots,g_{n}\right)\in\times_{i=1}^{n}G_{i}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+This is to avoid nesting a large number of parentheses.
+ 
+\end_layout
+
+\begin_layout Subsection*
+Example 4
+\end_layout
+
+\begin_layout Standard
+Suppose 
+\begin_inset Formula $G_{i}=\mathbb{Z}_{i}$
+\end_inset
+
+.
+ Consider:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+G=\times_{i=2}^{5}\mathbb{Z}_{i}=\mathbb{Z}_{2}\times\mathbb{Z}_{3}\times\mathbb{Z}_{4}\times\mathbb{Z}_{5}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+so if we add 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\left(1,2,3,4\right)+\left(1,2,3,4\right)=\left(1+1,2+2,3+3,4+4\right)=\left(0,1,2,3\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+as the first coordinate is mod 
+\begin_inset Formula $2$
+\end_inset
+
+, the second is mod 
+\begin_inset Formula $3$
+\end_inset
+
+, and so on.
+ 
+\end_layout
+
+\begin_layout Subsection*
+Some properties
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+1)
+\series default
+ 
+\begin_inset Formula $G,H$
+\end_inset
+
+ are abelian groups if and only if 
+\begin_inset Formula $G\times H$
+\end_inset
+
+ is abelian.
+ 
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+2) 
+\series default
+If 
+\begin_inset Formula $G,H$
+\end_inset
+
+ are cyclic groups, then 
+\begin_inset Formula $G\times H$
+\end_inset
+
+ is cyclic if and only if 
+\begin_inset Formula $\left|G\right|,\left|H\right|$
+\end_inset
+
+ are relatively prime.
+\end_layout
+
+\begin_layout Subsection*
+Proofs of properties
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+1) 
+\series default
+Suppose 
+\begin_inset Formula $G,H$
+\end_inset
+
+ are abelian.
+ Then for 
+\begin_inset Formula $\left(g_{1},h_{1}\right),\left(g_{2},h_{2}\right)\in G\times H$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\left(g_{1},h_{1}\right)*\left(g_{2},h_{2}\right)=\left(g_{1}*_{G}g_{2},h_{1}*_{H}h_{2}\right)=\left(g_{2}*_{G}g_{1},h_{2}*_{H}h_{1}\right)=\left(g_{2},h_{2}\right)*\left(g_{1},h_{1}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Now suppose WLOG that 
+\begin_inset Formula $H$
+\end_inset
+
+ is non-abelian.
+ Then there exists 
+\begin_inset Formula $h_{1},h_{2}\in H$
+\end_inset
+
+ such that 
+\begin_inset Formula $h_{1}*_{H}h_{2}\neq h_{2}*_{H}h_{1}$
+\end_inset
+
+.
+ So for 
+\begin_inset Formula $\left(g_{1},h_{1}\right),\left(g_{2},h_{2}\right)\in G\times H$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\left(g_{1},h_{1}\right)*\left(g_{2},h_{2}\right)=\left(g_{1}*_{G}g_{2},h_{1}*_{H}h_{2}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\left(g_{2},h_{2}\right)*\left(g_{1},h_{1}\right)=\left(g_{2}*_{G}g_{1},h_{2}*_{H}h_{1}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+but as 
+\begin_inset Formula $h_{1}*_{H}h_{2}\neq h_{2}*_{H}h_{1}$
+\end_inset
+
+, then 
+\begin_inset Formula $\left(g_{1}*_{G}g_{2},h_{1}*_{H}h_{2}\right)\neq\left(g_{2}*_{G}g_{1},h_{2}*_{H}h_{1}\right)$
+\end_inset
+
+, so 
+\begin_inset Formula $\left(g_{1},h_{1}\right)*\left(g_{2},h_{2}\right)\neq\left(g_{2},h_{2}\right)*\left(g_{1},h_{1}\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+2) 
+\series default
+Suppose 
+\begin_inset Formula $\left|G\right|=n,\left|H\right|=m$
+\end_inset
+
+ are not relatively prime.
+ Then the least common multiple of 
+\begin_inset Formula $n,m<nm$
+\end_inset
+
+.
+ As 
+\begin_inset Formula $G,H$
+\end_inset
+
+ are cyclic, then for any 
+\begin_inset Formula $g\in G$
+\end_inset
+
+, 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+g^{n}=e_{G}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+and for any 
+\begin_inset Formula $h\in H$
+\end_inset
+
+, 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+h^{m}=e_{H}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+so if we take any 
+\begin_inset Formula $\left(g,h\right)\in G\times H$
+\end_inset
+
+, then 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\left(g,h\right)^{\text{LCM}\left(n,m\right)}=\left(g^{\text{LCM}\left(n,m\right)},h^{\text{LCM}\left(n,m\right)}\right)=\left(e_{G},e_{H}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+but as 
+\begin_inset Formula $\text{LCM}\left(n,m\right)<nm$
+\end_inset
+
+, then it is not possible for any element of 
+\begin_inset Formula $G\times H$
+\end_inset
+
+ to generate all of the elements of 
+\begin_inset Formula $G\times H$
+\end_inset
+
+ (as this would require us to visit all of the elements in 
+\begin_inset Formula $G\times H$
+\end_inset
+
+ exactly once before visiting the identity).
+ Now, suppose 
+\begin_inset Formula $\left|G\right|=n,\left|H\right|=m$
+\end_inset
+
+ are relatively prime.
+ Then if 
+\begin_inset Formula $G=\left\langle g\right\rangle $
+\end_inset
+
+, 
+\begin_inset Formula $H=\left\langle h\right\rangle $
+\end_inset
+
+, then 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+g^{k}=e_{G}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+only when 
+\begin_inset Formula $n|k$
+\end_inset
+
+ and similarly, 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+h^{k}=e_{H}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+only when 
+\begin_inset Formula $m|k$
+\end_inset
+
+.
+ If we take the element 
+\begin_inset Formula $\left(g,h\right)\in G\times H$
+\end_inset
+
+, then for any number 
+\begin_inset Formula $k$
+\end_inset
+
+, 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\left(g,h\right)^{k}=\left(g^{k},h^{k}\right)=\left(e_{G},e_{H}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+only when 
+\begin_inset Formula $n|k$
+\end_inset
+
+ and 
+\begin_inset Formula $m|k$
+\end_inset
+
+.
+ But as 
+\begin_inset Formula $n,m$
+\end_inset
+
+ are relatively prime, this implies 
+\begin_inset Formula $nm|k$
+\end_inset
+
+.
+ As 
+\begin_inset Formula $\left|G\times H\right|=nm$
+\end_inset
+
+, then 
+\begin_inset Formula $G\times H$
+\end_inset
+
+ must be cyclic as every element in 
+\begin_inset Formula $G\times H$
+\end_inset
+
+ will be visited before the identity.
+ 
+\end_layout
+
+\end_body
+\end_document

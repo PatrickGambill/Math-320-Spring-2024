@@ -1,0 +1,931 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 0.4in
+\topmargin 0.75in
+\rightmargin 0.4in
+\bottommargin 0.5in
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Class 10
+\end_layout
+
+\begin_layout Section*
+Fixed Elements
+\end_layout
+
+\begin_layout Standard
+Another way we might verify we have a subgroup is to look at fixed elements.
+ Consider a permutation 
+\begin_inset Formula $\alpha$
+\end_inset
+
+.
+ If element 
+\begin_inset Formula $i$
+\end_inset
+
+ moves to position 
+\begin_inset Formula $j$
+\end_inset
+
+, we say 
+\begin_inset Formula $\alpha\left(i\right)=j$
+\end_inset
+
+.
+ If 
+\begin_inset Formula $\alpha\left(i\right)=i$
+\end_inset
+
+, we say 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ fixes 
+\begin_inset Formula $i$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Subsubsection*
+Ex 1
+\end_layout
+
+\begin_layout Standard
+Consider 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\alpha=\left(234\right)\in S_{5}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Here, 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\alpha\left(1\right)=1,\alpha\left(2\right)=3,\alpha\left(3\right)=4,\alpha\left(4\right)=2,\alpha\left(5\right)=5
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Thus 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ fixes 
+\begin_inset Formula $1$
+\end_inset
+
+ and 
+\begin_inset Formula $5$
+\end_inset
+
+.
+ This can help us, as any set where each permutation fixes an element are
+ quicker to check.
+ 
+\end_layout
+
+\begin_layout Subsubsection*
+Ex 2
+\end_layout
+
+\begin_layout Standard
+Let 
+\begin_inset Formula $H=\left\{ \alpha\in S_{4}|\alpha\left(4\right)=4\right\} \leq S_{4}$
+\end_inset
+
+.
+ To show this is true, note that every element except 
+\begin_inset Formula $4$
+\end_inset
+
+ gets permuted.
+ As 
+\begin_inset Formula $3$
+\end_inset
+
+ elements are being permuted, this implies 
+\begin_inset Formula $H=S_{3}$
+\end_inset
+
+ (well, 
+\begin_inset Formula $H$
+\end_inset
+
+ and 
+\begin_inset Formula $S_{3}$
+\end_inset
+
+ contain the same elements).
+ 
+\end_layout
+
+\begin_layout Subsubsection*
+Ex 3
+\end_layout
+
+\begin_layout Standard
+This can be generalized to show 
+\begin_inset Formula $S_{1}\leq S_{2}\leq\dots\leq S_{n-1}\leq S_{n}$
+\end_inset
+
+.
+ To show 
+\begin_inset Formula $S_{i}\leq S_{j}$
+\end_inset
+
+ for all 
+\begin_inset Formula $i\leq j$
+\end_inset
+
+, permute the first 
+\begin_inset Formula $i$
+\end_inset
+
+ numbers, but leave the last 
+\begin_inset Formula $j-i$
+\end_inset
+
+ numbers fixed.
+ To do so, we will introduce the concept of a stabilizer.
+\end_layout
+
+\begin_layout Section*
+Stabilizer
+\end_layout
+
+\begin_layout Standard
+If we consider subsets of a permutation group 
+\begin_inset Formula $G$
+\end_inset
+
+, (Not necessarily 
+\begin_inset Formula $S_{n}$
+\end_inset
+
+), then the permutations that leave element 
+\begin_inset Formula $a$
+\end_inset
+
+ fixed is called the stabilizer of 
+\begin_inset Formula $a$
+\end_inset
+
+.
+ We call this group 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\text{Stab}_{G}\left(a\right)=\left\{ \alpha\in G|\alpha\left(a\right)=a\right\} 
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Let's prove this forms a subgroup of 
+\begin_inset Formula $G$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsubsection*
+pf
+\end_layout
+
+\begin_layout Standard
+Let 
+\begin_inset Formula $\alpha,\beta\in\text{Stab}_{G}\left(a\right)$
+\end_inset
+
+.
+ This implies 
+\begin_inset Formula $\alpha\left(a\right),\beta\left(a\right)=a$
+\end_inset
+
+, thus 
+\begin_inset Formula $\alpha\left(\beta\left(a\right)\right)=\alpha\left(a\right)=a$
+\end_inset
+
+ (If both permutations fix 
+\begin_inset Formula $a$
+\end_inset
+
+, so does their product).
+ Now, consider 
+\begin_inset Formula $\alpha^{-1}\left(a\right)$
+\end_inset
+
+.
+ As 
+\begin_inset Formula $\alpha,$
+\end_inset
+
+ both fix 
+\begin_inset Formula $a$
+\end_inset
+
+, then 
+\begin_inset Formula $\alpha^{-1}\left(a\right)=\alpha^{-1}\left(\alpha\left(a\right)\right)=e\left(a\right)=a$
+\end_inset
+
+, thus 
+\begin_inset Formula $\alpha^{-1}$
+\end_inset
+
+ fixes 
+\begin_inset Formula $a$
+\end_inset
+
+.
+ Thus 
+\begin_inset Formula $\alpha^{-1}\in\text{Stab}_{G}\left(a\right)$
+\end_inset
+
+, thus 
+\begin_inset Formula $\text{Stab}_{G}\left(a\right)$
+\end_inset
+
+ forms a subgroup of 
+\begin_inset Formula $G$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsubsection*
+Ex 4
+\end_layout
+
+\begin_layout Standard
+This idea of a stabilizer can be extended to symmetry groups of objects.
+ Consider the symmetry group of a tetrahedron.
+ The set of all rotations of the vertices that leave vertex 
+\begin_inset Formula $1$
+\end_inset
+
+ fixed form the 
+\begin_inset Formula $\text{Stab}_{A_{4}}\left(1\right)=\left\{ \left(1\right),\left(234\right),\left(243\right)\right\} $
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Section*
+Orbits
+\end_layout
+
+\begin_layout Standard
+The orbit of an element 
+\begin_inset Formula $a$
+\end_inset
+
+ in permutation group 
+\begin_inset Formula $G$
+\end_inset
+
+ is the set containing all of the locations element 
+\begin_inset Formula $a$
+\end_inset
+
+ visits.
+ Formally,
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\text{Orb}_{G}\left(a\right)=\left\{ \alpha\left(a\right)\in G\right\} 
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+Ex 5
+\end_layout
+
+\begin_layout Standard
+In the symmetry group of a tetrahedron, vertex 
+\begin_inset Formula $1$
+\end_inset
+
+ will visit vertices 
+\begin_inset Formula $1,2,3,4$
+\end_inset
+
+ in some rotation, thus 
+\begin_inset Formula $\text{Orb}_{A_{4}}\left(1\right)=\left\{ 1,2,3,4\right\} $
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Section*
+Orbit-Stabilizer Theorem
+\end_layout
+
+\begin_layout Standard
+When trying the size of a permutation group 
+\begin_inset Formula $G$
+\end_inset
+
+, rather than counting each permutation explicitly, we can instead count
+ the size of the orbit and stabilizer of any particular element, then for
+ 
+\begin_inset Formula $a\in G$
+\end_inset
+
+: 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\left|G\right|=\left|\text{Stab}_{G}\left(a\right)\right|*\left|\text{Orb}_{G}\left(a\right)\right|
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Here, note that 
+\begin_inset Formula $\left|G\right|$
+\end_inset
+
+ is the number of elements of a group 
+\begin_inset Formula $G$
+\end_inset
+
+ or the number of elements in a set 
+\begin_inset Formula $G$
+\end_inset
+
+.
+ We call 
+\begin_inset Formula $\left|G\right|$
+\end_inset
+
+ the order of 
+\begin_inset Formula $G$
+\end_inset
+
+ if 
+\begin_inset Formula $G$
+\end_inset
+
+ is a group.
+\end_layout
+
+\begin_layout Subsubsection*
+Ex 6
+\end_layout
+
+\begin_layout Standard
+We know that the symmetry group of a tetrahedron is 
+\begin_inset Formula $A_{4}$
+\end_inset
+
+.
+ Recall 
+\begin_inset Formula $\left|A_{4}\right|=\frac{4!}{2}=12$
+\end_inset
+
+.
+ If we instead use orbit-stabilizer theorem, with 
+\begin_inset Formula $G$
+\end_inset
+
+ as the symmetry group of the tetrahedron, and using vertex 
+\begin_inset Formula $1$
+\end_inset
+
+ as the element, then
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\left|G\right|=\left|\text{Orb}_{G}\left(1\right)\right|*\left|\text{Stab}_{G}\left(1\right)\right|=4*3=12
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Oftentimes it is hard to count the symmetries of a group by finding each
+ symmetry explicitly.
+ Orbit stabilizer can help make life easier.
+ In class, we used orbit-stabilizer to count the rotational symmetries of
+ each of the DnD dice (platonic solids and D10).
+ This is good practice, and I suggest doing this for other solids.
+ How might the orbit and stabilizer of these shapes change if we include
+ the reflectional symmetries? What about other solids (such as the Archimedean
+ solids)?
+\end_layout
+
+\begin_layout Section*
+Subgroups of 
+\begin_inset Formula $S_{n}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+It isn't always clear when a set of permutations forms a subgroup of 
+\begin_inset Formula $S_{n}$
+\end_inset
+
+.
+ If you use the subgroup tests, you can verify when a given set is a subgroup.
+ Usually, it is easiest to see if there is a commonality between the permutation
+s in the set.
+\end_layout
+
+\begin_layout Subsubsection*
+Ex 7
+\end_layout
+
+\begin_layout Standard
+Consider 
+\begin_inset Formula $H=\left\{ \left(1\right),\left(12\right),\left(34\right),\left(12\right)\left(34\right)\right\} \leq S_{4}$
+\end_inset
+
+.
+ This is a subgroup.
+ This can be verified by explicitly checking each product of permutations
+ in 
+\begin_inset Formula $H$
+\end_inset
+
+.
+ Notice 
+\begin_inset Formula $H$
+\end_inset
+
+ is closed.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\left(1\right)\left(1\right)=\left(1\right),\ \left(12\right)\left(1\right)=\left(12\right),\ \left(34\right)\left(1\right)=\left(34\right).\ \left(12\right)\left(34\right)\left(1\right)=\left(12\right)\left(34\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\left(1\right)\left(12\right)=\left(12\right),\ \left(12\right)\left(12\right)=\left(1\right),\ \left(34\right)\left(12\right)=\left(12\right)\left(34\right),\ \left(12\right)\left(34\right)\left(12\right)=\left(34\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\left(1\right)\left(34\right)=\left(34\right),\ \left(12\right)\left(34\right)=\left(12\right)\left(34\right),\ \left(34\right)\left(34\right)=\left(1\right),\ \left(12\right)\left(34\right)\left(34\right)=\left(12\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\left(1\right)\left(12\right)\left(34\right)=\left(12\right)\left(34\right),\ \left(12\right)\left(12\right)\left(34\right)=\left(34\right),\ \left(34\right)\left(12\right)\left(34\right)=\left(12\right),\ \left(12\right)\left(34\right)\left(12\right)\left(34\right)=\left(1\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Notice in each row there is the identity permutation 
+\begin_inset Formula $\left(1\right)$
+\end_inset
+
+, and that each permutation is its own inverse.
+ As such, 
+\begin_inset Formula $H$
+\end_inset
+
+ is a subgroup.
+ With larger 
+\begin_inset Formula $H$
+\end_inset
+
+, checking every case gets unwieldy very quickly.
+ One way we might speed process up is to note that the product of disjoint
+ cycles commutes.
+ Furthermore, we might note that each 
+\begin_inset Formula $2$
+\end_inset
+
+-cycle is it's own inverse.
+ Note that 
+\begin_inset Formula $\left(12\right),\left(34\right)$
+\end_inset
+
+ 
+\begin_inset Formula $2$
+\end_inset
+
+-cycles, and are disjoint.
+ This implies that 
+\begin_inset Formula $\left(12\right)\left(34\right)$
+\end_inset
+
+ will be in 
+\begin_inset Formula $H$
+\end_inset
+
+, and will also be its own inverse.
+ We can extend this idea further, for larger 
+\begin_inset Formula $n$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsubsection*
+Ex 8
+\end_layout
+
+\begin_layout Standard
+Consider 
+\begin_inset Formula $K=\left\{ \left(12\right),\left(34\right),\left(56\right),\left(78\right)\right\} \subseteq S_{8}$
+\end_inset
+
+.
+ Notice that 
+\begin_inset Formula $K$
+\end_inset
+
+ is not a subgroup as 
+\begin_inset Formula $\left(1\right)\notin K$
+\end_inset
+
+.
+ If we use 
+\begin_inset Formula $H=\left\langle k|k\in K\right\rangle $
+\end_inset
+
+, then 
+\begin_inset Formula $H$
+\end_inset
+
+ is a subgroup of 
+\begin_inset Formula $K$
+\end_inset
+
+.
+ As each of the cycles in 
+\begin_inset Formula $K$
+\end_inset
+
+ is disjoint, we can see if every possible product of some number of permutation
+s is in a subset.
+ If we take all possible products, we get 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\left(1\right),\left(12\right),\left(34\right),\left(56\right),\left(78\right),\left(12\right)\left(34\right),\left(12\right)\left(56\right),\left(12\right)\left(78\right),\left(34\right)\left(56\right),\left(34\right)\left(78\right),\left(56\right)\left(78\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\left(12\right)\left(34\right)\left(56\right),\left(12\right)\left(34\right)\left(78\right),\left(12\right)\left(56\right)\left(78\right),\left(34\right)\left(56\right)\left(78\right),\left(12\right)\left(34\right)\left(56\right)\left(78\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+If instead we were given each of these permutations in a set, we could work
+ backwards and see we have all the permutations generated by elements in
+ 
+\begin_inset Formula $K$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsubsection*
+Cayley's Theorem
+\end_layout
+
+\begin_layout Standard
+It turns out that for any group 
+\begin_inset Formula $G$
+\end_inset
+
+ with 
+\begin_inset Formula $n$
+\end_inset
+
+ elements, 
+\begin_inset Formula $G\leq S_{n}$
+\end_inset
+
+.
+ This allows us to represent any group as a set of permutations on 
+\begin_inset Formula $n$
+\end_inset
+
+ elements.
+ Informally this can be shown by considering each row of a multiplication
+ table as a permutation on 
+\begin_inset Formula $n$
+\end_inset
+
+ elements.
+ As each group admits a multiplication table, then each group is a subgroup
+ of 
+\begin_inset Formula $S_{n}$
+\end_inset
+
+.
+ This is known as Cayley's theorem.
+\end_layout
+
+\begin_layout Subsubsection*
+Ex 9
+\end_layout
+
+\begin_layout Standard
+Consider the group 
+\begin_inset Formula $G=D_{3}$
+\end_inset
+
+.
+ The multiplication table for 
+\begin_inset Formula $C_{5}$
+\end_inset
+
+ looks like the table below:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename Class 5/D3.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+From this table, we can define a permutation corresponding to each element,
+ by taking the permutation that appears in the row corresponding to that
+ element.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\begin{array}{ccc}
+e & \rightarrow & \left(1\right)\\
+r & \rightarrow & \left(132\right)\left(456\right)\\
+r^{2} & \rightarrow & \left(123\right)\left(465\right)\\
+f & \rightarrow & \left(14\right)\left(25\right)\left(36\right)\\
+fr & \rightarrow & \left(15\right)\left(26\right)\left(34\right)\\
+fr^{2} & \rightarrow & \left(16\right)\left(24\right)\left(35\right)
+\end{array}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+If you combine all of these elements above, I claim that this product will
+ result in one of the above elements (after appropriate simplification).
+ If you wish to show this explicitly, it is good practice, but we will not
+ do so here.
+ 
+\begin_inset Formula $e$
+\end_inset
+
+, is always the permutation corresponding to the first row.
+ The permutations described in 
+\begin_inset Formula $r,r^{2}$
+\end_inset
+
+ are inverses as 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+rr^{2}\rightarrow\left(132\right)\left(456\right)\left(123\right)\left(465\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+=\left(132\right)\left(456\right)\left(465\right)\left(123\right)=\left(132\right)e\left(123\right)=\left(132\right)\left(123\right)=e
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Here, we used the property that the product of disjoint cycles commutes.
+ Similarly, we can show 
+\begin_inset Formula $f$
+\end_inset
+
+, 
+\begin_inset Formula $fr$
+\end_inset
+
+, 
+\begin_inset Formula $fr^{2}$
+\end_inset
+
+'s permutations are their own inverses.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+ff\rightarrow\left(14\right)\left(25\right)\left(36\right)\left(14\right)\left(25\right)\left(36\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+=\left(14\right)\left(25\right)\left(36\right)\left(36\right)\left(25\right)\left(14\right)=\left(14\right)\left(25\right)e\left(25\right)\left(14\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+=\left(14\right)\left(25\right)\left(25\right)\left(14\right)=\left(14\right)e\left(14\right)=\left(14\right)\left(14\right)=e
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+And similarly for 
+\begin_inset Formula $frfr$
+\end_inset
+
+ and 
+\begin_inset Formula $fr^{2}fr^{2}$
+\end_inset
+
+.
+\end_layout
+
+\end_body
+\end_document

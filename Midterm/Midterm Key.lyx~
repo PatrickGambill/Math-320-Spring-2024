@@ -1,0 +1,1156 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 0.4in
+\topmargin 0.75in
+\rightmargin 0.4in
+\bottommargin 0.5in
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Math 320 Midterm Key
+\end_layout
+
+\begin_layout Section*
+1.
+\end_layout
+
+\begin_layout Standard
+There are multiple valid answers.
+ Here is one:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename D4.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+2.
+\end_layout
+
+\begin_layout Standard
+These answers are not unique.
+ You might have a slightly different answer that is valid.
+ Remember in cycle notation 
+\begin_inset Formula $\left(123\right)=\left(231\right)=\left(312\right)$
+\end_inset
+
+ and that the product of disjoint cycles commutes.
+ 
+\end_layout
+
+\begin_layout Subsection*
+a)
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\alpha\beta=\left(143\right)\left(23\right)\left(34\right)\left(234\right)\left(12\right)=\left(1432\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+b)
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\beta\alpha=\left(34\right)\left(234\right)\left(12\right)\left(143\right)\left(23\right)=\left(3421\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+3.
+\end_layout
+
+\begin_layout Subsection*
+a)
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename U(5).PNG
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+b)
+\end_layout
+
+\begin_layout Standard
+The subgroups are 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\left\{ 1\right\} ,\left\{ 1,4\right\} ,\left\{ 1,2,3,4\right\} 
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+4.
+\end_layout
+
+\begin_layout Standard
+There are a few ways to show this.
+ 
+\end_layout
+
+\begin_layout Subsection*
+Method 1:
+\end_layout
+
+\begin_layout Standard
+We could show this function is onto and one-to-one directly.
+ For onto, suppose 
+\begin_inset Formula $\left(a,b\right)\in\mathbb{R}^{2}$
+\end_inset
+
+.
+ Then if
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\left(a,b\right)=\left(2x+y,y-3\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+a=2x+y,b=y-3
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Thus
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+y=b+3
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+and 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+a=2x+b+3
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+x=\frac{a-b-3}{2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+So for any 
+\begin_inset Formula $\left(a,b\right)\in\mathbb{R}^{2}$
+\end_inset
+
+ there exists 
+\begin_inset Formula $x,y$
+\end_inset
+
+ such that 
+\begin_inset Formula $f\left(x,y\right)=\left(a,b\right)$
+\end_inset
+
+.
+ Now to show this function is one-to-one.
+ Suppose 
+\begin_inset Formula $f\left(x,y\right)=f\left(z,w\right)$
+\end_inset
+
+.
+ Then
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\left(2x+y,y-3\right)=\left(2z+w,w-3\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+So 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+y-3=w-3
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+and 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+y=w
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+and 
+\begin_inset Formula 
+\[
+2x+y=2z+w=2z+y
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+So
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+2x=2z
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+and 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+x=z
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Thus 
+\begin_inset Formula $\left(x,y\right)=\left(z,w\right)$
+\end_inset
+
+ and 
+\begin_inset Formula $f$
+\end_inset
+
+ is one-to-one.
+ As 
+\begin_inset Formula $f$
+\end_inset
+
+ is onto and one-to-one, then 
+\begin_inset Formula $f$
+\end_inset
+
+ is a bijection.
+ 
+\end_layout
+
+\begin_layout Subsection*
+Method 2:
+\end_layout
+
+\begin_layout Standard
+Since 
+\begin_inset Formula $f$
+\end_inset
+
+ is a affine transformation of the form 
+\begin_inset Formula $\vec{x}\rightarrow A\vec{x}+\vec{b}$
+\end_inset
+
+, it is sufficient to show 
+\begin_inset Formula $A$
+\end_inset
+
+ is invertible to show 
+\begin_inset Formula $f$
+\end_inset
+
+ is invertible and thus a bijection.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+f\left(x,y\right)=\left(\begin{array}{cc}
+2 & 1\\
+0 & 1
+\end{array}\right)\left(\begin{array}{c}
+x\\
+y
+\end{array}\right)+\left(\begin{array}{c}
+0\\
+-3
+\end{array}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+so 
+\begin_inset Formula 
+\[
+A=\left(\begin{array}{cc}
+2 & 1\\
+0 & 1
+\end{array}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+and as 
+\begin_inset Formula $\text{Det}\left(A\right)=2*1=2\neq0$
+\end_inset
+
+, then 
+\begin_inset Formula $A$
+\end_inset
+
+ is invertible.
+\end_layout
+
+\begin_layout Section*
+5.
+\end_layout
+
+\begin_layout Subsection*
+a)
+\end_layout
+
+\begin_layout Standard
+A set 
+\begin_inset Formula $S$
+\end_inset
+
+ with binary operation 
+\begin_inset Formula $\diamond$
+\end_inset
+
+ forms an abelian group 
+\begin_inset Formula $G=\left(S,\diamond\right)$
+\end_inset
+
+ if 
+\begin_inset Formula $G$
+\end_inset
+
+ satisfies the following:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\exists e\in G$
+\end_inset
+
+ such that 
+\begin_inset Formula $x\diamond e=e\diamond x=x$
+\end_inset
+
+ for all 
+\begin_inset Formula $x\in G$
+\end_inset
+
+ (Identity)
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\left(a\diamond b\right)\diamond c=a\diamond\left(b\diamond c\right)$
+\end_inset
+
+ for all 
+\begin_inset Formula $a,b,c\in G$
+\end_inset
+
+ (Associativity)
+\end_layout
+
+\begin_layout Enumerate
+For each 
+\begin_inset Formula $a\in G$
+\end_inset
+
+, there exists 
+\begin_inset Formula $a^{-1}\in G$
+\end_inset
+
+ such that 
+\begin_inset Formula $a\diamond a^{-1}=a^{-1}\diamond a=e$
+\end_inset
+
+ (Inverses)
+\end_layout
+
+\begin_layout Enumerate
+For all 
+\begin_inset Formula $a,b\in G$
+\end_inset
+
+, 
+\begin_inset Formula $a\diamond b=b\diamond a$
+\end_inset
+
+ (Commutativity)
+\end_layout
+
+\begin_layout Subsection*
+b)
+\end_layout
+
+\begin_layout Standard
+Let's show each of the axioms.
+ First, let's show the binary operation is well defined.
+ As you are told this is a binary operation in the problem, you will not
+ get penalized for not showing this step.
+ Since, multiplication and addition of real numbers always results in a
+ real number, we only need to make sure 
+\begin_inset Formula $-1$
+\end_inset
+
+ is never a possible output from this binary operation.
+ Suppose
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+-1=a\diamond b=a+b+ab
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+for some 
+\begin_inset Formula $a,b$
+\end_inset
+
+.
+ Then
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+-1=a\left(1+b\right)+b
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+-1-b=-1\left(1+b\right)=a\left(1+b\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+As 
+\begin_inset Formula $b\neq-1$
+\end_inset
+
+ (since 
+\begin_inset Formula $-1$
+\end_inset
+
+ is not in the domain), then 
+\begin_inset Formula $\left(1+b\right)\neq0$
+\end_inset
+
+.
+ As such, we are able to cancel out the 
+\begin_inset Formula $\left(1+b\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+-1=a
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+But as 
+\begin_inset Formula $-1$
+\end_inset
+
+ is not in the domain, 
+\begin_inset Formula $a\neq-1$
+\end_inset
+
+! Thus to avoid contradiction, we conclude that 
+\begin_inset Formula $a\diamond b\neq-1$
+\end_inset
+
+ for any 
+\begin_inset Formula $a,b$
+\end_inset
+
+ in the domain.
+ Now for the axioms.
+ 
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Identity:
+\series default
+ 
+\end_layout
+
+\begin_layout Standard
+Suppose 
+\begin_inset Formula $b=0$
+\end_inset
+
+, then
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+a\diamond0=a+0+0=a
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Similarly if 
+\begin_inset Formula $a=0$
+\end_inset
+
+, then
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+0\diamond b=0+b+0=b
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Associativity:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\left(a\diamond b\right)\diamond c=\left(a+b+ab\right)\diamond c
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+=a+b+ab+c+\left(a+b+ab\right)c
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+=a+b+ab+c+ac+bc+abc
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+=a+b+c+bc+a\left(b+c+bc\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+=a\diamond\left(b+c+bc\right)=a\diamond\left(b\diamond c\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Inverses:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+0=a\diamond b=a+b+ab
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+0=a+b\left(1+a\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\frac{-a}{\left(1+a\right)}=b=a^{-1}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+To ensure this, consider 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+a\diamond a^{-1}=a+\frac{-a}{\left(1+a\right)}+a\left(\frac{-a}{\left(1+a\right)}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+=\frac{a\left(1+a\right)}{\left(1+a\right)}-\frac{a}{\left(1+a\right)}-\frac{a^{2}}{\left(1+a\right)}=0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Or if we take the binary operation the other direction:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+a^{-1}\diamond a=\frac{-a}{\left(1+a\right)}+a+\frac{-a}{\left(1+a\right)}a
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+=\frac{-a}{\left(1+a\right)}+\frac{a\left(1+a\right)}{\left(1+a\right)}+\frac{-a^{2}}{\left(1+a\right)}=0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Commutativity:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+a\diamond b=a+b+ab=b+a+ba=b\diamond a
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+6.
+\end_layout
+
+\begin_layout Subsection*
+a)
+\end_layout
+
+\begin_layout Standard
+A relation 
+\begin_inset Formula $R$
+\end_inset
+
+ on a set 
+\begin_inset Formula $S$
+\end_inset
+
+ is antisymmetric if for all 
+\begin_inset Formula $a,b$
+\end_inset
+
+ in 
+\begin_inset Formula $S$
+\end_inset
+
+ : 
+\begin_inset Formula $aRb,bRa$
+\end_inset
+
+ implies 
+\begin_inset Formula $a=b$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+b)
+\end_layout
+
+\begin_layout Standard
+Suppose 
+\begin_inset Formula $a|b$
+\end_inset
+
+ and 
+\begin_inset Formula $b|a$
+\end_inset
+
+.
+ Then 
+\begin_inset Formula $a=nb$
+\end_inset
+
+ for some 
+\begin_inset Formula $n\in\mathbb{Z}^{+}$
+\end_inset
+
+ and 
+\begin_inset Formula $b=ma$
+\end_inset
+
+ for some 
+\begin_inset Formula $m\in\mathbb{Z}^{+}$
+\end_inset
+
+, thus
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+a=n\left(ma\right)=\left(nm\right)a
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+for some 
+\begin_inset Formula $nm\in\mathbb{Z}^{+}$
+\end_inset
+
+.
+ Thus 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+mn=1\rightarrow m,n=1
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+so 
+\begin_inset Formula 
+\[
+a=1*b=b
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+7.
+\end_layout
+
+\begin_layout Subsection*
+a)
+\end_layout
+
+\begin_layout Standard
+Let 
+\begin_inset Formula $G,H$
+\end_inset
+
+ be groups.
+ We say 
+\begin_inset Formula $G\approx H$
+\end_inset
+
+ if there exists a bijection 
+\begin_inset Formula $f:G\rightarrow H$
+\end_inset
+
+ such that 
+\begin_inset Formula $f\left(ab\right)=f\left(a\right)f\left(b\right)$
+\end_inset
+
+ for all 
+\begin_inset Formula $a,b\in G$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection*
+b)
+\end_layout
+
+\begin_layout Standard
+First note 
+\begin_inset Formula $\text{Fix}\left(\phi\right)\subseteq G$
+\end_inset
+
+.
+ As such, we will use a subgroup test to show this.
+ You could also show this directly by proving all of the group axoims directly.
+ First, let's show this is non-empty.
+ Recall for all isomorphisms:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\phi\left(e_{G}\right)=e_{H}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+As this is an automorphism, then
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\phi\left(e\right)=e
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+so 
+\begin_inset Formula $e\in\text{Fix}\left(\phi\right)$
+\end_inset
+
+.
+ Now, suppose we use the first test: Let 
+\begin_inset Formula $a,b\in\text{Fix}\left(\phi\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\phi\left(ab^{-1}\right)=\phi\left(a\right)\phi\left(b^{-1}\right)=\phi\left(a\right)\phi\left(b\right)^{-1}=ab^{-1}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+So 
+\begin_inset Formula $ab^{-1}\in\text{Fix}\left(\phi\right)$
+\end_inset
+
+.
+ If we instead use the second test: Let 
+\begin_inset Formula $a,b\in\text{Fix}\left(\phi\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\phi\left(ab\right)=\phi\left(a\right)\phi\left(b\right)=ab
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+so 
+\begin_inset Formula $ab\in\text{Fix}\left(\phi\right)$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\phi\left(a^{-1}\right)=\phi\left(a\right)^{-1}=a^{-1}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+so 
+\begin_inset Formula $a^{-1}\in\text{Fix}\left(a^{-1}\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section*
+8.
+\end_layout
+
+\begin_layout Standard
+No comment
+\end_layout
+
+\end_body
+\end_document

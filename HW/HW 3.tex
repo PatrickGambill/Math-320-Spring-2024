@@ -1,0 +1,118 @@
+%% LyX 2.3.6.1 created this file.  For more info, see http://www.lyx.org/.
+%% Do not edit unless you really know what you are doing.
+\documentclass[english]{article}
+\usepackage[T1]{fontenc}
+\usepackage[latin9]{luainputenc}
+\usepackage{geometry}
+\geometry{verbose,tmargin=0.75in,bmargin=0.5in,lmargin=0.4in,rmargin=0.4in}
+\usepackage{amssymb}
+\usepackage{babel}
+\begin{document}
+\title{Math 320 HW 2}
+\date{Due: Jan. 31, 2023 at 11:59 PM}
+\maketitle
+
+\section*{1)}
+
+None of these sets with binary operation are groups. Each of these
+almost groups fails at least one of the group axioms. For each of
+these almost groups, show which axioms fail and which axioms hold.
+\begin{enumerate}
+\item $\mathbb{Z}$ under $\diamond$, where $a\diamond b=\left|a-b\right|$
+\item $\mathcal{F}\left(\mathbb{R},\mathbb{R}\right)$ under $\circ$, where
+$\mathcal{F}\left(\mathbb{R},\mathbb{R}\right)=\left\{ f:\mathbb{R}\rightarrow\mathbb{R}\right\} $
+and $\left(f\circ g\right)\left(x\right)=f\left(g\left(x\right)\right)$ 
+\end{enumerate}
+
+\section*{2)}
+
+The group of invertible $n\times n$ real matrices under matrix multiplication
+is called The General Linear Group over $\mathbb{R}$ and denoted
+as $GL_{n}\left(\mathbb{R}\right)$. Show 
+
+\subsection*{a)}
+
+$GL_{n}\left(\mathbb{R}\right)$ is a group (Hint: For $n\times n$
+matrices $A,B$, $\det\left(AB\right)=\det\left(A\right)\det\left(B\right)$)
+
+\subsection*{b)}
+
+The set of $n\times n$ invertible matrices does not form a group
+under matrix addition.
+
+\section*{3)}
+
+The shoe-sock property states for all $a,b\in G$, that 
+
+\[
+\left(ab\right)^{-1}=b^{-1}a^{-1}
+\]
+
+
+\subsection*{a)}
+
+Prove the shoe-sock property
+
+\subsection*{b)}
+
+This can be generalized to the following:
+
+\[
+\left(a_{1}a_{2}\dots a_{n}\right)^{-1}=a_{n}^{-1}a_{n-1}^{-1}\dots a_{2}^{-1}a_{1}^{-1}
+\]
+
+Prove this.
+
+\section*{4)}
+
+Determine if the set $H$ is a subgroup of the given group $G$ under
+the same binary operation as $G$. If so, prove it. Otherwise, explain
+why it isn't.
+\begin{enumerate}
+\item $H=\left\{ 3n|n\in\mathbb{Z}\right\} $, $G=\left(\mathbb{Z},+\right)$
+\item $H=\left\{ 1,2,5\right\} ,$$G=\left(Z_{6},+\right)$
+\item $H=\left\{ \left(\begin{array}{cc}
+a & b\\
+c & d
+\end{array}\right)|a,b,c,d\in\mathbb{Z}\right\} $, $G=\left(\left\{ \mathbb{R}^{2\times2}\right\} ,+\right)$
+\end{enumerate}
+
+\section*{5)}
+
+Prove that a group $G$ is abelian if and only if $\left(ab\right)^{-1}=a^{-1}b^{-1}\ \forall a,b\in G$.
+
+\section*{6)}
+
+Consider the cyclic group $\mathbb{Z}_{6}$. 
+
+\subsection*{a)}
+
+Find all of the subgroups of $\mathbb{Z}_{6}$
+
+\subsection*{b)}
+
+Draw multiplication tables for each of these subgroups and color each
+element in the table a distinct color. Remember, even though this
+is a multiplication table, the binary operation is addition mod $6$.
+
+\subsection*{c)}
+
+What patterns do you notice in these multiplication tables?
+
+\section*{7)}
+
+Solve the following equations for $x$ in the given cyclic group.
+If multiple solutions exist, be sure to state all solutions.
+
+\subsection*{a)}
+
+$x+4+1\equiv_{11}7$, $G=\mathbb{Z}_{11}$
+
+\subsection*{b)}
+
+$3*x\equiv_{13}1$, $G=U\left(13\right)$
+
+\subsection*{c)}
+
+$2*x\equiv_{11}3$, $G=U\left(11\right)$
+\end{document}

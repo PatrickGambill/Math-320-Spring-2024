@@ -1,0 +1,1430 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 0.4in
+\topmargin 0.75in
+\rightmargin 0.4in
+\bottommargin 0.5in
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Class 17
+\end_layout
+
+\begin_layout Section*
+Results from Normal Subgroups
+\end_layout
+
+\begin_layout Subsection*
+Thm
+\end_layout
+
+\begin_layout Standard
+Every subgroup of an abelian group 
+\begin_inset Formula $G$
+\end_inset
+
+ is normal.
+ 
+\end_layout
+
+\begin_layout Subsection*
+Pf
+\end_layout
+
+\begin_layout Standard
+Suppose 
+\begin_inset Formula $G$
+\end_inset
+
+ is abelian with subgroup 
+\begin_inset Formula $H\leq G$
+\end_inset
+
+.
+ Then 
+\begin_inset Formula $\forall h\in H$
+\end_inset
+
+, 
+\begin_inset Formula $\forall a\in G$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+ah=ha
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Thus
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+aH=\left\{ ah|h\in H\right\} =\left\{ ha|h\in H\right\} =Ha
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+so 
+\begin_inset Formula $H\trianglelefteq G$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection*
+Thm
+\end_layout
+
+\begin_layout Standard
+Let 
+\begin_inset Formula $G$
+\end_inset
+
+ be a group.
+ If 
+\begin_inset Formula $H\trianglelefteq G$
+\end_inset
+
+ and 
+\begin_inset Formula $K\leq G$
+\end_inset
+
+ then 
+\begin_inset Formula $HK=\left\{ hk|h\in H,k\in K\right\} \leq G$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+Pf
+\end_layout
+
+\begin_layout Standard
+Let's use the first subgroup test.
+ First, note 
+\begin_inset Formula $e\in H,K$
+\end_inset
+
+ so 
+\begin_inset Formula $e=ee\in HK$
+\end_inset
+
+, so 
+\begin_inset Formula $HK$
+\end_inset
+
+ is nonempty.
+ Let 
+\begin_inset Formula $h_{1}k_{1},h_{2}k_{2}\in HK$
+\end_inset
+
+.
+ Then we want to show 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\left(h_{1}k_{1}\right)\left(h_{2}k_{2}\right)^{-1}\in HK
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Using Shoe-Sock:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\left(h_{1}k_{1}\right)\left(h_{2}k_{2}\right)^{-1}=h_{1}k_{1}k_{2}^{-1}h_{2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+and as 
+\begin_inset Formula $K\leq G$
+\end_inset
+
+, then 
+\begin_inset Formula $k_{1}k_{2}^{-1}=k\in K$
+\end_inset
+
+ so
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+h_{1}k_{1}k_{2}^{-1}h_{2}^{-1}=h_{1}kh_{2}^{-1}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+As 
+\begin_inset Formula $H$
+\end_inset
+
+ is normal, then for each 
+\begin_inset Formula $g\in G$
+\end_inset
+
+, for each 
+\begin_inset Formula $h\in H$
+\end_inset
+
+, there exists 
+\begin_inset Formula $h'\in H$
+\end_inset
+
+ such that 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+gh=h'g
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+As 
+\begin_inset Formula $H\leq G$
+\end_inset
+
+, then 
+\begin_inset Formula $h_{2}^{-1}\in H$
+\end_inset
+
+ so we can use this property, to get
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+h_{1}kh_{2}^{-1}=h_{1}h_{3}k
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+for some 
+\begin_inset Formula $h_{3}\in H$
+\end_inset
+
+.
+ As 
+\begin_inset Formula $H\leq G$
+\end_inset
+
+, then 
+\begin_inset Formula $h_{1}h_{3}=h\in H$
+\end_inset
+
+, thus
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+h_{1}h_{3}k=hk\in HK
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+and by the first subgroup test, 
+\begin_inset Formula $HK\leq G$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+Lagrange's Theorem
+\end_layout
+
+\begin_layout Standard
+We can determine some important information about the possible subgroups
+ of group 
+\begin_inset Formula $G$
+\end_inset
+
+ depending on the order of 
+\begin_inset Formula $G$
+\end_inset
+
+.
+ Suppose 
+\begin_inset Formula $G$
+\end_inset
+
+ is a finite group, and 
+\begin_inset Formula $G$
+\end_inset
+
+ has order 
+\begin_inset Formula $n$
+\end_inset
+
+.
+ That is 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\left|G\right|=n
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+If 
+\begin_inset Formula $H\leq G$
+\end_inset
+
+, then 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\left|H\right||\left|G\right|
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+That is 
+\begin_inset Formula $n$
+\end_inset
+
+ must be divisible by 
+\begin_inset Formula $\left|H\right|$
+\end_inset
+
+.
+ This can be shown by recalling the properties of cosets we proved a couple
+ of classes ago.
+ The cosets formed from 
+\begin_inset Formula $H$
+\end_inset
+
+ will partition 
+\begin_inset Formula $G$
+\end_inset
+
+ into equally sized parts, no matter which subgroup 
+\begin_inset Formula $H$
+\end_inset
+
+ is chosen.
+ As 
+\begin_inset Formula $n$
+\end_inset
+
+ is a positive integer, this is only possible if 
+\begin_inset Formula $n$
+\end_inset
+
+ is divisible by 
+\begin_inset Formula $\left|H\right|$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Subsection*
+Cor
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\left|\left\langle a\right\rangle \right||\left|G\right|
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Recall the element 
+\begin_inset Formula $a\in G$
+\end_inset
+
+ will always generate a subgroup of 
+\begin_inset Formula $G$
+\end_inset
+
+.
+ We say the order of element 
+\begin_inset Formula $a$
+\end_inset
+
+ is 
+\begin_inset Formula 
+\[
+\left|a\right|=\left|\left\langle a\right\rangle \right|
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+As this is a subgroup of 
+\begin_inset Formula $G$
+\end_inset
+
+, this implies the order of each element of 
+\begin_inset Formula $G$
+\end_inset
+
+ must divide the number of elements in 
+\begin_inset Formula $G$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section*
+Quotient Groups (Factor Groups)
+\end_layout
+
+\begin_layout Standard
+To wrap up our discussion of normal subgroups, we are going to discuss quotient
+ groups.
+ Informally, quotient groups are made of the cosets formed from a normal
+ subgroup of a group 
+\begin_inset Formula $G$
+\end_inset
+
+.
+ By grouping elements of 
+\begin_inset Formula $G$
+\end_inset
+
+ together into these cosets, we can still learn a lot about the underlying
+ structure of 
+\begin_inset Formula $G$
+\end_inset
+
+.
+ Formally, let 
+\begin_inset Formula $G$
+\end_inset
+
+ be a group and let 
+\begin_inset Formula $H\vartriangleleft G$
+\end_inset
+
+.
+ Then the set
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+G/H=\left\{ aH|a\in G\right\} 
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+is a group under the binary operation 
+\begin_inset Formula 
+\[
+\left(aH\right)\left(bH\right)=abH
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+for 
+\begin_inset Formula $a,b\in G$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+pf
+\end_layout
+
+\begin_layout Standard
+We will now prove this is a well defined group.
+ First, let's consider the binary operation in question.
+ Using the usual definition of multiplication of cosets:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\left(aH\right)\left(bH\right)=aHbH
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+but, since 
+\begin_inset Formula $H$
+\end_inset
+
+ is normal
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+aHbH=a\left(Hb\right)H=a\left(bH\right)H=abHH=abH
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Thus our product makes sense if we assume 
+\begin_inset Formula $H$
+\end_inset
+
+ is normal.
+ Furthermore, 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+abH\in G/H
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+as 
+\begin_inset Formula 
+\[
+ab\in G
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Since 
+\begin_inset Formula $G$
+\end_inset
+
+ is a group and has closure.
+ This gives us a valid binary operation.
+ To show associativity, consider the following for 
+\begin_inset Formula $a,b,c\in G$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\left(\left(aH\right)\left(bH\right)\right)\left(cH\right)=\left(abH\right)\left(cH\right)=\left(ab\right)cH
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+as 
+\begin_inset Formula $G$
+\end_inset
+
+ is a group and has associativity:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+a\left(bc\right)H=\left(aH\right)\left(bcH\right)=\left(aH\right)\left(\left(bH\right)\left(cH\right)\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+as desired.
+ Now, for the identity element:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+eH=H\in G/H
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+For any 
+\begin_inset Formula $aH\in G/H$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\left(H\right)\left(aH\right)=aH=\left(aH\right)\left(H\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+so 
+\begin_inset Formula $H$
+\end_inset
+
+ is the identity.
+ For inverse elements, suppose 
+\begin_inset Formula $a\in G$
+\end_inset
+
+.
+ Then 
+\begin_inset Formula $a^{-1}\in G$
+\end_inset
+
+, thus
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\left(aH\right)\left(a^{-1}H\right)=aa^{-1}H=eH=H
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+so for any element 
+\begin_inset Formula $aH\in G/H$
+\end_inset
+
+, 
+\begin_inset Formula $\left(aH\right)^{-1}=a^{-1}H$
+\end_inset
+
+.
+ As all of the necessary conditions are met, we have 
+\begin_inset Formula $G/H$
+\end_inset
+
+ as a group.
+ Let's look at some examples of quotient groups:
+\end_layout
+
+\begin_layout Subsection*
+Ex 1
+\end_layout
+
+\begin_layout Standard
+Let 
+\begin_inset Formula $G=\left(\mathbb{Z},+\right)$
+\end_inset
+
+ and let 
+\begin_inset Formula $5\mathbb{Z}=\left\{ 0,\pm5,\pm10,\dots\right\} $
+\end_inset
+
+.
+ First, let's note that 
+\begin_inset Formula $5\mathbb{Z}$
+\end_inset
+
+ is a normal subgroup of 
+\begin_inset Formula $G$
+\end_inset
+
+ as 
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+1.
+
+\series default
+ 
+\begin_inset Formula $5\mathbb{Z}\subseteq\mathbb{Z}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+2.
+
+\series default
+ From subgroup test 1, if 
+\begin_inset Formula $a,b\in5\mathbb{Z}$
+\end_inset
+
+, then 
+\begin_inset Formula $a=5n,b=5m$
+\end_inset
+
+ for some 
+\begin_inset Formula $m,n\in\mathbb{Z}$
+\end_inset
+
+, thus 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+a-b=5n-5m=5\left(n-m\right)\in5\mathbb{Z}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+as 
+\begin_inset Formula $n-m\in\mathbb{Z}$
+\end_inset
+
+.
+ This means 
+\begin_inset Formula $5\mathbb{Z}\leq G$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+3.
+
+\series default
+ As 
+\begin_inset Formula $G$
+\end_inset
+
+ is abelian, each of its subgroups are normal, thus 
+\begin_inset Formula $5\mathbb{Z}\vartriangleleft G$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+The resulting quotient group is 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\mathbb{Z}/5\mathbb{Z}=\left\{ 5\mathbb{Z},1+5\mathbb{Z},2+5\mathbb{Z},3+5\mathbb{Z},4+5\mathbb{Z}\right\} 
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+When combining two elements of 
+\begin_inset Formula $\mathbb{Z}/5\mathbb{Z}$
+\end_inset
+
+, we will use addition, as this is the binary operation of 
+\begin_inset Formula $\mathbb{Z}$
+\end_inset
+
+.
+ For example, 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+1+5\mathbb{Z}+3+5\mathbb{Z}=1+3+5\mathbb{Z}+5\mathbb{Z}=4+5\mathbb{Z}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+and 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+3+5\mathbb{Z}+3+5\mathbb{Z}=6+5\mathbb{Z}=1+5+5\mathbb{Z}=1+5\mathbb{Z}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+In fact, 
+\begin_inset Formula $\mathbb{Z}/5\mathbb{Z}\approx\mathbb{Z}_{5}$
+\end_inset
+
+.
+ This can be shown by using the isomorphism 
+\begin_inset Formula $\phi:\mathbb{Z}/5\mathbb{Z}\rightarrow\mathbb{Z}_{5}$
+\end_inset
+
+ such that 
+\begin_inset Formula $\phi\left(a+5\mathbb{Z}\right)=a$
+\end_inset
+
+.
+ In fact, we can make the more general claim 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\mathbb{Z}/n\mathbb{Z}\approx\mathbb{Z}_{n}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+Ex 2
+\end_layout
+
+\begin_layout Standard
+Suppose 
+\begin_inset Formula $G=U\left(11\right)$
+\end_inset
+
+.
+ Recall, this is the set of integers 
+\begin_inset Formula $\left\{ 1,2,3,4,5,6,7,8,9,10\right\} $
+\end_inset
+
+ under multiplication mod 
+\begin_inset Formula $11$
+\end_inset
+
+.
+ We can take the subgroup 
+\begin_inset Formula 
+\[
+H=\left\langle 3\right\rangle =\left\{ 1,3,9,5,4\right\} 
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Note that 
+\begin_inset Formula $H$
+\end_inset
+
+ is a subgroup, since it is generated by an element in 
+\begin_inset Formula $G$
+\end_inset
+
+ and 
+\begin_inset Formula $H$
+\end_inset
+
+ is normal as it is a subgroup of an abelian group.
+ The quotient group
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+U\left(11\right)/\left\langle 3\right\rangle =\left\{ \left\langle 3\right\rangle ,2\left\langle 3\right\rangle \right\} 
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+where 
+\begin_inset Formula $2\left\langle 3\right\rangle =\left\{ 2,6,7,10,8\right\} $
+\end_inset
+
+.
+ As this is a group with two elements, then 
+\begin_inset Formula $G/H\approx C_{2}$
+\end_inset
+
+.
+ In fact, we can show 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\left\langle 3\right\rangle \left\langle 3\right\rangle =\left\langle 3\right\rangle 
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\left\langle 3\right\rangle 2\left\langle 3\right\rangle =2\left\langle 3\right\rangle 
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+2\left\langle 3\right\rangle 2\left\langle 3\right\rangle =4\left\langle 3\right\rangle =\left\langle 3\right\rangle 
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+So, we can take the isomorphism 
+\begin_inset Formula $\phi:U\left(11\right)/\left\langle 3\right\rangle \rightarrow C_{2}$
+\end_inset
+
+ such that 
+\begin_inset Formula $\phi\left(x\right)=\begin{cases}
+0 & \text{if }x=\left\langle 3\right\rangle \\
+1 & \text{otherwise}
+\end{cases}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection*
+Note
+\end_layout
+
+\begin_layout Standard
+Lagrange's theorem also tells us that 
+\begin_inset Formula $\left|G/H\right|=\left|G\right|/\left|H\right|$
+\end_inset
+
+.
+ This is because each coset of 
+\begin_inset Formula $H$
+\end_inset
+
+ is equally sized, so we can find the number of cosets by dividing the number
+ of elements of 
+\begin_inset Formula $G$
+\end_inset
+
+ by the number of elements in 
+\begin_inset Formula $H$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection*
+Thm
+\end_layout
+
+\begin_layout Standard
+This next theorem generalizes the above result.
+ Let 
+\begin_inset Formula $G$
+\end_inset
+
+ be a group, and let 
+\begin_inset Formula $Z\left(G\right)$
+\end_inset
+
+ be the center of 
+\begin_inset Formula $G$
+\end_inset
+
+.
+ Then
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+G/Z\left(G\right)\approx\text{Inn}\left(G\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+pf
+\end_layout
+
+\begin_layout Standard
+To prove this, consider the mapping 
+\begin_inset Formula $T:G/Z\left(G\right)\rightarrow\text{Inn}\left(G\right)$
+\end_inset
+
+ given by 
+\begin_inset Formula $T\left(gZ\left(G\right)\right)=\phi_{g}$
+\end_inset
+
+ where 
+\begin_inset Formula $\phi_{g}=gxg^{-1}$
+\end_inset
+
+.
+ First, let's show that this mapping is well defined.
+ We need to make sure each input maps to a single output.
+ If 
+\begin_inset Formula $gZ\left(G\right)=hZ\left(G\right)$
+\end_inset
+
+, we need to show 
+\begin_inset Formula $\phi_{g}=\phi_{h}$
+\end_inset
+
+.
+ From 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+gZ\left(G\right)=hZ\left(G\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+h^{-1}gZ\left(G\right)=Z\left(G\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+thus 
+\begin_inset Formula $h^{-1}g\in Z\left(G\right)$
+\end_inset
+
+.
+ In other words:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+h^{-1}gx=xh^{-1}g
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+gx=hxh^{-1}g
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\phi_{g}=gxg^{-1}=hxh^{-1}=\phi_{h}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+as desired.
+ Now, we will show that 
+\begin_inset Formula $T$
+\end_inset
+
+ is one-to-one.
+ To do so, suppose 
+\begin_inset Formula $\phi_{g}=\phi_{h}$
+\end_inset
+
+.
+ Then
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\phi_{g}=gxg^{-1}=hxh^{-1}=\phi_{h}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+thus
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+h^{-1}gxg^{-1}=xh^{-1}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+h^{-1}gx=xh^{-1}g
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Thus 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+h^{-1}g\in Z\left(G\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+so
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+h^{-1}gZ\left(G\right)=Z\left(G\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+gZ\left(G\right)=hZ\left(G\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+so 
+\begin_inset Formula $T$
+\end_inset
+
+ is one-to-one, as 
+\begin_inset Formula $T\left(gZ\left(G\right)\right)=\phi_{g}=\phi_{h}=T\left(hZ\left(G\right)\right)$
+\end_inset
+
+ implies 
+\begin_inset Formula $gZ\left(G\right)=hZ\left(G\right)$
+\end_inset
+
+.
+ Now, to show this mapping is onto.
+ Recall 
+\begin_inset Formula $\text{Inn}\left(G\right)=\left\{ \phi_{g}|g\in G\right\} $
+\end_inset
+
+.
+ Let 
+\begin_inset Formula $g\in G$
+\end_inset
+
+.
+ Then
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\phi_{g}=gxg^{-1}=T\left(gZ\left(G\right)\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+and as 
+\begin_inset Formula $gZ\left(G\right)\in G/Z\left(G\right)$
+\end_inset
+
+, 
+\begin_inset Formula $T$
+\end_inset
+
+ is onto.
+ Finally, we need to show 
+\begin_inset Formula $T$
+\end_inset
+
+ is a homomorphism.
+ Let 
+\begin_inset Formula $g,h\in G$
+\end_inset
+
+.
+ Then 
+\begin_inset Formula $gZ\left(G\right),hZ\left(G\right)\in G/Z\left(G\right)$
+\end_inset
+
+ such that
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+T\left(gZ\left(G\right)hZ\left(G\right)\right)=T\left(ghZ\left(G\right)\right)=\phi_{gh}=ghx\left(gh\right)^{-1}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+=ghxh^{-1}g^{-1}=g\phi_{h}g^{-1}=\phi_{g}\circ\phi_{h}=T\left(gZ\left(G\right)\right)T\left(hZ\left(G\right)\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+as desired.
+ As 
+\begin_inset Formula $T$
+\end_inset
+
+ is an isomorphism and is a homomorphism, then 
+\begin_inset Formula $G/Z\left(G\right)\approx\text{Inn}\left(G\right)$
+\end_inset
+
+.
+\end_layout
+
+\end_body
+\end_document

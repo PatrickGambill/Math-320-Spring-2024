@@ -1,0 +1,372 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 0.4in
+\topmargin 0.75in
+\rightmargin 0.4in
+\bottommargin 0.5in
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Math 320 HW 2
+\end_layout
+
+\begin_layout Date
+Due: Jan.
+ 31, 2023 at 11:59 PM
+\end_layout
+
+\begin_layout Section*
+1)
+\end_layout
+
+\begin_layout Standard
+None of these sets with binary operation are groups.
+ Each of these almost groups fails at least one of the group axioms.
+ For each of these almost groups, show which axioms fail and which axioms
+ hold.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\mathbb{Z}$
+\end_inset
+
+ under 
+\begin_inset Formula $\diamond$
+\end_inset
+
+, where 
+\begin_inset Formula $a\diamond b=\left|a-b\right|$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\mathcal{F}\left(\mathbb{R},\mathbb{R}\right)$
+\end_inset
+
+ under 
+\begin_inset Formula $\circ$
+\end_inset
+
+, where 
+\begin_inset Formula $\mathcal{F}\left(\mathbb{R},\mathbb{R}\right)=\left\{ f:\mathbb{R}\rightarrow\mathbb{R}\right\} $
+\end_inset
+
+ and 
+\begin_inset Formula $\left(f\circ g\right)\left(x\right)=f\left(g\left(x\right)\right)$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $ $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+2)
+\end_layout
+
+\begin_layout Standard
+The group of invertible 
+\begin_inset Formula $n\times n$
+\end_inset
+
+ real matrices under matrix multiplication is called The General Linear
+ Group over 
+\begin_inset Formula $\mathbb{R}$
+\end_inset
+
+ and denoted as 
+\begin_inset Formula $GL_{n}\left(\mathbb{R}\right)$
+\end_inset
+
+.
+ Show 
+\end_layout
+
+\begin_layout Subsection*
+a)
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $GL_{n}\left(\mathbb{R}\right)$
+\end_inset
+
+ is a group (Hint: For 
+\begin_inset Formula $n\times n$
+\end_inset
+
+ matrices 
+\begin_inset Formula $A,B$
+\end_inset
+
+, 
+\begin_inset Formula $\det\left(AB\right)=\det\left(A\right)\det\left(B\right)$
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Subsection*
+b)
+\end_layout
+
+\begin_layout Standard
+The set of 
+\begin_inset Formula $n\times n$
+\end_inset
+
+ invertible matrices does not form a group under matrix addition.
+\end_layout
+
+\begin_layout Section*
+3)
+\end_layout
+
+\begin_layout Section*
+4)
+\end_layout
+
+\begin_layout Standard
+Determine if the set 
+\begin_inset Formula $H$
+\end_inset
+
+ is a subgroup of the given group 
+\begin_inset Formula $G$
+\end_inset
+
+ under the same binary operation as 
+\begin_inset Formula $G$
+\end_inset
+
+.
+ If so, prove it.
+ Otherwise, provide a counter example.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $H=\left\{ 3n|n\in\mathbb{Z}\right\} $
+\end_inset
+
+, 
+\begin_inset Formula $G=\left(\mathbb{Z},+\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $H=\left\{ 1,2,5\right\} ,$
+\end_inset
+
+
+\begin_inset Formula $G=\left(Z_{6},+\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $H=\left\{ \left(\begin{array}{cc}
+a & b\\
+c & d
+\end{array}\right)|a,b,c,d\in\mathbb{Z}\right\} $
+\end_inset
+
+, 
+\begin_inset Formula $G=\left(\left\{ \mathbb{R}^{2\times2}\right\} ,+\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+5)
+\end_layout
+
+\begin_layout Standard
+Prove that a group 
+\begin_inset Formula $G$
+\end_inset
+
+ is abelian if and only if 
+\begin_inset Formula $\left(ab\right)^{-1}=a^{-1}b^{-1}\ \forall a,b\in G$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section*
+6)
+\end_layout
+
+\begin_layout Standard
+Consider the cyclic group 
+\begin_inset Formula $\mathbb{Z}_{6}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Subsection*
+a)
+\end_layout
+
+\begin_layout Standard
+Find all of the subgroups of 
+\begin_inset Formula $\mathbb{Z}_{6}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+b)
+\end_layout
+
+\begin_layout Standard
+Draw multiplication tables for each of these subgroups and color each element
+ in the table a distinct color.
+ Remember, even though this is a multiplication table, the binary operation
+ is addition mod 
+\begin_inset Formula $6$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection*
+c)
+\end_layout
+
+\begin_layout Standard
+What patterns do you notice in these multiplication tables?
+\end_layout
+
+\begin_layout Section*
+7)
+\end_layout
+
+\begin_layout Standard
+Solve the following equations for 
+\begin_inset Formula $x$
+\end_inset
+
+ in the given cyclic group.
+ If multiple solutions exist, be sure to state all solutions.
+\end_layout
+
+\begin_layout Subsection*
+a)
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $x+4+x\equiv_{11}7$
+\end_inset
+
+, 
+\begin_inset Formula $G=\mathbb{Z}_{11}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+b)
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $3*x\equiv_{13}1$
+\end_inset
+
+, 
+\begin_inset Formula $G=U\left(13\right)$
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

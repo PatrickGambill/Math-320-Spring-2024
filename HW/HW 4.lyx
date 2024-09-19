@@ -1,0 +1,269 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 0.4in
+\topmargin 0.75in
+\rightmargin 0.4in
+\bottommargin 0.5in
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Math 320 HW 4
+\end_layout
+
+\begin_layout Date
+Due: Feb.
+ 13, 2024 at 11:59 PM
+\end_layout
+
+\begin_layout Section*
+1)
+\end_layout
+
+\begin_layout Standard
+Create a Cayley digraph for each of the following groups.
+ What is the minimum number of generators needed to create the group?
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $D_{3}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $S_{3}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+2)
+\end_layout
+
+\begin_layout Standard
+The digraphs below are not valid Cayley Digraphs.
+ Explain why each one is not.
+\end_layout
+
+\begin_layout Subsection*
+a)
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename ../../Math 320 Spring 2023/HW/HW 3/2a.png
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+b)
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename ../../Math 320 Spring 2023/HW/HW 3/2b.png
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+3)
+\end_layout
+
+\begin_layout Standard
+Rewrite the following cycles as a product of 2-cycles and as a product of
+ disjoint cycles.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\left(631\right)\left(1247\right)\left(5\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\left[\begin{array}{cccccc}
+1 & 2 & 3 & 4 & 5 & 6\\
+6 & 5 & 3 & 1 & 2 & 4
+\end{array}\right]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+4)
+\end_layout
+
+\begin_layout Enumerate
+Draw a shape with 
+\begin_inset Formula $D_{5}$
+\end_inset
+
+ symmetry
+\end_layout
+
+\begin_layout Enumerate
+Draw a shape with 
+\begin_inset Formula $C_{6}$
+\end_inset
+
+ symmetry
+\end_layout
+
+\begin_layout Section*
+5)
+\end_layout
+
+\begin_layout Standard
+For subgroups 
+\begin_inset Formula $H,K\leq G$
+\end_inset
+
+, show 
+\begin_inset Formula $H\cap K$
+\end_inset
+
+ is a subgroup of 
+\begin_inset Formula $G$
+\end_inset
+
+.
+ Is 
+\begin_inset Formula $H\cup K$
+\end_inset
+
+ a subgroup of 
+\begin_inset Formula $G$
+\end_inset
+
+? If so, prove it.
+ Otherwise, provide a counterexample.
+\end_layout
+
+\begin_layout Section*
+6)
+\end_layout
+
+\begin_layout Standard
+The center 
+\begin_inset Formula $Z\left(G\right)$
+\end_inset
+
+ of group 
+\begin_inset Formula $G$
+\end_inset
+
+ is defined as follows:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+Z\left(G\right)=\left\{ a\in G|ax=xa\ \forall x\in G\right\} 
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Show 
+\begin_inset Formula $Z\left(G\right)$
+\end_inset
+
+ forms a subgroup of 
+\begin_inset Formula $G$
+\end_inset
+
+.
+\end_layout
+
+\end_body
+\end_document

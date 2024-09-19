@@ -1,0 +1,1255 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 0.4in
+\topmargin 0.75in
+\rightmargin 0.4in
+\bottommargin 0.5in
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Class 21
+\end_layout
+
+\begin_layout Standard
+Before we get into the topics of today's lecture, let's clarify some notation.
+ Let 
+\begin_inset Formula $R$
+\end_inset
+
+ be a commutative ring and let 
+\begin_inset Formula $a\in R$
+\end_inset
+
+.
+ Then
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\left\langle a\right\rangle =\left\{ ar|r\in R\right\} 
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+For example, suppose 
+\begin_inset Formula $R=\mathbb{Z}$
+\end_inset
+
+.
+ Then 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\left\langle 3\right\rangle =3\mathbb{Z}=\left\{ 3n|n\in\mathbb{Z}\right\} 
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+For another example, consider 
+\begin_inset Formula $R=\mathbb{R}\left[x\right]$
+\end_inset
+
+.
+ Then 
+\begin_inset Formula 
+\[
+\left\langle x^{2}-2\right\rangle =\left\{ \left(x^{2}-2\right)p\left(x\right)|p\left(x\right)\in\mathbb{R}\left[x\right]\right\} 
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Let's show 
+\begin_inset Formula $\left\langle a\right\rangle $
+\end_inset
+
+ is an ideal of 
+\begin_inset Formula $R$
+\end_inset
+
+.
+ We can use the ideal test! First, suppose 
+\begin_inset Formula $ar_{1},ar_{2}\in\left\langle a\right\rangle $
+\end_inset
+
+.
+ Then 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+ar_{1}-ar_{2}=a\left(r_{1}-r_{2}\right)\in\left\langle a\right\rangle 
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Now, suppose 
+\begin_inset Formula $s\in R$
+\end_inset
+
+ and 
+\begin_inset Formula $ar\in\left\langle a\right\rangle $
+\end_inset
+
+.
+ Then
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\left(ar\right)s=a\left(rs\right)\in\left\langle a\right\rangle 
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+so 
+\begin_inset Formula $\left\langle a\right\rangle $
+\end_inset
+
+ is an ideal.
+ (Note as 
+\begin_inset Formula $R$
+\end_inset
+
+ is commutative, it suffices to show right multiplication absorbs.
+ For a non-commutative ring you have to show both sides).
+\end_layout
+
+\begin_layout Section*
+Ring Homomorphisms and Ring Isomorphisms
+\end_layout
+
+\begin_layout Standard
+As with groups, we can show some of the structure of rings are preserved
+ under homomorphisms and isomorphisms.
+ For rings, we have to extend the definition slightly form the definition
+ in groups.
+ 
+\end_layout
+
+\begin_layout Subsection*
+Def
+\end_layout
+
+\begin_layout Standard
+Let 
+\begin_inset Formula $R$
+\end_inset
+
+ and 
+\begin_inset Formula $S$
+\end_inset
+
+ be rings.
+ A map 
+\begin_inset Formula $\phi:R\rightarrow S$
+\end_inset
+
+ is a ring homomorphism if 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\phi\left(a+b\right)=\phi\left(a\right)+\phi\left(b\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\phi\left(ab\right)=\phi\left(a\right)\phi\left(b\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+Ex 1
+\end_layout
+
+\begin_layout Standard
+Suppose 
+\begin_inset Formula $\phi:\mathbb{Z}\rightarrow\mathbb{Z}_{2}$
+\end_inset
+
+ given by
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\phi\left(x\right)=_{2}x^{2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+To show this is a ring homomorphism, let's first show the addition property
+ holds:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\phi\left(a+b\right)=_{2}\left(a+b\right)^{2}=_{2}a^{2}+2ab+b^{2}=_{2}a^{2}+b^{2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+as we are working mod 
+\begin_inset Formula $2$
+\end_inset
+
+, and 
+\begin_inset Formula $2ab$
+\end_inset
+
+ is a multiple of 
+\begin_inset Formula $2$
+\end_inset
+
+, thus
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\phi\left(a+b\right)=_{2}a^{2}+b^{2}=_{2}\phi\left(a\right)+\phi\left(b\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Now, for the multiplication property:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\phi\left(ab\right)=_{2}\left(ab\right)^{2}=_{2}a^{2}b^{2}=_{2}\phi\left(a\right)\phi\left(b\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+Ex 2
+\end_layout
+
+\begin_layout Standard
+Let 
+\begin_inset Formula $\phi:\mathbb{R}\left[x\right]\rightarrow\mathbb{R}$
+\end_inset
+
+ given by 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\phi\left(p\left(x\right)\right)=p\left(1\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+This is the map that takes a polynomial and plugs 
+\begin_inset Formula $1$
+\end_inset
+
+ in for 
+\begin_inset Formula $x$
+\end_inset
+
+.
+ For convenience, we will let 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+p\left(x\right)=\sum_{i=0}^{n}p_{i}x^{i},\ q\left(x\right)=\sum_{j=0}^{m}q_{j}x^{j}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+and without loss of generality, suppose 
+\begin_inset Formula $p_{i}=0,q_{j}=0$
+\end_inset
+
+ for all 
+\begin_inset Formula $i>n,j>m$
+\end_inset
+
+.
+ First, let's show the addition property:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\phi\left(p\left(x\right)+q\left(x\right)\right)=\phi\left(\sum_{i=0}^{n}p_{i}x^{i}+\sum_{j=0}^{m}q_{j}x^{j}\right)=\phi\left(\sum_{i=0}^{\max\left\{ n,m\right\} }\left(p_{i}+q_{i}\right)x^{i}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+plugging in 
+\begin_inset Formula $x=1$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+=\sum_{i=0}^{\max\left\{ n,m\right\} }\left(p_{i}+q_{i}\right)\left(1\right)^{i}=\sum_{i=0}^{\max\left\{ n,m\right\} }\left(p_{i}+q_{i}\right)\left(1\right)^{i}=\sum_{i=0}^{n}p_{i}\left(1\right)^{i}+\sum_{j=0}^{m}q_{j}\left(1\right)^{j}=\phi\left(\sum_{i=0}^{n}p_{i}x^{i}\right)+\phi\left(\sum_{j=0}^{m}q_{j}x^{j}\right)=\phi\left(p\left(x\right)\right)+\phi\left(q\left(x\right)\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Now to show multiplication:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\phi\left(p\left(x\right)q\left(x\right)\right)=\phi\left(\left(\sum_{i=0}^{n}p_{i}x^{i}\right)\left(\sum_{j=0}^{m}q_{j}x^{j}\right)\right)=\phi\left(\sum_{i=0}^{n+m}\left(\sum_{j=0}^{i}p_{j}q_{i-j}\right)x^{i}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+plugging in 
+\begin_inset Formula $x=1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+=\sum_{i=0}^{n+m}\left(\sum_{j=0}^{i}p_{j}q_{i-j}\right)\left(1\right)^{i}=\left(\sum_{i=0}^{n}p_{i}\left(1\right)^{i}\right)\left(\sum_{j=0}^{m}q_{j}\left(1\right)^{j}\right)=\phi\left(\sum_{i=0}^{n}p_{i}x^{i}\right)\phi\left(\sum_{j=0}^{m}q_{j}x^{j}\right)=\phi\left(p\left(x\right)\right)\phi\left(q\left(x\right)\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+Def
+\end_layout
+
+\begin_layout Standard
+Let 
+\begin_inset Formula $\phi:R\rightarrow S$
+\end_inset
+
+ be a ring homomorphism.
+ If 
+\begin_inset Formula $\phi$
+\end_inset
+
+ is also a bijection, then 
+\begin_inset Formula $\phi$
+\end_inset
+
+ is a ring isomorphism.
+ If 
+\begin_inset Formula $R=S$
+\end_inset
+
+, then 
+\begin_inset Formula $\phi$
+\end_inset
+
+ is a ring automorphism.
+\end_layout
+
+\begin_layout Subsection*
+Non Ex 1
+\end_layout
+
+\begin_layout Standard
+Let 
+\begin_inset Formula $\phi:\mathbb{Z}\left[x\right]\rightarrow\mathbb{Z}\left[x\right]$
+\end_inset
+
+ given by 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\phi\left(p\left(x\right)\right)=-p\left(x\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Then 
+\begin_inset Formula $\phi$
+\end_inset
+
+ is not a ring isomorphism.
+ To show this, we will consider each property: For the addition property:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\phi\left(p\left(x\right)+q\left(x\right)\right)=-\left(p\left(x\right)+q\left(x\right)\right)=-p\left(x\right)-q\left(x\right)=\phi\left(p\left(x\right)\right)+\phi\left(q\left(x\right)\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+For the multiplication property:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\phi\left(p\left(x\right)q\left(x\right)\right)=-\left(p\left(x\right)q\left(x\right)\right)\neq\left(-p\left(x\right)\right)\left(-q\left(x\right)\right)=\phi\left(p\left(x\right)\right)\phi\left(q\left(x\right)\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+So the multiplication property will not hold.
+ 
+\end_layout
+
+\begin_layout Subsection*
+Ex 2
+\end_layout
+
+\begin_layout Standard
+Suppose 
+\begin_inset Formula $\phi:\mathbb{Q}\left[x\right]\slash\left\langle x^{2}-2\right\rangle \rightarrow\mathbb{Q}\left[\sqrt{2}\right]$
+\end_inset
+
+ given by 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\phi\left(ax+b+\left\langle x^{2}-2\right\rangle \right)=a\sqrt{2}+b
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Then 
+\begin_inset Formula $\phi$
+\end_inset
+
+ is a ring isomorphism.
+ To show this, we can start by showing the addition and multiplication propertie
+s:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\phi\left(\left(ax+b+\left\langle x^{2}-2\right\rangle \right)+\left(cx+d+\left\langle x^{2}-2\right\rangle \right)\right)=\phi\left(\left(a+c\right)x+\left(b+d\right)\right)=\left(a+c\right)\sqrt{2}+\left(b+d\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+=a\sqrt{2}+b+c\sqrt{2}+d=\phi\left(ax+b+\left\langle x^{2}-2\right\rangle \right)+\phi\left(cx+d+\left\langle x^{2}-2\right\rangle \right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Now for the multiplication property:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\phi\left(\left(ax+b+\left\langle x^{2}-2\right\rangle \right)\left(cx+d+\left\langle x^{2}-2\right\rangle \right)\right)=\phi\left(acx^{2}+\left(a+d\right)x+bd+\left\langle x^{2}-2\right\rangle \right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+But as we have quotiented 
+\begin_inset Formula $\mathbb{Q}\left[x\right]$
+\end_inset
+
+ by 
+\begin_inset Formula $\left\langle x^{2}-2\right\rangle $
+\end_inset
+
+, then 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+acx^{2}+\left(a+d\right)x+bd+\left\langle x^{2}-2\right\rangle =acx^{2}+\left(a+d\right)x+bd-ac\left(x^{2}-2\right)+\left\langle x^{2}-2\right\rangle =\left(a+d\right)x+bd+2ac+\left\langle x^{2}-2\right\rangle 
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Thus
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\phi\left(\left(ax+b+\left\langle x^{2}-2\right\rangle \right)\left(cx+d+\left\langle x^{2}-2\right\rangle \right)\right)=\phi\left(\left(a+d\right)x+bd+2ac+\left\langle x^{2}-2\right\rangle \right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+=\left(a+d\right)\sqrt{2}+bd+2ac=\left(a\sqrt{2}+b\right)\left(c\sqrt{2}+d\right)=\phi\left(ax+b\right)\phi\left(cx+d\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Now, let's show we have a bijection.
+ For onto, suppose 
+\begin_inset Formula $a\sqrt{2}+b\in\mathbb{Q}\left[x\right]$
+\end_inset
+
+.
+ Then 
+\begin_inset Formula $\phi\left(ax+b+\left\langle x^{2}-2\right\rangle \right)=a\sqrt{2}+b$
+\end_inset
+
+, so 
+\begin_inset Formula $\phi$
+\end_inset
+
+ is onto.
+ Now, suppose 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\phi\left(ax+b+\left\langle x^{2}-2\right\rangle \right)=\phi\left(cx+d+\left\langle x^{2}-2\right\rangle \right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Then 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+a\sqrt{2}+b=c\sqrt{2}+d
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+thus 
+\begin_inset Formula $a=c$
+\end_inset
+
+ and 
+\begin_inset Formula $b=d$
+\end_inset
+
+, so 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+ax+b+\left\langle x^{2}-2\right\rangle =cx+d+\left\langle x^{2}-2\right\rangle 
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+and 
+\begin_inset Formula $\phi$
+\end_inset
+
+ is one-to-one.
+ As all of the conditions are satisfied, then 
+\begin_inset Formula $\phi$
+\end_inset
+
+ is a ring isomorphism.
+\end_layout
+
+\begin_layout Subsection*
+Properties of Ring Isomorphisms
+\end_layout
+
+\begin_layout Standard
+Let 
+\begin_inset Formula $R,S$
+\end_inset
+
+ be rings and 
+\begin_inset Formula $\phi:R\rightarrow S$
+\end_inset
+
+ be a ring isomorphism.
+ Further, let 
+\end_layout
+
+\begin_layout Enumerate
+Ring Isomorphisms form an equivalence relation.
+\end_layout
+
+\begin_layout Enumerate
+The composition of ring isomorphisms are a ring isomorphism.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\phi\left(0\right)=0$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+If 
+\begin_inset Formula $R$
+\end_inset
+
+ is a ring with unity, then 
+\begin_inset Formula $\phi\left(1\right)=1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\phi\left(-a\right)=-a$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+If 
+\begin_inset Formula $R$
+\end_inset
+
+ is a ring with unity and 
+\begin_inset Formula $a$
+\end_inset
+
+ is a unit, then 
+\begin_inset Formula $\phi\left(a^{-1}\right)=\phi\left(a\right)^{-1}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $R$
+\end_inset
+
+ is a commutative ring if and only if 
+\begin_inset Formula $S$
+\end_inset
+
+ is a commutative ring.
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $a$
+\end_inset
+
+ is a zero divisor in 
+\begin_inset Formula $R$
+\end_inset
+
+ if and only if 
+\begin_inset Formula $\phi\left(a\right)$
+\end_inset
+
+ is a zero divisor in 
+\begin_inset Formula $S$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $R$
+\end_inset
+
+ is an integral domain if and only if 
+\begin_inset Formula $S$
+\end_inset
+
+ is an integral domain.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $R$
+\end_inset
+
+ is a field if and only if 
+\begin_inset Formula $S$
+\end_inset
+
+ is a field.
+ 
+\end_layout
+
+\begin_layout Subsection*
+Pf
+\end_layout
+
+\begin_layout Standard
+Properties 
+\begin_inset Formula $1$
+\end_inset
+
+ and 
+\begin_inset Formula $2$
+\end_inset
+
+ will be left as exercises for a future assignment.
+ 
+\end_layout
+
+\begin_layout Subsubsection*
+3)
+\end_layout
+
+\begin_layout Standard
+Consider 
+\begin_inset Formula $\phi\left(0\right)=\phi\left(0+0\right)=\phi\left(0\right)+\phi\left(0\right)$
+\end_inset
+
+.
+ Then subtracting 
+\begin_inset Formula $\phi\left(0\right)$
+\end_inset
+
+ from both sides, we get 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+0=\phi\left(0\right)-\phi\left(0\right)=\phi\left(0\right)+\phi\left(0\right)-\phi\left(0\right)=\phi\left(0\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+4)
+\end_layout
+
+\begin_layout Standard
+Consider 
+\begin_inset Formula $a\in R$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\phi\left(a\right)=\phi\left(1a\right)=\phi\left(1\right)\phi\left(a\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+So 
+\begin_inset Formula $\phi\left(1\right)=1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsubsection*
+5)
+\end_layout
+
+\begin_layout Standard
+Consider 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+0=\phi\left(0\right)=\phi\left(a-a\right)=\phi\left(a\right)+\phi\left(-a\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+so 
+\begin_inset Formula $-\phi\left(a\right)=\phi\left(-a\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsubsection*
+6)
+\end_layout
+
+\begin_layout Standard
+Suppose 
+\begin_inset Formula $a$
+\end_inset
+
+ is a unit in 
+\begin_inset Formula $R$
+\end_inset
+
+.
+ Then
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+1=\phi\left(1\right)=\phi\left(aa^{-1}\right)=\phi\left(a\right)\phi\left(a^{-1}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+So 
+\begin_inset Formula $\phi\left(a\right)^{-1}=\phi\left(a^{-1}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+7)
+\end_layout
+
+\begin_layout Standard
+First, suppose 
+\begin_inset Formula $R$
+\end_inset
+
+ is a commutative ring.
+ Then 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\phi\left(a\right)\phi\left(b\right)=\phi\left(ab\right)=\phi\left(ba\right)=\phi\left(b\right)\phi\left(a\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+for all 
+\begin_inset Formula $a,b\in R$
+\end_inset
+
+.
+ As 
+\begin_inset Formula $\phi$
+\end_inset
+
+ is onto, this implies 
+\begin_inset Formula $\phi\left(a\right)\phi\left(b\right)=\phi\left(b\right)\phi\left(a\right)$
+\end_inset
+
+ for all 
+\begin_inset Formula $\phi\left(a\right),\phi\left(b\right)\in S$
+\end_inset
+
+.
+ Now, suppose 
+\begin_inset Formula $S$
+\end_inset
+
+ is a commutative ring.
+ Let 
+\begin_inset Formula $a,b\in R$
+\end_inset
+
+.
+ Then
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\phi\left(ab\right)=\phi\left(a\right)\phi\left(b\right)=\phi\left(b\right)\phi\left(a\right)=\phi\left(ba\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+and as 
+\begin_inset Formula $\phi$
+\end_inset
+
+ is one-to-one, then 
+\begin_inset Formula $ab=ba$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Subsubsection*
+8)
+\end_layout
+
+\begin_layout Standard
+Suppose 
+\begin_inset Formula $a$
+\end_inset
+
+ is a zero divisor in 
+\begin_inset Formula $R$
+\end_inset
+
+.
+ Then 
+\begin_inset Formula $\exists b\in R$
+\end_inset
+
+ such that 
+\begin_inset Formula $ab=0$
+\end_inset
+
+ and 
+\begin_inset Formula $a,b\neq0$
+\end_inset
+
+.
+ Thus
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+0=\phi\left(0\right)=\phi\left(ab\right)=\phi\left(a\right)\phi\left(b\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+But as 
+\begin_inset Formula $\phi$
+\end_inset
+
+ is one-to-one and 
+\begin_inset Formula $a,b\neq0$
+\end_inset
+
+, then 
+\begin_inset Formula $\phi\left(a\right),\phi\left(b\right)\neq0$
+\end_inset
+
+.
+ Thus 
+\begin_inset Formula $\phi\left(a\right)$
+\end_inset
+
+ is a zero divisor.
+ Now, suppose 
+\begin_inset Formula $\phi\left(a\right)$
+\end_inset
+
+ is a zero divisor in 
+\begin_inset Formula $S$
+\end_inset
+
+.
+ Then 
+\begin_inset Formula $\exists\phi\left(b\right)\neq0$
+\end_inset
+
+ such that
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\phi\left(0\right)=0=\phi\left(a\right)\phi\left(b\right)=\phi\left(ab\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+but as 
+\begin_inset Formula $\phi$
+\end_inset
+
+ is one-to-one, 
+\begin_inset Formula $0=ab$
+\end_inset
+
+ and as 
+\begin_inset Formula $\phi\left(a\right),\phi\left(b\right)$
+\end_inset
+
+ are both non-zero, then so are 
+\begin_inset Formula $a,b$
+\end_inset
+
+ and thus 
+\begin_inset Formula $a$
+\end_inset
+
+ is a zero divisor.
+ 
+\end_layout
+
+\begin_layout Subsubsection*
+9)
+\end_layout
+
+\begin_layout Standard
+This follows by 
+\series bold
+4) 
+\series default
+(which implies that both rings will have an identity), 
+\series bold
+7)
+\series default
+ (which implies both rings will be commutative), and 
+\series bold
+8)
+\series default
+, (which ensures each ring will have no zero divisors).
+\end_layout
+
+\begin_layout Subsubsection*
+10)
+\end_layout
+
+\begin_layout Standard
+This follows by 
+\series bold
+4) 
+\series default
+(which implies that both rings will have an identity), 
+\series bold
+6)
+\series default
+ (which ensures every nonzero element of both rings are units),and 
+\series bold
+7)
+\series default
+ (which implies both rings will be commutative).
+\end_layout
+
+\end_body
+\end_document

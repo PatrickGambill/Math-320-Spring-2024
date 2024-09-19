@@ -1,0 +1,1701 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 0.4in
+\topmargin 0.75in
+\rightmargin 0.4in
+\bottommargin 0.5in
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Class 15
+\end_layout
+
+\begin_layout Section*
+Cosets
+\end_layout
+
+\begin_layout Standard
+Cosets allow us to split the elements of a group into equal sized subsets.
+ Suppose we have a group 
+\begin_inset Formula $G$
+\end_inset
+
+ with subset 
+\begin_inset Formula $H$
+\end_inset
+
+.
+ Then we define a left coset of 
+\begin_inset Formula $H$
+\end_inset
+
+ in 
+\begin_inset Formula $G$
+\end_inset
+
+ containing 
+\begin_inset Formula $a$
+\end_inset
+
+ as 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+aH=\left\{ ah|h\in H\right\} 
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+where 
+\begin_inset Formula $a\in G$
+\end_inset
+
+.
+ Similarly, we define the right coset of 
+\begin_inset Formula $H$
+\end_inset
+
+ in 
+\begin_inset Formula $G$
+\end_inset
+
+ containing 
+\begin_inset Formula $a$
+\end_inset
+
+ as 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+Ha=\left\{ ha|h\in H\right\} 
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+For coset 
+\begin_inset Formula $aH$
+\end_inset
+
+ or 
+\begin_inset Formula $Ha$
+\end_inset
+
+, we call 
+\begin_inset Formula $a$
+\end_inset
+
+ the coset representative of 
+\begin_inset Formula $H$
+\end_inset
+
+.
+ We can also define the coset 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+aHa^{-1}=\left\{ aha^{-1}|h\in H\right\} 
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+We will also use the notation 
+\begin_inset Formula $\left|aH\right|$
+\end_inset
+
+ to represent the number of elements in 
+\begin_inset Formula $aH$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Subsection*
+Ex 1
+\end_layout
+
+\begin_layout Standard
+Let 
+\begin_inset Formula $H=\left\{ e,r\right\} ,G=D_{3}$
+\end_inset
+
+.
+ Then the possible left cosets are 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+eH,rH,r^{2}H,fH,frH,fr^{2}H
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Let's compute each of these
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+eH=\left\{ ee,er\right\} =\left\{ e,r\right\} 
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+rH=\left\{ re,rr\right\} =\left\{ r,r^{2}\right\} 
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+r^{2}H=\left\{ r^{2}e,r^{2}r\right\} =\left\{ r^{2},e\right\} 
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+fH=\left\{ fe,fr\right\} =\left\{ f,fr\right\} 
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+frH=\left\{ fre,frr\right\} =\left\{ fr,fr^{2}\right\} 
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+fr^{2}H=\left\{ fr^{2}e,fr^{2}r\right\} =\left\{ fr^{2},f\right\} 
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Similarly, for the right cosets, we have possible right cosets
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+He,Hr,Hr^{2},Hf,Hfr,Hfr^{2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Computing each
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+He=\left\{ ee,re\right\} =\left\{ e,r\right\} 
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+Hr=\left\{ er,rr\right\} =\left\{ r,r^{2}\right\} 
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+Hr^{2}=\left\{ er^{2},rr^{2}\right\} =\left\{ r^{2},e\right\} 
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+Hf=\left\{ ef,rf\right\} =\left\{ f,fr^{2}\right\} 
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+Hfr=\left\{ efr,rfr\right\} =\left\{ fr,f\right\} 
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+Hfr^{2}=\left\{ efr^{2},rfr^{2}\right\} =\left\{ fr^{2},fr\right\} 
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Note that it is possible for 
+\begin_inset Formula $aH=Ha$
+\end_inset
+
+ or for 
+\begin_inset Formula $aH\neq Ha$
+\end_inset
+
+, depending on 
+\begin_inset Formula $H$
+\end_inset
+
+ and 
+\begin_inset Formula $a$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection*
+Ex 2
+\end_layout
+
+\begin_layout Standard
+This time, suppose we take 
+\begin_inset Formula $H=\left\{ e,f\right\} $
+\end_inset
+
+ and still keep 
+\begin_inset Formula $G=D_{3}$
+\end_inset
+
+.
+ Then we can compute the left and right cosets once again.
+ First for the left cosets:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+eH=\left\{ ee,ef\right\} =\left\{ e,f\right\} 
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+rH=\left\{ re,rf\right\} =\left\{ r,fr^{2}\right\} 
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+r^{2}H=\left\{ r^{2}e,r^{2}f\right\} =\left\{ r^{2},fr\right\} 
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+fH=\left\{ fe,ff\right\} =\left\{ f,e\right\} 
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+frH=\left\{ fre,frf\right\} =\left\{ fr,r^{2}\right\} 
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+fr^{2}H=\left\{ fr^{2}e,fr^{2}f\right\} =\left\{ fr^{2},r\right\} 
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Notice that some of these cosets are the same.
+ In fact,
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+eH=fH=\left\{ e,f\right\} 
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+rH=fr^{2}H=\left\{ fr^{2},r\right\} 
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+r^{2}H=frH=\left\{ r^{2},fr\right\} 
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Similarly, if we compute the right cosets:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+He=\left\{ ee,fe\right\} =\left\{ e,f\right\} 
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+Hr=\left\{ er,fr\right\} =\left\{ r,fr\right\} 
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+Hr^{2}=\left\{ er^{2},fr^{2}\right\} =\left\{ r^{2},fr^{2}\right\} 
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+Hf=\left\{ ef,ff\right\} =\left\{ f,e\right\} 
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+Hfr=\left\{ efr,ffr\right\} =\left\{ fr,r\right\} 
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+Hfr^{2}=\left\{ efr^{2},ffr^{2}\right\} =\left\{ fr^{2},r^{2}\right\} 
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Once again, we see that some of the right cosets are the same as each other.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+He=Hf=\left\{ f,e\right\} 
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+Hr=Hfr=\left\{ r,fr\right\} 
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+Hr^{2}=Hfr^{2}=\left\{ fr^{2},r^{2}\right\} 
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+In general, we can can show this holds whenever 
+\begin_inset Formula $H$
+\end_inset
+
+ is a subgroup.
+ In fact, we can make much stronger claims about cosets when 
+\begin_inset Formula $H$
+\end_inset
+
+ is a subgroup of 
+\begin_inset Formula $G$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection*
+Thm
+\end_layout
+
+\begin_layout Standard
+Let 
+\begin_inset Formula $H\leq G$
+\end_inset
+
+, 
+\begin_inset Formula $a,b\in G$
+\end_inset
+
+.
+ Then
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $a\in aH$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $aH=H$
+\end_inset
+
+ iff 
+\begin_inset Formula $a\in H$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\left(ab\right)H=a\left(bH\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $aH=bH$
+\end_inset
+
+ iff 
+\begin_inset Formula $a\in bH$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $aH=bH$
+\end_inset
+
+ or 
+\begin_inset Formula $aH\cap bH=\emptyset$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $aH=bH$
+\end_inset
+
+ iff 
+\begin_inset Formula $a^{-1}b\in H$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\left|aH\right|=\left|bH\right|$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $aH=Ha$
+\end_inset
+
+ iff 
+\begin_inset Formula $H=aHa^{-1}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $aH\leq G$
+\end_inset
+
+ iff 
+\begin_inset Formula $a\in H$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Equivalent theorems hold for the right cosets.
+ In particular, note that the cosets of 
+\begin_inset Formula $H$
+\end_inset
+
+ will partition the elements of 
+\begin_inset Formula $G$
+\end_inset
+
+ if 
+\begin_inset Formula $H$
+\end_inset
+
+ is a subgroup.
+ 
+\end_layout
+
+\begin_layout Subsection*
+Pf
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+1)
+\series default
+ As 
+\begin_inset Formula $H\leq G$
+\end_inset
+
+, then 
+\begin_inset Formula $e\in H$
+\end_inset
+
+ thus
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+a=a*e\in aH
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+2)
+\series default
+ First, suppose 
+\begin_inset Formula $a\in H$
+\end_inset
+
+.
+ Then 
+\begin_inset Formula $ah\in H$
+\end_inset
+
+ as 
+\begin_inset Formula $H$
+\end_inset
+
+ is a subgroup and is closed, thus 
+\begin_inset Formula $aH\subseteq H$
+\end_inset
+
+.
+ Now, suppose 
+\begin_inset Formula $h\in H$
+\end_inset
+
+.
+ Then 
+\begin_inset Formula $ah\in H$
+\end_inset
+
+, as 
+\begin_inset Formula $H$
+\end_inset
+
+ is closed, so 
+\begin_inset Formula $aH\subseteq H$
+\end_inset
+
+, thus 
+\begin_inset Formula $aH=H$
+\end_inset
+
+.
+ Suppose 
+\begin_inset Formula $a\notin H$
+\end_inset
+
+.
+ Then 
+\begin_inset Formula $a\in aH$
+\end_inset
+
+ by 
+\series bold
+1)
+\series default
+, but since 
+\begin_inset Formula $a\notin H$
+\end_inset
+
+ then 
+\begin_inset Formula $aH\not\subseteq H$
+\end_inset
+
+, thus 
+\begin_inset Formula $aH\neq H$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+3)
+\series default
+ Let 
+\begin_inset Formula $\left(ab\right)h\in\left(ab\right)H$
+\end_inset
+
+.
+ Then 
+\begin_inset Formula $\left(ab\right)h=a\left(bh\right)\in a\left(bH\right)$
+\end_inset
+
+, thus 
+\begin_inset Formula $\left(ab\right)H\subseteq a\left(bH\right)$
+\end_inset
+
+.
+ Similarly, let 
+\begin_inset Formula $a\left(bh\right)\in a\left(bH\right)$
+\end_inset
+
+.
+ Then 
+\begin_inset Formula $a\left(bh\right)=\left(ab\right)h\in\left(ab\right)H$
+\end_inset
+
+, thus 
+\begin_inset Formula $a\left(bH\right)\subseteq\left(ab\right)H$
+\end_inset
+
+, thus 
+\begin_inset Formula $a\left(bH\right)=\left(ab\right)H$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+4)
+\series default
+ Let 
+\begin_inset Formula $aH=bH$
+\end_inset
+
+.
+ As 
+\begin_inset Formula $a\in aH$
+\end_inset
+
+ by 
+\series bold
+1)
+\series default
+, then 
+\begin_inset Formula $a\in aH=bH$
+\end_inset
+
+.
+ Now, suppose 
+\begin_inset Formula $a\in bH$
+\end_inset
+
+.
+ Then 
+\begin_inset Formula $a=bh$
+\end_inset
+
+ for some 
+\begin_inset Formula $h\in H$
+\end_inset
+
+, thus 
+\begin_inset Formula $aH=\left(bh\right)H=b\left(hH\right)=bH$
+\end_inset
+
+ (as 
+\series bold
+2)
+\series default
+ implies 
+\begin_inset Formula $hH=H$
+\end_inset
+
+ for 
+\begin_inset Formula $h\in H$
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+5)
+\series default
+ Suppose 
+\begin_inset Formula $aH\neq bH$
+\end_inset
+
+ and 
+\begin_inset Formula $aH\cap bH\neq\emptyset$
+\end_inset
+
+.
+ Then 
+\begin_inset Formula $\exists x\in aH,bH$
+\end_inset
+
+ such that 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+x=ah_{1}=bh_{2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+for some 
+\begin_inset Formula $h_{1},h_{2}\in H$
+\end_inset
+
+.
+ Then
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+a=ah_{1}h_{1}^{-1}=bh_{2}h_{1}^{-1}=b\left(h_{2}h_{1}^{-1}\right)\in bH
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+as 
+\begin_inset Formula $H$
+\end_inset
+
+ is a group so 
+\begin_inset Formula $h_{2}h_{1}^{-1}\in H$
+\end_inset
+
+.
+ But by 
+\series bold
+4)
+\series default
+, this means 
+\begin_inset Formula $aH=bH$
+\end_inset
+
+, a contradiction! Thus to avoid contradiction, we must have 
+\begin_inset Formula $aH=bH$
+\end_inset
+
+ or 
+\begin_inset Formula $aH\cap bH=\emptyset$
+\end_inset
+
+.
+ Further, as 
+\begin_inset Formula $H$
+\end_inset
+
+ is non-empty, this implies that 
+\begin_inset Formula $\left\{ aH|a\in G\right\} $
+\end_inset
+
+ will partition 
+\begin_inset Formula $G$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+6)
+\series default
+ Suppose 
+\begin_inset Formula $aH=bH$
+\end_inset
+
+.
+ Then
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+H=eH=a^{-1}aH=a^{-1}bH
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+But as 
+\begin_inset Formula 
+\[
+\left(a^{-1}b\right)H=H
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+then by 
+\series bold
+2)
+\series default
+, 
+\begin_inset Formula $a^{-1}b\in H$
+\end_inset
+
+.
+ Now, suppose 
+\begin_inset Formula $a^{-1}b\in H$
+\end_inset
+
+.
+ Then by 
+\series bold
+2)
+\series default
+, 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+a^{-1}bH=H
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+so 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+bH=aa^{-1}bH=aH
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+7)
+\series default
+ To show these sets have the same cardinality, we need to find a bijection
+ between them.
+ Let 
+\begin_inset Formula $f:aH\rightarrow bH$
+\end_inset
+
+ given by
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+f\left(ah\right)=bh
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+for all 
+\begin_inset Formula $h\in H$
+\end_inset
+
+.
+ First, let's show 
+\begin_inset Formula $f$
+\end_inset
+
+ is onto.
+ Let 
+\begin_inset Formula $bh\in bH$
+\end_inset
+
+.
+ Then
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+f\left(ah\right)=bh
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Now, to show this function is one-to-one.
+ Suppose 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+f\left(ah_{1}\right)=f\left(ah_{2}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Then 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+bh_{1}=bh_{2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+b^{-1}bh_{1}=h_{1}=h_{2}=b^{-1}bh_{2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Thus 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+ah_{1}=ah_{2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+As 
+\begin_inset Formula $f$
+\end_inset
+
+ is a bijection, then 
+\begin_inset Formula $\left|aH\right|=\left|bH\right|$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+8)
+\series default
+ Suppose 
+\begin_inset Formula $aH=Ha$
+\end_inset
+
+.
+ Then
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+aHa^{-1}=Haa^{-1}=H
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Now, suppose 
+\begin_inset Formula $H=aHa^{-1}$
+\end_inset
+
+.
+ Then
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+Ha=aHa^{-1}a=aH
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+9)
+\series default
+ Suppose 
+\begin_inset Formula $a\in H$
+\end_inset
+
+.
+ Then by 
+\series bold
+2)
+\series default
+, 
+\begin_inset Formula $aH=H$
+\end_inset
+
+.
+ But as we already know 
+\begin_inset Formula $H\leq G$
+\end_inset
+
+, then 
+\begin_inset Formula $H=aH\leq G$
+\end_inset
+
+.
+ Now, suppose 
+\begin_inset Formula $a\notin H$
+\end_inset
+
+.
+ Then by 
+\series bold
+4)
+\series default
+, we know 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+eH=H\neq aH
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+as 
+\begin_inset Formula $a\notin H$
+\end_inset
+
+.
+ But by 
+\series bold
+4)
+\series default
+, this also implies 
+\begin_inset Formula $e\notin aH$
+\end_inset
+
+.
+ As 
+\begin_inset Formula $aH$
+\end_inset
+
+ does not contain an identity element, it cannot be a group (and therefore,
+ 
+\begin_inset Formula $aH\nleq G$
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Section*
+Normal Subgroups
+\end_layout
+
+\begin_layout Standard
+A subgroup 
+\begin_inset Formula $H\leq G$
+\end_inset
+
+ is a normal subgroup (denoted 
+\begin_inset Formula $H\trianglelefteq G$
+\end_inset
+
+) if 
+\begin_inset Formula $aH=Ha$
+\end_inset
+
+ for all 
+\begin_inset Formula $a\in G$
+\end_inset
+
+.
+ In particular, by 
+\series bold
+8)
+\series default
+, we also get 
+\begin_inset Formula $H\trianglelefteq G$
+\end_inset
+
+ if 
+\begin_inset Formula $aHa^{-1}=H$
+\end_inset
+
+ or 
+\begin_inset Formula $a^{-1}Ha=H$
+\end_inset
+
+ for all 
+\begin_inset Formula $a\in G$
+\end_inset
+
+).
+ If 
+\begin_inset Formula $H<G$
+\end_inset
+
+ and 
+\begin_inset Formula $H\trianglelefteq G$
+\end_inset
+
+, then we say 
+\begin_inset Formula $H\vartriangleleft G$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection*
+Ex 3
+\end_layout
+
+\begin_layout Standard
+If we use the subgroup from 
+\series bold
+Ex 2
+\series default
+, we see that 
+\begin_inset Formula $H$
+\end_inset
+
+ is not a normal subgroup, as 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+rH\neq Hr
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+Ex 4
+\end_layout
+
+\begin_layout Standard
+Let 
+\begin_inset Formula $H=\left\{ e,r,r^{2}\right\} ,G=D_{3}$
+\end_inset
+
+.
+ Then the possible left cosets are 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+eH,rH,r^{2}H,fH,frH,fr^{2}H
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+These will give
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+H=eH=rH=r^{2}H=\left\{ e,r,r^{2}\right\} 
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+fH=frH=fr^{2}H=\left\{ f*e,f*r,f*r^{2}\right\} =\left\{ f,fr,fr^{2}\right\} 
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Using 
+\series bold
+4) 
+\series default
+allows us to only explicitly compute a given coset once.
+ Once we know the elements of 
+\begin_inset Formula $fH$
+\end_inset
+
+, we immediately know the elements of 
+\begin_inset Formula $frH$
+\end_inset
+
+ and 
+\begin_inset Formula $fr^{2}H$
+\end_inset
+
+.
+ Now for the right cosets:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+He,Hr,Hr^{2},Hf,Hfr,Hfr^{2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+H=He=Hr=Hr^{2}=\left\{ e,r,r^{2}\right\} 
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+Hf=Hfr=Hfr^{2}=\left\{ ef,rf,r^{2}f\right\} =\left\{ f,fr^{2},fr\right\} =\left\{ f,fr,fr^{2}\right\} 
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Since the left and right cosets are the same, then we can say 
+\begin_inset Formula $H\trianglelefteq G$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection*
+Ex 5
+\end_layout
+
+\begin_layout Standard
+Suppose 
+\begin_inset Formula $H=3\mathbb{Z},G=\mathbb{Z}$
+\end_inset
+
+.
+ Then 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+0+3\mathbb{Z}=\pm3+3\mathbb{Z}=\pm6+3\mathbb{Z}=\dots=\left\{ 0,\pm3,\pm6,\dots\right\} =\left\{ 3n|n\in\mathbb{Z}\right\} 
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+1+3\mathbb{Z}=4+3\mathbb{Z}=-2+3\mathbb{Z}=\dots=\left\{ 1,4,,-2,7,-5,\dots\right\} =\left\{ 3n+1|n\in\mathbb{Z}\right\} 
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+2+3\mathbb{Z}=5+3\mathbb{Z}=-1+3\mathbb{Z}=\dots=\left\{ 2,5,-1,8,-4,\dots\right\} =\left\{ 3n+2|n\in\mathbb{Z}\right\} 
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Or for the right cosets:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+3\mathbb{Z}+0=3\mathbb{Z}\pm3=3\mathbb{Z}\pm6=\dots=\left\{ 0,\pm3,\pm6,\dots\right\} =\left\{ 3n|n\in\mathbb{Z}\right\} 
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+3\mathbb{Z}+1=3\mathbb{Z}+4=3\mathbb{Z}-2=\dots=\left\{ 1,4,,-2,7,-5,\dots\right\} =\left\{ 3n+1|n\in\mathbb{Z}\right\} 
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+3\mathbb{Z}+2=3\mathbb{Z}+5=3\mathbb{Z}-1=\dots=\left\{ 2,5,-1,8,-4,\dots\right\} =\left\{ 3n+2|n\in\mathbb{Z}\right\} 
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+And as the left and right cosets are the same for 
+\begin_inset Formula $H$
+\end_inset
+
+, then
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+H\trianglelefteq G
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\end_layout
+
+\end_body
+\end_document

@@ -1,0 +1,1549 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 0.4in
+\topmargin 0.75in
+\rightmargin 0.4in
+\bottommargin 0.5in
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Class 12
+\end_layout
+
+\begin_layout Subsection*
+Thm
+\end_layout
+
+\begin_layout Standard
+All cyclic groups of order 
+\begin_inset Formula $n$
+\end_inset
+
+ are the same up to isomorphism.
+\end_layout
+
+\begin_layout Subsubsection*
+Pf
+\end_layout
+
+\begin_layout Standard
+Here, when we say up to isomorphism, we mean that all cyclic groups of order
+ 
+\begin_inset Formula $n$
+\end_inset
+
+ are isomorphic.
+ Suppose 
+\begin_inset Formula $G,H$
+\end_inset
+
+ are cyclic groups of order 
+\begin_inset Formula $n$
+\end_inset
+
+.
+ That is 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+G=\left\langle a|a^{n}=e\right\rangle ,H=\left\langle b|b^{n}=e\right\rangle 
+\]
+
+\end_inset
+
+ for some 
+\begin_inset Formula $a\in G$
+\end_inset
+
+, 
+\begin_inset Formula $b\in H$
+\end_inset
+
+.
+ Then we can take the isomorphism 
+\begin_inset Formula $\phi:G\rightarrow H$
+\end_inset
+
+ such that 
+\begin_inset Formula $\phi\left(a^{m}\right)=b^{m}$
+\end_inset
+
+.
+ To show this is an isomorphism, we will show this function is bijective
+ and obeys 
+\begin_inset Formula $\phi\left(aa'\right)=\phi\left(a\right)\phi\left(a'\right)\forall a,a'\in G$
+\end_inset
+
+.
+ First, let's show 
+\begin_inset Formula $\phi$
+\end_inset
+
+ is bijective.
+ To show 
+\begin_inset Formula $\phi$
+\end_inset
+
+ is onto, suppose 
+\begin_inset Formula $c\in H$
+\end_inset
+
+.
+ Then 
+\begin_inset Formula $c=b^{m}$
+\end_inset
+
+ for some 
+\begin_inset Formula $m$
+\end_inset
+
+ such that 
+\begin_inset Formula $0\leq m<n$
+\end_inset
+
+, thus for some 
+\begin_inset Formula $d\in G$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\phi\left(d\right)=c=b^{m}=\phi\left(a\right)^{m}=\phi\left(a^{m}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Thus 
+\begin_inset Formula $\forall c\in H$
+\end_inset
+
+ there exists 
+\begin_inset Formula $d=a^{m}\in G$
+\end_inset
+
+ such that 
+\begin_inset Formula $\phi\left(d\right)=c$
+\end_inset
+
+, so 
+\begin_inset Formula $\phi$
+\end_inset
+
+ is onto.
+ To show 
+\begin_inset Formula $\phi$
+\end_inset
+
+ is one to one, suppose 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\phi\left(x\right)=\phi\left(y\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+for 
+\begin_inset Formula $x,y\in H$
+\end_inset
+
+.
+ Then 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\phi\left(x\right)=b^{m}=\phi\left(y\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+For some 
+\begin_inset Formula $m$
+\end_inset
+
+ such that 
+\begin_inset Formula $0\leq m<n$
+\end_inset
+
+, thus
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\phi\left(x\right)=\phi\left(y\right)=b^{m}=\phi\left(a^{m}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+And 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+x=y=a^{m}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Thus 
+\begin_inset Formula $\phi$
+\end_inset
+
+ is one-to-one.
+ As 
+\begin_inset Formula $\phi$
+\end_inset
+
+ is onto and one-to-one, then 
+\begin_inset Formula $\phi$
+\end_inset
+
+ is a bijection.
+ For 
+\begin_inset Formula $x,y\in G$
+\end_inset
+
+, 
+\begin_inset Formula $x=a^{m},y=a^{r}$
+\end_inset
+
+ for some 
+\begin_inset Formula $r,s$
+\end_inset
+
+ such that 
+\begin_inset Formula $0\leq r,s<n$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\phi\left(xy\right)=\phi\left(a^{m}a^{r}\right)=\phi\left(a^{m+r}\right)=b^{m+r}=b^{m}b^{r}=\phi\left(a^{m}\right)\phi\left(a^{r}\right)=\phi\left(x\right)\phi\left(y\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Thus 
+\begin_inset Formula $G,H$
+\end_inset
+
+ are isomorphic.
+ We could have also proven this result by noting that 
+\begin_inset Formula $\phi$
+\end_inset
+
+ maps the generator of 
+\begin_inset Formula $G$
+\end_inset
+
+ to 
+\begin_inset Formula $H$
+\end_inset
+
+, and then applied the properties from last class.
+\end_layout
+
+\begin_layout Section*
+Automorphisms
+\end_layout
+
+\begin_layout Standard
+There are a couple of special types of isomorphisms we will focus on now.
+ The first is automorphisms.
+ Informally, these are isomorphisms from a group onto itself.
+ Formally, we say 
+\begin_inset Formula $\phi:G\rightarrow G$
+\end_inset
+
+ is an automorphism if 
+\begin_inset Formula $\phi$
+\end_inset
+
+ is an isomorphism.
+ These automorphisms represent symmetry structures within a group.
+\end_layout
+
+\begin_layout Subsection*
+Ex 1
+\end_layout
+
+\begin_layout Standard
+Let 
+\begin_inset Formula $G=\left(\mathbb{C},+\right)$
+\end_inset
+
+, and let 
+\begin_inset Formula $\phi:G\rightarrow G$
+\end_inset
+
+ such that 
+\begin_inset Formula $\phi\left(z\right)=\bar{z}$
+\end_inset
+
+.
+ Equivalently, 
+\begin_inset Formula $\phi\left(a+bi\right)=a-bi$
+\end_inset
+
+.
+ Then 
+\begin_inset Formula $\phi$
+\end_inset
+
+ is an automorphism on 
+\begin_inset Formula $G$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Subsubsection*
+Pf
+\end_layout
+
+\begin_layout Standard
+First, let's show 
+\begin_inset Formula $\phi$
+\end_inset
+
+ is bijective.
+ To do this, we start by showing 
+\begin_inset Formula $\phi$
+\end_inset
+
+ is onto.
+ Let 
+\begin_inset Formula $a+bi,c+di\in\mathbb{C}$
+\end_inset
+
+.
+ Then
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\phi\left(c+di\right)=a+bi
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+=c-di=a+bi
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Thus 
+\begin_inset Formula $a=c,d=-b$
+\end_inset
+
+.
+ For any 
+\begin_inset Formula $a+bi\in\mathbb{C}$
+\end_inset
+
+,
+\begin_inset Formula $\exists c+di\in\mathbb{C}$
+\end_inset
+
+ such that 
+\begin_inset Formula $\phi\left(c+di\right)=a+bi$
+\end_inset
+
+.
+ Now to show 
+\begin_inset Formula $\phi$
+\end_inset
+
+ is one-to-one.
+ Suppose 
+\begin_inset Formula $a+bi,c+di\in\mathbb{C}$
+\end_inset
+
+ s.t.
+ 
+\begin_inset Formula $\phi\left(a+bi\right)=\phi\left(c+di\right)$
+\end_inset
+
+.
+ Then
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+a-bi=\phi\left(a+bi\right)=\phi\left(c+di\right)=c-di
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Thus 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+a=c,-b=-d
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+a=c,b=d
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+so
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+a+bi=c+di
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Therefore 
+\begin_inset Formula $\phi$
+\end_inset
+
+ is one-to-one.
+ As 
+\begin_inset Formula $\phi$
+\end_inset
+
+ is both onto and one-to-one, then 
+\begin_inset Formula $\phi$
+\end_inset
+
+ is bijective.
+ Now, to show 
+\begin_inset Formula $\phi$
+\end_inset
+
+ is an isomorphism.
+ Let 
+\begin_inset Formula $x,y\in\mathbb{C}$
+\end_inset
+
+ such that 
+\begin_inset Formula $x=a+bi,y=c+di$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\phi\left(x+y\right)=\phi\left(\left(a+bi\right)+\left(c+di\right)\right)=\phi\left(\left(a+c\right)+\left(bi+di\right)\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+=\phi\left(\left(a+c\right)+\left(b+d\right)i\right)=\left(a+c\right)-\left(b+d\right)i
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+=a+c-bi-di=\left(a-bi\right)+\left(c-di\right)=\phi\left(a+bi\right)+\phi\left(c+di\right)=\phi\left(x\right)+\phi\left(y\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Thus 
+\begin_inset Formula $\phi$
+\end_inset
+
+ is an isomorphism from 
+\begin_inset Formula $G\rightarrow G$
+\end_inset
+
+, and thus an automorphism on 
+\begin_inset Formula $G$
+\end_inset
+
+.
+ This automorphism corresponds to the symmetry in the complex plane found
+ by reflecting over the real axis.
+\end_layout
+
+\begin_layout Subsection*
+Ex 2
+\end_layout
+
+\begin_layout Standard
+Let 
+\begin_inset Formula $G=\mathbb{Z}_{6}$
+\end_inset
+
+.
+ Let 
+\begin_inset Formula $\phi:G\rightarrow G$
+\end_inset
+
+ be an automorphism such that 
+\begin_inset Formula $\phi\left(1\right)=5$
+\end_inset
+
+.
+ As 
+\begin_inset Formula $1$
+\end_inset
+
+ and 
+\begin_inset Formula $5$
+\end_inset
+
+ are generators, this is enough to uniquely define the automorphism.
+ Equivalently, we can write this as 
+\begin_inset Formula $\phi\left(a\right)=-a\ \forall a\in\mathbb{Z}_{6}$
+\end_inset
+
+.
+ To show we have an isomorphism, let's show 
+\begin_inset Formula $\phi$
+\end_inset
+
+ is an isomorphism.
+ First, to show 
+\begin_inset Formula $\phi$
+\end_inset
+
+ is a bijection.
+ Suppose 
+\begin_inset Formula $a,b\in G$
+\end_inset
+
+.
+ To show 
+\begin_inset Formula $\phi$
+\end_inset
+
+ is onto:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\phi\left(a\right)=-a=b
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Thus
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+a=-b
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+and so each 
+\begin_inset Formula $b\in G$
+\end_inset
+
+ has an 
+\begin_inset Formula $a\in G$
+\end_inset
+
+ such that 
+\begin_inset Formula $\phi\left(a\right)=b$
+\end_inset
+
+.
+ Now, to show 
+\begin_inset Formula $\phi$
+\end_inset
+
+ is one-to-one:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\phi\left(a\right)=\phi\left(b\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+-a=-b
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+a=b
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Thus 
+\begin_inset Formula $\phi$
+\end_inset
+
+ is one-to-one.
+ As 
+\begin_inset Formula $\phi$
+\end_inset
+
+ is both onto and one-to-one, 
+\begin_inset Formula $\phi$
+\end_inset
+
+ is bijective.
+ Now, to show 
+\begin_inset Formula $\phi$
+\end_inset
+
+ is an isomorphism.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\phi\left(a+b\right)=-\left(a+b\right)=-a-b=\phi\left(a\right)+\phi\left(b\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Thus 
+\begin_inset Formula $\phi$
+\end_inset
+
+ is an isomorphism and an automorphism on 
+\begin_inset Formula $\mathbb{Z}_{6}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section*
+Inner Automorphisms
+\end_layout
+
+\begin_layout Standard
+There is a special class of automorphisms called inner automorphisms.
+ These are defined as follows: For group 
+\begin_inset Formula $G$
+\end_inset
+
+ with 
+\begin_inset Formula $a\in G$
+\end_inset
+
+, 
+\begin_inset Formula $\phi_{a}:G\rightarrow G$
+\end_inset
+
+ is an inner automorphism if 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\phi_{a}\left(x\right)=axa^{-1}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+First let's prove that inner automorphisms are actually automorphisms.
+\end_layout
+
+\begin_layout Subsection*
+pf
+\end_layout
+
+\begin_layout Standard
+We need to show 
+\begin_inset Formula $\phi_{a}\left(x\right)$
+\end_inset
+
+ is bijective and obeys 
+\begin_inset Formula $\phi_{a}\left(xy\right)=\phi_{a}\left(x\right)\phi_{a}\left(y\right)$
+\end_inset
+
+.
+ First for bijection, let's show 
+\begin_inset Formula $\phi_{a}$
+\end_inset
+
+ is onto.
+ Pick some 
+\begin_inset Formula $y\in G$
+\end_inset
+
+, such that
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+y=\phi_{a}\left(x\right)=axa^{-1}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Then multiplying by 
+\begin_inset Formula $a^{-1},a$
+\end_inset
+
+ appropriately
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+a^{-1}ya=a^{-1}axa^{-1}a=exe=x
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Thus 
+\begin_inset Formula $\forall y\in G,\exists x$
+\end_inset
+
+ such that 
+\begin_inset Formula $\phi_{a}\left(x\right)=y$
+\end_inset
+
+.
+ Now to show 
+\begin_inset Formula $\phi_{a}$
+\end_inset
+
+ is one-to-one.
+ Suppose 
+\begin_inset Formula $x,y\in G$
+\end_inset
+
+ such that 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\phi_{a}\left(x\right)=\phi_{a}\left(y\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+axa^{-1}=aya^{-1}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Multiplying both sides by 
+\begin_inset Formula $a,a^{-1}$
+\end_inset
+
+ appropriately:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+a^{-1}axa^{-1}a=a^{-1}aya^{-1}a
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+exe=eye
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+x=y
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+This 
+\begin_inset Formula $\phi_{a}$
+\end_inset
+
+ is both onto and one-to-one, thus bijective.
+ Now, to show 
+\begin_inset Formula $\phi_{a}$
+\end_inset
+
+ is an isomorphism:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\phi_{a}\left(xy\right)=axya^{-1}=axeya^{-1}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+=axa^{-1}aya^{-1}=\left(axa^{-1}\right)\left(aya^{-1}\right)=\phi_{a}\left(x\right)\phi_{a}\left(y\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+So 
+\begin_inset Formula $\phi_{a}$
+\end_inset
+
+ is an isomorphism, thus 
+\begin_inset Formula $\phi_{a}$
+\end_inset
+
+ is an automorphism on 
+\begin_inset Formula $G$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection*
+Ex 1
+\end_layout
+
+\begin_layout Standard
+A boring example comes from finding an inner automorphism on 
+\begin_inset Formula $G$
+\end_inset
+
+ when 
+\begin_inset Formula $G$
+\end_inset
+
+ is abelian.
+ For any element 
+\begin_inset Formula $a$
+\end_inset
+
+ in 
+\begin_inset Formula $G$
+\end_inset
+
+,
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\phi_{a}\left(x\right)=axa^{-1}=aa^{-1}x=ex=x
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+So the only inner automorphism is the identity function.
+ 
+\end_layout
+
+\begin_layout Subsection*
+Ex 2
+\end_layout
+
+\begin_layout Standard
+A more interesting example can be shown for 
+\begin_inset Formula $D_{3}$
+\end_inset
+
+.
+ Suppose we take 
+\begin_inset Formula $\phi_{f}\left(x\right)=fxf^{-1}=fxf$
+\end_inset
+
+.
+ Then we can show what the automorphism looks like for each 
+\begin_inset Formula $x\in D_{3}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\phi_{f}\left(e\right)=fef=ff=e
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\phi_{f}\left(r\right)=frf=r^{2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\phi_{f}\left(r^{2}\right)=fr^{2}f=r
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\phi_{f}\left(f\right)=fff=ef=f
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\phi_{f}\left(fr\right)=ffrf=erf=rf=fr^{2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\phi_{f}\left(fr^{2}\right)=ffr^{2}f=er^{2}f=r^{2}f=fr
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Notice that this is a bijection.
+ This is also an isomorphism, using the argument shown in the proof of this
+ this section.
+\end_layout
+
+\begin_layout Section*
+Automorphism Groups
+\end_layout
+
+\begin_layout Standard
+We can define groups of automorphisms and inner automorphisms as groups
+ of these functions under composition.
+ We call the group of automorphisms on 
+\begin_inset Formula $G$
+\end_inset
+
+,
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\text{Aut}\left(G\right)=\left\{ \phi:G\rightarrow G|\phi\ \text{is an automorphism}\right\} 
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Similarly, we define the inner automorphism group
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\text{Inn}\left(G\right)=\left\{ \phi_{a}|\phi_{a}\left(x\right)=axa^{-1}\forall x\in G,a\in G\right\} 
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Let's prove that each of these form a group.
+ 
+\end_layout
+
+\begin_layout Subsection*
+pf
+\end_layout
+
+\begin_layout Standard
+Let 
+\begin_inset Formula $\text{Aut}\left(G\right)$
+\end_inset
+
+ be the set of all automorphisms on 
+\begin_inset Formula $G$
+\end_inset
+
+.
+ To show we have a group under function composition, we need to show we
+ have closure, associativity identity, and inverses.
+ First to show closure holds.
+ Suppose 
+\begin_inset Formula $\phi,\theta$
+\end_inset
+
+ are automorphisms on 
+\begin_inset Formula $G$
+\end_inset
+
+.
+ Then 
+\begin_inset Formula $\phi,\theta$
+\end_inset
+
+ are bijective, thus 
+\begin_inset Formula $\phi\circ\theta$
+\end_inset
+
+ is bijective.
+ Now to show 
+\begin_inset Formula $\phi\circ\theta$
+\end_inset
+
+ is an isomorphism.
+ Let 
+\begin_inset Formula $x,y\in G$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\phi\circ\theta\left(xy\right)=\phi\left(\theta\left(xy\right)\right)=\phi\left(\theta\left(x\right)\theta\left(y\right)\right)=\phi\left(\theta\left(x\right)\right)\phi\left(\theta\left(y\right)\right)=\left(\phi\circ\theta\left(x\right)\right)\left(\phi\circ\theta\left(y\right)\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Thus 
+\begin_inset Formula $\phi\circ\theta$
+\end_inset
+
+ is an isomorphism, and an automorphism of 
+\begin_inset Formula $G$
+\end_inset
+
+.
+ This implies 
+\begin_inset Formula $\text{Aut}\left(G\right)$
+\end_inset
+
+ is closed under function composition.
+ As 
+\begin_inset Formula $\text{Aut}\left(G\right)$
+\end_inset
+
+ is a subset of the group of all invertible functions from 
+\begin_inset Formula $G\rightarrow G$
+\end_inset
+
+ under composition, then 
+\begin_inset Formula $\text{Aut}\left(G\right)$
+\end_inset
+
+ has associativity, as composition of functions is associative.
+ Now, to show identity, consider 
+\begin_inset Formula $\phi\left(x\right)=x$
+\end_inset
+
+.
+ This is a bijection as the identity function is a bijection.
+ to show 
+\begin_inset Formula $\phi\left(x\right)=x$
+\end_inset
+
+ is an isomorphism, let 
+\begin_inset Formula $x,y\in G$
+\end_inset
+
+.
+ Then
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\phi\left(xy\right)=xy=\phi\left(x\right)\phi\left(y\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+As 
+\begin_inset Formula $\phi\left(x\right)=x$
+\end_inset
+
+ is an isomorphism, then 
+\begin_inset Formula $\phi\left(x\right)=x$
+\end_inset
+
+ is an automorphism on 
+\begin_inset Formula $G$
+\end_inset
+
+.
+ As the identity function is the identity in the group of all invertible
+ functions 
+\begin_inset Formula $G\rightarrow G$
+\end_inset
+
+, then it will also be the identity of 
+\begin_inset Formula $\text{Aut}\left(G\right)$
+\end_inset
+
+.
+ Finally, to show inverses hold, suppose 
+\begin_inset Formula $\phi^{-1}$
+\end_inset
+
+ is the inverse of 
+\begin_inset Formula $\phi\in\text{Aut}\left(G\right)$
+\end_inset
+
+.
+ We know the inverse 
+\begin_inset Formula $\phi^{-1}$
+\end_inset
+
+ exists and is bijective as 
+\begin_inset Formula $\phi$
+\end_inset
+
+ is bijective.
+ Now, to show 
+\begin_inset Formula $\phi^{-1}$
+\end_inset
+
+ is also an isomorphism:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\phi\left(xy\right)=\phi\left(x\right)\phi\left(y\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+xy=\phi^{-1}\left(\phi\left(xy\right)\right)=\phi^{-1}\left(\phi\left(x\right)\phi\left(y\right)\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\phi^{-1}\left(\phi\left(x\right)\right)\phi^{-1}\left(\phi\left(y\right)\right)=\phi^{-1}\left(\phi\left(x\right)\phi\left(y\right)\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+For convenience, we may wish to set 
+\begin_inset Formula $X=\phi\left(x\right),Y=\phi\left(y\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+=\phi^{-1}\left(X\right)\phi^{-1}\left(Y\right)=\phi^{-1}\left(XY\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Thus 
+\begin_inset Formula $\phi^{-1}$
+\end_inset
+
+ is an isomorphism and thus an automorphism on 
+\begin_inset Formula $G$
+\end_inset
+
+.
+ As such, 
+\begin_inset Formula $\phi^{-1}\in\text{Aut}\left(G\right)$
+\end_inset
+
+.
+ Now, let's show that 
+\begin_inset Formula $\text{Inn}\left(G\right)$
+\end_inset
+
+ is a group.
+ To do so, we will note 
+\begin_inset Formula $\text{Inn}\left(G\right)\leq\text{Aut}\left(G\right)$
+\end_inset
+
+, as each element of 
+\begin_inset Formula $\text{Inn}\left(G\right)$
+\end_inset
+
+ is an automorphism (as shown previously).
+ Suppose we use subgroup test 2.
+ First, we must show 
+\begin_inset Formula $\text{Inn}\left(G\right)$
+\end_inset
+
+ is closed under function composition.
+ Let 
+\begin_inset Formula $\phi_{a},\phi_{b}\in\text{Inn}\left(G\right)$
+\end_inset
+
+.
+ Then
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\phi_{b}\circ\phi_{a}\left(x\right)=\phi_{b}\left(\phi_{a}\left(x\right)\right)=\phi_{b}\left(axa^{-1}\right)=baxa^{-1}b^{-1}=\left(ba\right)x\left(ba\right)^{-1}=\phi_{ba}\left(x\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+as 
+\begin_inset Formula $G$
+\end_inset
+
+ is a group, 
+\begin_inset Formula $ba\in G$
+\end_inset
+
+.
+ Now, let's show that 
+\begin_inset Formula $\text{Inn}\left(G\right)$
+\end_inset
+
+ contains the inverses of its elements.
+ Suppose 
+\begin_inset Formula $\phi_{a}\in\text{Inn}\left(G\right)$
+\end_inset
+
+.
+ Then 
+\begin_inset Formula $\phi_{a}^{-1}=\phi_{a^{-1}}$
+\end_inset
+
+ as 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\phi_{a^{-1}}\circ\phi_{a}\left(x\right)=\phi_{a^{-1}}\left(\phi_{a}\left(x\right)\right)=\phi_{a^{-1}}\left(axa^{-1}\right)=a^{-1}axa^{-1}a=exe=x
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+As 
+\begin_inset Formula $a^{-1}\in G$
+\end_inset
+
+, then 
+\begin_inset Formula $\phi_{a^{-1}}\in\text{Inn}\left(G\right)$
+\end_inset
+
+.
+ As both conditions are met for the second subgroup test, then 
+\begin_inset Formula $\text{Inn}\left(G\right)\leq\text{Aut}\left(G\right)$
+\end_inset
+
+, and thus 
+\begin_inset Formula $\text{Inn}\left(G\right)$
+\end_inset
+
+ is a group under function composition.
+ Next class with new content, we will give some examples of these groups.
+\end_layout
+
+\end_body
+\end_document
