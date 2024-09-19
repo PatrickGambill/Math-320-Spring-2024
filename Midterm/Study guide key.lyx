@@ -1,0 +1,2103 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 0.4in
+\topmargin 0.75in
+\rightmargin 0.4in
+\bottommargin 0.5in
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Math 320 Midterm Study Guide Key
+\end_layout
+
+\begin_layout Subsection*
+1)
+\end_layout
+
+\begin_layout Subsubsection*
+1)
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+X\cap Y=\left\{ 0,1,2\right\} \cap\left\{ 1,2,3\right\} =\left\{ 1,2\right\} 
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\left(X\cap Y\right)\cup Z=\left\{ 1,2\right\} \cup\left\{ 0,3\right\} =\left\{ 0,1,2,3\right\} 
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+2)
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+P\left(Y\right)=\left\{ \emptyset,\left\{ 1\right\} ,\left\{ 2\right\} ,\left\{ 3\right\} ,\left\{ 1,2\right\} ,\left\{ 1,3\right\} ,\left\{ 2,3\right\} ,\left\{ 1,2,3\right\} \right\} 
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+P\left(Z\right)=\left\{ \emptyset,\left\{ 0\right\} ,\left\{ 3\right\} ,\left\{ 0,3\right\} \right\} 
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+P\left(Y\right)\cap P\left(Z\right)=\left\{ \emptyset,\left\{ 3\right\} \right\} 
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+3)
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+X\times Y=\left\{ 0,1,2\right\} \times\left\{ 1,2,3\right\} =\left\{ \left(0,1\right),\left(0,2\right),\left(0,3\right),\left(1,1\right),\left(1,2\right),\left(1,3\right),\left(2,1\right),\left(2,2\right),\left(2,3\right)\right\} 
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+2)
+\end_layout
+
+\begin_layout Standard
+Recall that 
+\begin_inset Formula $A\cup\left(B\cap C\right)=\left(A\cup B\right)\cap\left(A\cup C\right)$
+\end_inset
+
+.
+ Also recall that 
+\begin_inset Formula $\cap$
+\end_inset
+
+ is associative.
+ Using these identities,
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+A\cup\left(B\cap C\cap D\right)=A\cup\left(B\cap\left(C\cap D\right)\right)=\left(A\cup B\right)\cap\left(A\cup\left(C\cap D\right)\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+=\left(A\cup B\right)\cap\left(\left(A\cup C\right)\cap\left(A\cup D\right)\right)=\left(A\cup B\right)\cap\left(A\cup C\right)\cap\left(A\cup D\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+3)
+\end_layout
+
+\begin_layout Standard
+To show this forms an equivalence relation, we need to show that congruence
+ of triangles is 
+\series bold
+i)
+\series default
+ Reflexive, 
+\series bold
+ii)
+\series default
+ Symmetric, 
+\series bold
+iii)
+\series default
+ Transitive.
+ 
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+i)
+\series default
+ Every triangle is congruent to itself, as every triangles will have the
+ same side lengths and angles as itself.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+ii)
+\series default
+ Suppose triangle 
+\begin_inset Formula $A$
+\end_inset
+
+ is congruent to triangle 
+\begin_inset Formula $B$
+\end_inset
+
+.
+ Then 
+\begin_inset Formula $A$
+\end_inset
+
+ has the same side lengths and angles as 
+\begin_inset Formula $B$
+\end_inset
+
+, thus 
+\begin_inset Formula $B$
+\end_inset
+
+ has the same side lengths and angles as 
+\begin_inset Formula $A$
+\end_inset
+
+.
+ This implies 
+\begin_inset Formula $B$
+\end_inset
+
+ is also congruent to 
+\begin_inset Formula $A$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+iii)
+\series default
+ Suppose triangle 
+\begin_inset Formula $A$
+\end_inset
+
+ is congruent to triangle 
+\begin_inset Formula $B$
+\end_inset
+
+ and triangle 
+\begin_inset Formula $B$
+\end_inset
+
+ is congruent to triangle 
+\begin_inset Formula $C$
+\end_inset
+
+.
+ Then 
+\begin_inset Formula $A,B$
+\end_inset
+
+ share the same side lengths and angles, and 
+\begin_inset Formula $B,C$
+\end_inset
+
+ share the same side lengths and angles, thus 
+\begin_inset Formula $A,C$
+\end_inset
+
+ share the same side lengths and angles so 
+\begin_inset Formula $A$
+\end_inset
+
+ and 
+\begin_inset Formula $C$
+\end_inset
+
+ are congruent.
+\end_layout
+
+\begin_layout Standard
+As all three properties are satisfied, then congruence of triangles is an
+ equivalence relation.
+\end_layout
+
+\begin_layout Subsection*
+4)
+\end_layout
+
+\begin_layout Standard
+To show 
+\begin_inset Formula $f$
+\end_inset
+
+ is a bijection, we need to show 
+\begin_inset Formula $f$
+\end_inset
+
+ is onto and one-to-one.
+ 
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+onto:
+\series default
+ Let 
+\begin_inset Formula $\left(a,b,c\right)\in\mathbb{\mathbb{R}}^{3}$
+\end_inset
+
+ such that 
+\begin_inset Formula $f\left(x,y,z\right)=\left(a,b,c\right)$
+\end_inset
+
+ for some 
+\begin_inset Formula $x,y,z$
+\end_inset
+
+.
+ This yields system of equations:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+x+y=a
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+y+3z=b
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+3z=c
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+If we divide the bottom equation by 
+\begin_inset Formula $3$
+\end_inset
+
+, we see 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+z=\frac{c}{3}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+If we subtract equation 
+\begin_inset Formula $3$
+\end_inset
+
+ from equation 
+\begin_inset Formula $2$
+\end_inset
+
+, we see
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+y+3z-3z=b-c
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+y=b-c
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+If we substitute our result for 
+\begin_inset Formula $y$
+\end_inset
+
+ into equation 
+\begin_inset Formula $1$
+\end_inset
+
+, we get
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+x+\left(b-c\right)=a
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+x=a-b+c
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Thus 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\left(x,y,z\right)=\left(a-b+c,b-c,\frac{c}{3}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+and 
+\begin_inset Formula $f$
+\end_inset
+
+ is onto.
+ 
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+one-to-one: 
+\series default
+Now, suppose 
+\begin_inset Formula $\exists\left(x_{1},y_{1},z_{1}\right),\left(x_{2},y_{2},z_{2}\right)$
+\end_inset
+
+ such that 
+\begin_inset Formula $f\left(x_{1},y_{1},z_{1}\right)=f\left(x_{2},y_{2},z_{2}\right)$
+\end_inset
+
+.
+ Then 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+f\left(x_{1},y_{1},z_{1}\right)=f\left(x_{2},y_{2},z_{2}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\left(x_{1}+y_{1},y_{1}+3z_{1},3z_{1}\right)=\left(x_{2}+y_{2},y_{2}+3z_{2},3z_{2}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Then, from the last coordinate:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+3z_{1}=3z_{2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+z_{1}=z_{2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+From the second coordinate:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+y_{1}+3z_{1}=y_{2}+3z_{2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+y_{1}+3z_{1}=y_{2}+3z_{1}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+y_{1}=y_{2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+From the first coordinate:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+x_{1}+y_{1}=x_{2}+y_{2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+x_{1}+y_{1}=x_{2}+y_{1}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+x_{1}=x_{2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+thus
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\left(x_{1},y_{1},z_{1}\right)=\left(x_{2},y_{2},z_{2}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+and 
+\begin_inset Formula $f$
+\end_inset
+
+ is one-to-one.
+ As 
+\begin_inset Formula $f$
+\end_inset
+
+ is both onto and one-to-one, then 
+\begin_inset Formula $f$
+\end_inset
+
+ is bijective.
+\end_layout
+
+\begin_layout Subsection*
+5)
+\end_layout
+
+\begin_layout Standard
+To show this forms an equivalence relation, we need to show that this relation
+ is 
+\series bold
+i)
+\series default
+ Reflexive, 
+\series bold
+ii)
+\series default
+ Symmetric, 
+\series bold
+iii)
+\series default
+ Transitive.
+ 
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+i)
+\series default
+ Every set 
+\begin_inset Formula $A$
+\end_inset
+
+ has a bijection 
+\begin_inset Formula $f:A\rightarrow A$
+\end_inset
+
+ given by 
+\begin_inset Formula $f\left(a\right)=a$
+\end_inset
+
+.
+ This is the identity map that maps every element of 
+\begin_inset Formula $A$
+\end_inset
+
+ to itself, thus 
+\begin_inset Formula $\left|A\right|=\left|A\right|$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+ii)
+\series default
+ Suppose 
+\begin_inset Formula $A$
+\end_inset
+
+ has the same cardinality as 
+\begin_inset Formula $B$
+\end_inset
+
+.
+ Then there exists a bijection 
+\begin_inset Formula $f:A\rightarrow B$
+\end_inset
+
+.
+ As 
+\begin_inset Formula $f$
+\end_inset
+
+ is a bijection, it is invertible and there exists a bijection 
+\begin_inset Formula $f^{-1}:B\rightarrow A$
+\end_inset
+
+, thus 
+\begin_inset Formula $\left|A\right|=\left|B\right|$
+\end_inset
+
+ implies 
+\begin_inset Formula $\left|B\right|=\left|A\right|$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+iii)
+\series default
+ Suppose 
+\begin_inset Formula $\left|A\right|=\left|B\right|$
+\end_inset
+
+ and 
+\begin_inset Formula $\left|B\right|=\left|C\right|$
+\end_inset
+
+.
+ Then there exist bijections 
+\begin_inset Formula $f:A\rightarrow B$
+\end_inset
+
+ and 
+\begin_inset Formula $g:B\rightarrow C$
+\end_inset
+
+.
+ The composition 
+\begin_inset Formula $g\circ f:A\rightarrow C$
+\end_inset
+
+ will be a bijection as composition of bijections form a bijection, thus
+ 
+\begin_inset Formula $\left|A\right|=\left|C\right|$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+As all three properties are satisfied, then equality of cardinality is an
+ equivalence relation.
+\end_layout
+
+\begin_layout Subsection*
+6)
+\end_layout
+
+\begin_layout Standard
+Let 
+\begin_inset Formula $a,b\in G$
+\end_inset
+
+.
+ Then 
+\begin_inset Formula $ab=eabe=b^{2}aba^{2}=bbabaa=b\left(ba\right)\left(ba\right)a=bea=ba$
+\end_inset
+
+, thus 
+\begin_inset Formula $G$
+\end_inset
+
+ is abelian.
+\end_layout
+
+\begin_layout Subsection*
+7)
+\end_layout
+
+\begin_layout Standard
+To show this forms a group, we need to show that 
+\begin_inset Formula $X$
+\end_inset
+
+ is closed under composition of functions, 
+\begin_inset Formula $X$
+\end_inset
+
+ has an identity, each function as an inverse, and that composition of functions
+ is associative.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Closure:
+\series default
+ We will prove this by exhaustion.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+t\circ t=t,\ t\circ\frac{1}{t}=\frac{1}{t},\ t\circ-t=-t,\ t\circ-\frac{1}{t}=-\frac{1}{t}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\frac{1}{t}\circ t=\frac{1}{t},\ \frac{1}{t}\circ\frac{1}{t}=t,\ \frac{1}{t}\circ-t=-\frac{1}{t},\ \frac{1}{t}\circ-\frac{1}{t}=-t
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+-t\circ t=-t,\ -t\circ\frac{1}{t}=-\frac{1}{t},\ -t\circ-t=t,\ -t\circ-\frac{1}{t}=\frac{1}{t}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+-\frac{1}{t}\circ t=-\frac{1}{t},\ -\frac{1}{t}\circ\frac{1}{t}=-t,\ -\frac{1}{t}\circ-t=\frac{1}{t},\ -\frac{1}{t}\circ-\frac{1}{t}=t
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Identity: 
+\series default
+From the above compositions, we can see that 
+\begin_inset Formula $t$
+\end_inset
+
+ is an identity under function composition.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Inverses:
+\series default
+ From the above note that each function is its own inverse.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Associativity:
+\series default
+ Composition of functions is associative, as we previously showed in class.
+\end_layout
+
+\begin_layout Standard
+As all conditions are satisfied, then 
+\begin_inset Formula $X$
+\end_inset
+
+ forms a group under function composition.
+\end_layout
+
+\begin_layout Subsection*
+8)
+\end_layout
+
+\begin_layout Standard
+Using subgroup test 
+\begin_inset Formula $2$
+\end_inset
+
+, we need to show 
+\begin_inset Formula $N_{G}\left(S\right)$
+\end_inset
+
+ is closed and for each 
+\begin_inset Formula $a\in N_{G}\left(S\right)\implies a^{-1}\in N_{G}\left(S\right)$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Closure:
+\series default
+ Suppose 
+\begin_inset Formula $a,b\in N_{G}\left(S\right),s\in S$
+\end_inset
+
+.
+ Then 
+\begin_inset Formula $bsb^{-1}=t$
+\end_inset
+
+ for some 
+\begin_inset Formula $t\in S$
+\end_inset
+
+, thus 
+\begin_inset Formula $\left(ab\right)s\left(ab\right)^{-1}=absb^{-1}a^{-1}=ata^{-1}\in S$
+\end_inset
+
+, as 
+\begin_inset Formula $t\in S$
+\end_inset
+
+, thus 
+\begin_inset Formula $N_{G}\left(S\right)$
+\end_inset
+
+ is closed.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Inverses:
+\series default
+ Suppose 
+\begin_inset Formula $a\in N_{G}\left(S\right),s\in S$
+\end_inset
+
+.
+ Then 
+\begin_inset Formula $asa^{-1}=t$
+\end_inset
+
+ for some 
+\begin_inset Formula $t\in S$
+\end_inset
+
+.
+ Let's show for a given 
+\begin_inset Formula $t$
+\end_inset
+
+, there is exactly one 
+\begin_inset Formula $s$
+\end_inset
+
+ such that 
+\begin_inset Formula $asa^{-1}=t$
+\end_inset
+
+.
+ Suppose this was not the case.
+ Then 
+\begin_inset Formula $as_{1}a^{-1}=as_{2}a^{-1}=t$
+\end_inset
+
+, thus 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+a^{-1}as_{1}a^{-1}a=a^{-1}as_{2}a^{-1}a
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+s_{1}=s_{2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+As each 
+\begin_inset Formula $s$
+\end_inset
+
+ maps to a unique 
+\begin_inset Formula $t$
+\end_inset
+
+, and 
+\begin_inset Formula $asa^{-1}\in S$
+\end_inset
+
+ for all 
+\begin_inset Formula $s\in S$
+\end_inset
+
+, then every possible 
+\begin_inset Formula $t\in S$
+\end_inset
+
+ should be mapped to by some 
+\begin_inset Formula $s\in S$
+\end_inset
+
+ as 
+\begin_inset Formula $s=a^{-1}ta$
+\end_inset
+
+.
+ Thus 
+\begin_inset Formula $a^{-1}\in N_{G}\left(S\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection*
+9)
+\end_layout
+
+\begin_layout Standard
+Since 
+\begin_inset Formula $\mathbb{\mathbb{Z}}_{8}$
+\end_inset
+
+ is cyclic, then we know each of its subgroups must also be cyclic.
+ Lets find each of the subgroups generated by the elements of 
+\begin_inset Formula $\mathbb{Z}_{8}$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\left\langle 0\right\rangle =\left\{ 0\right\} 
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\left\langle 1\right\rangle =\left\{ 0,1,2,3,4,5,6,7\right\} 
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\left\langle 2\right\rangle =\left\{ 0,2,4,6\right\} 
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\left\langle 3\right\rangle =\left\{ 0,1,2,3,4,5,6,7\right\} 
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\left\langle 4\right\rangle =\left\{ 0,4\right\} 
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\left\langle 5\right\rangle =\left\{ 0,1,2,3,4,5,6,7\right\} 
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\left\langle 6\right\rangle =\left\{ 0,2,4,6\right\} 
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\left\langle 7\right\rangle =\left\{ 0,1,2,3,4,5,6,7\right\} 
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Thus all of the subgroups of 
+\begin_inset Formula $\mathbb{Z}_{8}$
+\end_inset
+
+ are 
+\begin_inset Formula $\left\langle 0\right\rangle ,\left\langle 4\right\rangle ,\left\langle 2\right\rangle ,\left\langle 1\right\rangle $
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection*
+10)
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename table.PNG
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+11)
+\end_layout
+
+\begin_layout Standard
+Note that these digraphs need not be unique.
+ I also chose to label the nodes, but the nodes do not need to be labeled
+ for a Cayley Digraph to be valid.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+a)
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename D5.png
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+b)
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename C7.png
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+12)
+\end_layout
+
+\begin_layout Standard
+Note that these answers are not unique:
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+a)
+\series default
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename C6 object.PNG
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+b)
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename D4 Object.PNG
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+13)
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+a)
+\series default
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\alpha\beta=\left(145\right)\left(723\right)\left(8147\right)\left(23\right)\left(34\right)\left(651\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+=\left(174\right)\left(2\right)\left(3865\right)=\left(174\right)\left(3865\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+b)
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\beta\gamma=\left(23\right)\left(34\right)\left(651\right)\left(34567\right)\left(12\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+=\left(173\right)\left(25\right)\left(4\right)\left(6\right)\left(8\right)=\left(173\right)\left(25\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+c)
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\alpha\gamma=\left(145\right)\left(723\right)\left(8147\right)\left(34567\right)\left(12\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+=\left(1382467\right)\left(5\right)=\left(1382467\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+14)
+\end_layout
+
+\begin_layout Standard
+Suppose 
+\begin_inset Formula $\alpha,\beta$
+\end_inset
+
+ are odd cycles.
+ This means that 
+\begin_inset Formula $\alpha=C_{\alpha1}...C_{\alpha n}$
+\end_inset
+
+ , where 
+\begin_inset Formula $n$
+\end_inset
+
+ is odd, and each 
+\begin_inset Formula $C_{\alpha i}$
+\end_inset
+
+ is a 
+\begin_inset Formula $2$
+\end_inset
+
+-cycle.
+ Similarly, 
+\begin_inset Formula $\beta=C_{\beta1}...C_{\beta m}$
+\end_inset
+
+ , where 
+\begin_inset Formula $m$
+\end_inset
+
+ is odd, and each 
+\begin_inset Formula $C_{\alpha i}$
+\end_inset
+
+ is a 
+\begin_inset Formula $2$
+\end_inset
+
+-cycle.
+ Thus
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\alpha\beta=C_{\alpha1}...C_{\alpha n}C_{\beta1}...C_{\beta m}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+As 
+\begin_inset Formula $n,m$
+\end_inset
+
+ are both odd, 
+\begin_inset Formula $n+m$
+\end_inset
+
+ is even and 
+\begin_inset Formula $\alpha\beta$
+\end_inset
+
+ is a product of an even number of 
+\begin_inset Formula $2$
+\end_inset
+
+-cycles, thus 
+\begin_inset Formula $\alpha\beta$
+\end_inset
+
+ is even.
+\end_layout
+
+\begin_layout Subsection*
+15)
+\end_layout
+
+\begin_layout Standard
+Let 
+\begin_inset Formula $X=\left\{ 1,2,3,4\right\} $
+\end_inset
+
+.
+ Recall 
+\begin_inset Formula $A_{4}$
+\end_inset
+
+ will only contain even cycles.
+ For 
+\begin_inset Formula $4$
+\end_inset
+
+ elements, this corresponds to any permutations with 
+\begin_inset Formula $0$
+\end_inset
+
+ disjoint 
+\begin_inset Formula $2$
+\end_inset
+
+-cycles or 
+\begin_inset Formula $2$
+\end_inset
+
+ disjoint 
+\begin_inset Formula $2$
+\end_inset
+
+-cycles.
+ This gives us 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+A_{4}=\left\{ \left(1\right),\left(12\right)\left(34\right),\left(13\right)\left(24\right),\left(14\right)\left(23\right),\left(123\right),\left(132\right),\left(124\right),\left(142\right),\left(134\right),\left(143\right),\left(234\right),\left(243\right)\right\} 
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+First, for the orbits:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\text{Orb}\left(1\right)=\left\{ 1,2,3,4\right\} 
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\text{Orb}\left(2\right)=\left\{ 1,2,3,4\right\} 
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\text{Orb}\left(3\right)=\left\{ 1,2,3,4\right\} 
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\text{Orb}\left(4\right)=\left\{ 1,2,3,4\right\} 
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+These can be found by looking at the first 
+\begin_inset Formula $4$
+\end_inset
+
+ permutations.
+ Note that each element of 
+\begin_inset Formula $X$
+\end_inset
+
+ will be in a 
+\begin_inset Formula $2$
+\end_inset
+
+-cycle with every other element of 
+\begin_inset Formula $X$
+\end_inset
+
+, and every element must be in its own orbit, as the identity permutation
+ is in 
+\begin_inset Formula $A_{4}.$
+\end_inset
+
+ To find the stabilizers, we look for the permutations that fix a given
+ element.
+ These are the permutations that do not contain the element in any cycles
+ of length 
+\begin_inset Formula $2$
+\end_inset
+
+ or more.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\text{Stab}\left(1\right)=\left\{ \left(1\right),\left(234\right),\left(243\right)\right\} 
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\text{Stab}\left(2\right)=\left\{ \left(1\right),\left(134\right),\left(143\right)\right\} 
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\text{Stab}\left(3\right)=\left\{ \left(1\right),\left(124\right),\left(142\right)\right\} 
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\text{Stab}\left(4\right)=\left\{ \left(1\right),\left(123\right),\left(132\right)\right\} 
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+16)
+\end_layout
+
+\begin_layout Standard
+Let 
+\begin_inset Formula $G$
+\end_inset
+
+ be the group of symmetries of the dodecahedron.
+ First, let's pick an arbitrary face of the dodecahedron.
+ Let's call this face 
+\begin_inset Formula $1$
+\end_inset
+
+.
+ There are 
+\begin_inset Formula $12$
+\end_inset
+
+ faces on the dodecahedron, so the dodecahedron could be rotated to put
+ 
+\begin_inset Formula $1$
+\end_inset
+
+ into any of the locations of the other faces, thus 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\left|\text{Orb}\left(1\right)\right|=12
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Each face of the dodecahedron is a pentagon, so this pentagon can be rotated
+ 
+\begin_inset Formula $5$
+\end_inset
+
+ times about 
+\begin_inset Formula $1$
+\end_inset
+
+, yielding 
+\begin_inset Formula $5$
+\end_inset
+
+ permutations of the faces that leave 
+\begin_inset Formula $1$
+\end_inset
+
+ fixed.
+ This implies
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\left|\text{Stab}\left(1\right)\right|=5
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Thus by orbit-stabilizer theorem, 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\left|G\right|=\left|\text{Orb}\left(1\right)\right|\left|\text{Stab}\left(1\right)\right|=12*5=60
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+17)
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+a)
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+f\left(e\right)=f\left(e*e\right)=f\left(e\right)f\left(e\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+As the identity is unique, this implies 
+\begin_inset Formula $f\left(e\right)$
+\end_inset
+
+ must be the identity in 
+\begin_inset Formula $H$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+b)
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+f\left(a\right)f\left(a^{-1}\right)=f\left(aa^{-1}\right)=f\left(e\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+By 
+\series bold
+a)
+\series default
+, 
+\begin_inset Formula $f\left(e\right)$
+\end_inset
+
+ is the identity in 
+\begin_inset Formula $H$
+\end_inset
+
+, thus 
+\begin_inset Formula $f\left(a^{-1}\right)=\left(f\left(a\right)\right)^{-1}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+c)
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+f\left(a\right)f\left(b\right)=f\left(ab\right)=f\left(ba\right)=f\left(b\right)f\left(a\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+d)
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $n=1$
+\end_inset
+
+ is trivial.
+ We will prove the rest using induction.
+ If 
+\begin_inset Formula $n=2$
+\end_inset
+
+, then
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+f\left(a^{2}\right)=f\left(aa\right)=f\left(a\right)f\left(a\right)=f\left(a\right)^{2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Now, for the inductive step.
+ Suppose 
+\begin_inset Formula $f\left(a^{n}\right)=f\left(a\right)^{n}$
+\end_inset
+
+ for all 
+\begin_inset Formula $n$
+\end_inset
+
+ such that 
+\begin_inset Formula $2\leq n\leq k$
+\end_inset
+
+.
+ Then
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+f\left(a^{k+1}\right)=f\left(a^{k}\right)f\left(a\right)=f\left(a\right)^{k}f\left(a\right)=f\left(a\right)^{k}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+18)
+\end_layout
+
+\begin_layout Standard
+By 
+\series bold
+d)
+\series default
+, we know 
+\begin_inset Formula $f\left(a^{n}\right)=f\left(a\right)^{n}$
+\end_inset
+
+.
+ Suppose 
+\begin_inset Formula $f\left(b\right)\in H$
+\end_inset
+
+.
+ Then 
+\begin_inset Formula $b=a^{n}$
+\end_inset
+
+ for some 
+\begin_inset Formula $n\in\mathbb{Z}$
+\end_inset
+
+.
+ Thus 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+f\left(b\right)=f\left(a^{n}\right)=f\left(a\right)^{n}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+19)
+\end_layout
+
+\begin_layout Standard
+Let 
+\begin_inset Formula $A^{n}=\left(\begin{array}{cc}
+\cos\left(\frac{n\pi}{6}\right) & \sin\left(\frac{n\pi}{6}\right)\\
+-\sin\left(\frac{n\pi}{6}\right) & \cos\left(\frac{n\pi}{6}\right)
+\end{array}\right)$
+\end_inset
+
+.
+ Then let 
+\begin_inset Formula $f\left(A^{n}\right)=n$
+\end_inset
+
+ be an isomorphism from 
+\begin_inset Formula $R_{12}\rightarrow\mathbb{Z}_{12}$
+\end_inset
+
+.
+ We will show that 
+\begin_inset Formula $f$
+\end_inset
+
+ is an isomorphism, thus 
+\begin_inset Formula $R_{12}\approx\mathbb{Z}_{12}$
+\end_inset
+
+.
+ To show this, we need to show 
+\begin_inset Formula $f\left(AB\right)=f\left(A\right)f\left(B\right)$
+\end_inset
+
+, and that 
+\begin_inset Formula $f$
+\end_inset
+
+ is bijective.
+ Let 
+\begin_inset Formula $A^{n},A^{m}\in R_{12}$
+\end_inset
+
+.
+ Then
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+f\left(A^{n}A^{m}\right)=f\left(A^{n+m}\right)=f\left(A^{n+m_{mod\ 12}}\right)=n+m_{mod\ 12}=n+m=f\left(A^{n}\right)+f\left(A^{m}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Note that we used a 
+\begin_inset Formula $+$
+\end_inset
+
+ as our binary operation in 
+\begin_inset Formula $\mathbb{Z}_{12}$
+\end_inset
+
+.
+ Now, to show 
+\begin_inset Formula $f$
+\end_inset
+
+ is bijective.
+ First, let's show 
+\begin_inset Formula $f$
+\end_inset
+
+ is one-to-one.
+ Suppose 
+\begin_inset Formula $f\left(A^{n}\right)=f\left(A^{m}\right)$
+\end_inset
+
+.
+ Then
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+f\left(A^{n}\right)=n=m=f\left(A^{m}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Thus
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+A^{n}=A^{m}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Now, to show 
+\begin_inset Formula $f$
+\end_inset
+
+ in onto.
+ Let 
+\begin_inset Formula $n\in\mathbb{Z}_{12}$
+\end_inset
+
+.
+ Then 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+f\left(A^{n}\right)=n
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+and as 
+\begin_inset Formula $A^{n}\in R_{12}$
+\end_inset
+
+ for all 
+\begin_inset Formula $n\in\mathbb{Z}_{12}$
+\end_inset
+
+, then 
+\begin_inset Formula $f$
+\end_inset
+
+ is onto.
+ As 
+\begin_inset Formula $f$
+\end_inset
+
+ is both one-to-one and onto, 
+\begin_inset Formula $f$
+\end_inset
+
+ is bijective.
+ As all of the conditions are satisfied, then 
+\begin_inset Formula $f$
+\end_inset
+
+ is an isomorphism and 
+\begin_inset Formula $R_{12}\approx\mathbb{Z}_{12}$
+\end_inset
+
+.
+\end_layout
+
+\end_body
+\end_document

@@ -1,0 +1,972 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 0.4in
+\topmargin 0.75in
+\rightmargin 0.4in
+\bottommargin 0.5in
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Math 320 Project 1 Example Right-Up
+\end_layout
+
+\begin_layout Standard
+The first thing we will prove is that congruence of triangles and similarity
+ of triangles are both well defined equivalence relations.
+\end_layout
+
+\begin_layout Section*
+Congruence
+\end_layout
+
+\begin_layout Standard
+To show congruence forms an equivalence relation, we need to show that congruenc
+e of triangles is 
+\series bold
+i)
+\series default
+ Reflexive, 
+\series bold
+ii)
+\series default
+ Symmetric, 
+\series bold
+iii)
+\series default
+ Transitive.
+ 
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+i)
+\series default
+ Every triangle is congruent to itself, as every triangles will have the
+ same side lengths and angles as itself.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+ii)
+\series default
+ Suppose triangle 
+\begin_inset Formula $A$
+\end_inset
+
+ is congruent to triangle 
+\begin_inset Formula $B$
+\end_inset
+
+.
+ Then 
+\begin_inset Formula $A$
+\end_inset
+
+ has the same side lengths and angles as 
+\begin_inset Formula $B$
+\end_inset
+
+, thus 
+\begin_inset Formula $B$
+\end_inset
+
+ has the same side lengths and angles as 
+\begin_inset Formula $A$
+\end_inset
+
+.
+ This implies 
+\begin_inset Formula $B$
+\end_inset
+
+ is also congruent to 
+\begin_inset Formula $A$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+iii)
+\series default
+ Suppose triangle 
+\begin_inset Formula $A$
+\end_inset
+
+ is congruent to triangle 
+\begin_inset Formula $B$
+\end_inset
+
+ and triangle 
+\begin_inset Formula $B$
+\end_inset
+
+ is congruent to triangle 
+\begin_inset Formula $C$
+\end_inset
+
+.
+ Then 
+\begin_inset Formula $A,B$
+\end_inset
+
+ share the same side lengths and angles, and 
+\begin_inset Formula $B,C$
+\end_inset
+
+ share the same side lengths and angles, thus 
+\begin_inset Formula $A,C$
+\end_inset
+
+ share the same side lengths and angles so 
+\begin_inset Formula $A$
+\end_inset
+
+ and 
+\begin_inset Formula $C$
+\end_inset
+
+ are congruent.
+\end_layout
+
+\begin_layout Standard
+As all three properties are satisfied, then congruence of triangles is an
+ equivalence relation.
+\end_layout
+
+\begin_layout Section*
+Similarity
+\end_layout
+
+\begin_layout Standard
+To show similarity forms an equivalence relation, we need to show that similarit
+y of triangles is 
+\series bold
+i)
+\series default
+ Reflexive, 
+\series bold
+ii)
+\series default
+ Symmetric, 
+\series bold
+iii)
+\series default
+ Transitive.
+ 
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+i)
+\series default
+ Every triangle is similar to itself, as every triangles will have the same
+ side lengths and angles as itself.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+ii)
+\series default
+ Suppose triangle 
+\begin_inset Formula $A$
+\end_inset
+
+ is similar to triangle 
+\begin_inset Formula $B$
+\end_inset
+
+.
+ Then 
+\begin_inset Formula $A$
+\end_inset
+
+ has the same angles as 
+\begin_inset Formula $B$
+\end_inset
+
+, thus 
+\begin_inset Formula $B$
+\end_inset
+
+ has the same side lengths and angles as 
+\begin_inset Formula $A$
+\end_inset
+
+.
+ This implies 
+\begin_inset Formula $B$
+\end_inset
+
+ is also similar to 
+\begin_inset Formula $A$
+\end_inset
+
+ by AA rule.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+iii)
+\series default
+ Suppose triangle 
+\begin_inset Formula $A$
+\end_inset
+
+ is similar to triangle 
+\begin_inset Formula $B$
+\end_inset
+
+ and triangle 
+\begin_inset Formula $B$
+\end_inset
+
+ is similar to triangle 
+\begin_inset Formula $C$
+\end_inset
+
+.
+ Then 
+\begin_inset Formula $A,B$
+\end_inset
+
+ share the same angles, and 
+\begin_inset Formula $B,C$
+\end_inset
+
+ share the same side angles, thus 
+\begin_inset Formula $A,C$
+\end_inset
+
+ share the same side angles so 
+\begin_inset Formula $A$
+\end_inset
+
+ and 
+\begin_inset Formula $C$
+\end_inset
+
+ are similar by AA rule.
+\end_layout
+
+\begin_layout Standard
+As all three properties are satisfied, then similarity of triangles is an
+ equivalence relation.
+\end_layout
+
+\begin_layout Section*
+Proofs of Congruence Rules
+\end_layout
+
+\begin_layout Standard
+Here, we will give a sketch of a proof for why the SSS, SAS, ASA rules work,
+ as well as reasoning why ASS will not work.
+\end_layout
+
+\begin_layout Subsection*
+SSS
+\end_layout
+
+\begin_layout Standard
+The law cosines states:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+c^{2}=a^{2}+b^{2}-2ab\cos\left(C\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Where 
+\begin_inset Formula $a,b,c$
+\end_inset
+
+ are sides of the triangle, and C is the angle opposite side 
+\begin_inset Formula $c$
+\end_inset
+
+.
+ As this is a triangle, we know 
+\begin_inset Formula $0<\gamma<\pi$
+\end_inset
+
+, so we can uniquely determine 
+\begin_inset Formula $C$
+\end_inset
+
+ by solving the equation above for 
+\begin_inset Formula $C$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+C=\frac{\arccos\left(a^{2}+b^{2}-c^{2}\right)}{2ab}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+As each angle can be found in the triangle by picking appropriate sides
+ for 
+\begin_inset Formula $a,b,c$
+\end_inset
+
+, then we can determine the angles of both triangles only with information
+ of the side lengths, thus both triangles sharing the same side lengths
+ is sufficient to show that the two triangles are congruent.
+\end_layout
+
+\begin_layout Subsection*
+SAS
+\end_layout
+
+\begin_layout Standard
+Once again, we can use the law of cosines.
+ As the unknown side is the side opposite the angle 
+\begin_inset Formula $C$
+\end_inset
+
+, then we simply solve for 
+\begin_inset Formula $c$
+\end_inset
+
+ to find the missing side:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+c=\sqrt{a^{2}+b^{2}-2ab\cos\left(C\right)}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+As a triangle cannot have a negative side length, we can drop the 
+\begin_inset Formula $-$
+\end_inset
+
+ sign when taking the square root.
+ This means that 
+\begin_inset Formula $c$
+\end_inset
+
+ will have a unique value.
+ Once we know all three side lengths we can rely on SSS to show both triangles
+ are congruent.
+\end_layout
+
+\begin_layout Subsection*
+ASA
+\end_layout
+
+\begin_layout Standard
+This time around, we will use the law of sines.
+ Recall the law of sines:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\frac{\sin\left(A\right)}{a}=\frac{\sin\left(B\right)}{b}=\frac{\sin\left(C\right)}{c}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Here, each side is denoted by a lower case 
+\begin_inset Formula $a$
+\end_inset
+
+,
+\begin_inset Formula $b$
+\end_inset
+
+, or 
+\begin_inset Formula $c$
+\end_inset
+
+.
+ The angle opposite of a given side is given by taking a capital letter.
+ Before we use the law of sines, let's first note the sum of the angles
+ in a triangle will always be 
+\begin_inset Formula $\pi$
+\end_inset
+
+.
+ This means that given the two known angles, we can find the third angle
+ by taking 
+\begin_inset Formula $\pi-A-B$
+\end_inset
+
+ (assuming 
+\begin_inset Formula $A$
+\end_inset
+
+,
+\begin_inset Formula $B$
+\end_inset
+
+ are the known angles).
+ Once we know three angles, and have one known side (suppose WLOG 
+\begin_inset Formula $a$
+\end_inset
+
+ is the known side), then we can solve for the remaining unknown sides as
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+b=\frac{a\sin\left(B\right)}{\sin\left(A\right)}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+and 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+c=\frac{a\sin\left(C\right)}{\sin\left(A\right)}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+Why ASS fails
+\end_layout
+
+\begin_layout Standard
+If we consider ASS, we do not have enough information to determine the missing
+ side.
+ Suppose WLOG the missing side is 
+\begin_inset Formula $a$
+\end_inset
+
+.
+ If we try using the law of cosines, we can rearrange the equation to get
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+0=a^{2}-2ab\cos\left(C\right)+\left(b^{2}-c^{2}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Using quadratic formula:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+a=\frac{2b\cos\left(C\right)\pm\sqrt{\left(-2b\cos\left(C\right)\right)^{2}-4\left(b^{2}-c^{2}\right)}}{2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+a=\frac{2b\cos\left(C\right)\pm\sqrt{4b^{2}\cos^{2}\left(C\right)-4\left(b^{2}-c^{2}\right)}}{2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+a=b\cos\left(C\right)\pm\sqrt{b^{2}\cos^{2}\left(C\right)-b^{2}+c^{2}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+a=b\cos\left(C\right)\pm\sqrt{b^{2}\left(\cos^{2}\left(C\right)-1\right)+c^{2}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+a=b\cos\left(C\right)\pm\sqrt{b^{2}\left(-\sin^{2}\left(C\right)\right)+c^{2}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+As we have a valid triangle, we will assume that 
+\begin_inset Formula $b^{2}\left(-\sin^{2}\left(C\right)\right)+c^{2}\geq0$
+\end_inset
+
+.
+ If it were not, we could not have a side length of 
+\begin_inset Formula $a$
+\end_inset
+
+, as it would be imaginary.
+ Further, we can assume that from the 
+\begin_inset Formula $\pm$
+\end_inset
+
+ we will only take the 
+\begin_inset Formula $+$
+\end_inset
+
+ if the 
+\begin_inset Formula $-$
+\end_inset
+
+ forces 
+\begin_inset Formula $a\leq0$
+\end_inset
+
+.
+ If we have the case where 
+\begin_inset Formula $b\cos\left(C\right)>\sqrt{b^{2}\left(-\sin^{2}\left(C\right)\right)+c^{2}}$
+\end_inset
+
+, then we may have two possible answers.
+ Suppose we instead try using the law of sines:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\frac{\sin\left(A\right)}{a}=\frac{\sin\left(B\right)}{b}=\frac{\sin\left(C\right)}{c}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+WLOG, we can try solving for an unknown angle.
+ Suppose this angle is 
+\begin_inset Formula $B$
+\end_inset
+
+ and we know the angle 
+\begin_inset Formula $C$
+\end_inset
+
+.
+ Then
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+B=\arcsin\left(\frac{b\sin\left(C\right)}{c}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Here, we run into an issue.
+ If we take 
+\begin_inset Formula $\arcsin$
+\end_inset
+
+, we will get a value for 
+\begin_inset Formula $B$
+\end_inset
+
+ such that 
+\begin_inset Formula $-\frac{\pi}{2}<B<\frac{\pi}{2}$
+\end_inset
+
+, as the range of 
+\begin_inset Formula $\arcsin$
+\end_inset
+
+ is 
+\begin_inset Formula $\left[-\frac{\pi}{2},\frac{\pi}{2}\right]$
+\end_inset
+
+.
+ The valid angles for a triangle lie in 
+\begin_inset Formula $\left(0,\pi\right)$
+\end_inset
+
+ however.
+ 
+\begin_inset Formula $\arcsin$
+\end_inset
+
+ will not be able to tell us if we have an angle of 
+\begin_inset Formula $B$
+\end_inset
+
+ or 
+\begin_inset Formula $\pi-B$
+\end_inset
+
+, as these will yield the same result from 
+\begin_inset Formula $\arcsin$
+\end_inset
+
+.
+ As the law of cosines and law of sines both may yield two correct answers,
+ ASS does not prove congruence of triangles in general.
+ 
+\end_layout
+
+\begin_layout Section*
+Proofs of Similarity Rules
+\end_layout
+
+\begin_layout Standard
+These similarity rules rely on the law of sines.
+ Recall
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\frac{\sin\left(A\right)}{a}=\frac{\sin\left(B\right)}{b}=\frac{\sin\left(C\right)}{c}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+If we rearrange the law of sines, we can show the following ratios hold:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\frac{a}{b}=\frac{\sin\left(A\right)}{\sin\left(B\right)},\frac{a}{c}=\frac{\sin\left(A\right)}{\sin\left(C\right)},\frac{b}{c}=\frac{\sin\left(B\right)}{\sin\left(C\right)}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+With this in mind, we can show why similarity holds for the following rules:
+\end_layout
+
+\begin_layout Subsection*
+AA
+\end_layout
+
+\begin_layout Standard
+Suppose we know two of the angles.
+ Then we can find the third angle by subtracting the two known angles from
+ 
+\begin_inset Formula $\pi$
+\end_inset
+
+.
+ Next, suppose the first triangle have side lengths 
+\begin_inset Formula $a,b,c$
+\end_inset
+
+ and the second triangle has side lengths 
+\begin_inset Formula $xa,xb,xc$
+\end_inset
+
+ where 
+\begin_inset Formula $x$
+\end_inset
+
+ is some positive scaling factor.
+ Then
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\frac{xa}{xb}=\frac{a}{b}=\frac{\sin\left(A\right)}{\sin\left(B\right)},\frac{xa}{xc}=\frac{a}{c}=\frac{\sin\left(A\right)}{\sin\left(C\right)},\frac{xb}{xc}=\frac{b}{c}=\frac{\sin\left(B\right)}{\sin\left(C\right)}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The only way for all of the angles to be the same in each triangle is for
+ the corresponding sides to be proportional.
+\end_layout
+
+\begin_layout Subsection*
+SAS
+\end_layout
+
+\begin_layout Standard
+If we know two of the sides are proportional, and we know that the angle
+ between the two sides, then we can show that the unknown side scales appropriat
+ely using the law of cosines.
+ Recall
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+c=\sqrt{a^{2}+b^{2}-2ab\cos\left(C\right)}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+As 
+\begin_inset Formula $c$
+\end_inset
+
+ is opposite angle 
+\begin_inset Formula $C$
+\end_inset
+
+, we will assume 
+\begin_inset Formula $c$
+\end_inset
+
+ is the unknown side.
+ Suppose the first triangle have side lengths 
+\begin_inset Formula $a,b$
+\end_inset
+
+ and angle 
+\begin_inset Formula $C$
+\end_inset
+
+ and the second triangle has side lengths 
+\begin_inset Formula $xa,xb$
+\end_inset
+
+ and angle 
+\begin_inset Formula $C$
+\end_inset
+
+, where 
+\begin_inset Formula $x$
+\end_inset
+
+ is some positive scaling factor.
+ Then
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\sqrt{\left(xa\right)^{2}+\left(xb\right)^{2}-2\left(xa\right)\left(xb\right)\cos\left(C\right)}=\sqrt{x^{2}a^{2}+x^{2}b^{2}-2x^{2}ab\cos\left(C\right)}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+As 
+\begin_inset Formula $x>0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+=x\sqrt{a^{2}+b^{2}-2ab\cos\left(C\right)}=xc
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+thus all of the sides of triangle 
+\begin_inset Formula $2$
+\end_inset
+
+ are proportional to those of triangle 1.
+ As such, we can use the law of sines to solve for the remaining two angles
+ for both triangles.
+ These will both yield the same result as 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\frac{xa}{xc}\sin\left(C\right)=\frac{a}{c}\sin\left(C\right)=\sin\left(A\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\frac{xb}{xc}\sin\left(C\right)=\frac{b}{c}\sin\left(C\right)=\sin\left(B\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+and as we will know the ratios of the side lengths, we can be certain the
+ law of sines is well defined, the only angle that can possibly be obtuse
+ is an angle opposite of the longest side of the triangle.
+ If we wait to solve for this angle until we know the other two angles,
+ then we can take the difference of 
+\begin_inset Formula $\pi$
+\end_inset
+
+ and the two acute angles.
+\end_layout
+
+\end_body
+\end_document

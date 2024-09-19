@@ -1,0 +1,669 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 0.4in
+\topmargin 0.75in
+\rightmargin 0.4in
+\bottommargin 0.5in
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Math 320 Project 2 Example
+\end_layout
+
+\begin_layout Standard
+In graph theory, perhaps the most famous graph is the Petersen Graph The
+ Petersen graph is important in graph theory, as it works as a non-trivial
+ counterexample for many conjectures in graph theory.
+ A picture of the Petersen graph is shown below:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename C:/Users/Patrick/Desktop/Math 320/Project/Option 3 Example/G(5,2).png
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+There are many different ways to draw this graph, but the above form is
+ one of the more common drawings.
+ This method of drawing has a couple of key features to note.
+ First, note that the outside and inside sets of nodes both contain the
+ same number of nodes (5).
+ Second, note that we connect each node of the inside set of nodes with
+ it's corresponding node in the outside set of nodes.
+ Also note that the inside nodes are connecting by adding 
+\begin_inset Formula $2$
+\end_inset
+
+ mod 
+\begin_inset Formula $5$
+\end_inset
+
+ to each numbered node on the inside.
+ Note, we made sure to label the nodes clockwise in the inside set of nodes.
+ This leads to a more general notion of the Petersen graph.
+\end_layout
+
+\begin_layout Section*
+\begin_inset Formula $G\left(n,k\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Informally, the generalized Petersen Graph 
+\begin_inset Formula $G\left(n,k\right)$
+\end_inset
+
+ contains 
+\begin_inset Formula $n$
+\end_inset
+
+ nodes in the inside set of nodes and the outside set of nodes.
+ The outside nodes will all be connected in a single cycle, each inside
+ node will be connected to exactly one inside node, and the inside nodes
+ will be connected by adding 
+\begin_inset Formula $k$
+\end_inset
+
+ mod 
+\begin_inset Formula $n$
+\end_inset
+
+.
+ (Provided we are careful to number our inside nodes in the same order as
+ the outside nodes).
+\end_layout
+
+\begin_layout Subsection*
+Examples
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+1)
+\series default
+ The ordinary Petersen Graph is 
+\begin_inset Formula $G\left(5,2\right)$
+\end_inset
+
+ as there are 
+\begin_inset Formula $5$
+\end_inset
+
+ nodes in the inside and outside set of nodes, and we are adding 
+\begin_inset Formula $2$
+\end_inset
+
+ mod 
+\begin_inset Formula $5$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+2)
+\series default
+ 
+\begin_inset Formula $G\left(6,2\right)$
+\end_inset
+
+ and 
+\begin_inset Formula $G\left(6,3\right)$
+\end_inset
+
+ are shown below.
+ Notice how the two graphs have different structure with the same 
+\begin_inset Formula $n$
+\end_inset
+
+ value but different 
+\begin_inset Formula $k$
+\end_inset
+
+ values.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename C:/Users/Patrick/Desktop/Math 320/Project/Option 3 Example/G(6,2).png
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename C:/Users/Patrick/Desktop/Math 320/Project/Option 3 Example/G(6,3).png
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+3) 
+\series default
+If we instead take 
+\begin_inset Formula $G\left(7,3\right)$
+\end_inset
+
+, notice how the inside structure changes.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename C:/Users/Patrick/Desktop/Math 320/Project/Option 3 Example/G(7,3).png
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+Properties
+\end_layout
+
+\begin_layout Standard
+After drawing a few of these types of graphs, we may ask questions about
+ when certain properties of the graph apply.
+ Let's try to prove a couple!
+\end_layout
+
+\begin_layout Subsubsection*
+1)
+\end_layout
+
+\begin_layout Standard
+The inside subgraph will be connected if and only if 
+\begin_inset Formula $n,k$
+\end_inset
+
+ are relatively prime.
+\end_layout
+
+\begin_layout Subsubsection*
+Terminology)
+\end_layout
+
+\begin_layout Standard
+Before we prove this, let's make sure we are clear on some terminology.
+ The inside subgraph is the graph that is formed by removing every node
+ in the outside set of nodes as well as all edges containing these nodes.
+ The inside subgraph of 
+\begin_inset Formula $G\left(5,2\right)$
+\end_inset
+
+ and 
+\begin_inset Formula $G\left(6,2\right)$
+\end_inset
+
+ are pictured below:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename C:/Users/Patrick/Desktop/Math 320/Project/Option 3 Example/Inside G(5,2).png
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename C:/Users/Patrick/Desktop/Math 320/Project/Option 3 Example/Inside G(6,2).png
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Informally, we say a graph is connected if it is in one piece.
+ We say a graph is disconnected if it is in more than one piece.
+ Formally, we say a graph is connected if you can find a path from any node
+ to any other node in the graph, and a graph is disconnected otherwise.
+ Note that 
+\begin_inset Formula $G\left(5,2\right)$
+\end_inset
+
+ is connected, but 
+\begin_inset Formula $G\left(6,2\right)$
+\end_inset
+
+ is not.
+ Now, we have the tools we need to prove the property! 
+\end_layout
+
+\begin_layout Subsubsection*
+pf)
+\end_layout
+
+\begin_layout Standard
+Recall the for the group 
+\begin_inset Formula $\mathbb{Z}_{n}$
+\end_inset
+
+ under addition, that 
+\begin_inset Formula $x\in\mathbb{Z}_{n}$
+\end_inset
+
+ is a generator of 
+\begin_inset Formula $\mathbb{Z}_{n}$
+\end_inset
+
+ iff 
+\begin_inset Formula $x$
+\end_inset
+
+ is relatively prime to 
+\begin_inset Formula $n$
+\end_inset
+
+.
+ That is each element in 
+\begin_inset Formula $\mathbb{Z}_{n}$
+\end_inset
+
+ can be visited by repeatedly adding 
+\begin_inset Formula $x$
+\end_inset
+
+ to itself.
+ This allows us to visit each node in the inside subgraph by repeatedly
+ connected every 
+\begin_inset Formula $k$
+\end_inset
+
+ nodes if 
+\begin_inset Formula $k$
+\end_inset
+
+ is relatively prime to 
+\begin_inset Formula $n$
+\end_inset
+
+.
+ As this property of 
+\begin_inset Formula $\mathbb{Z}_{n}$
+\end_inset
+
+ is an iff statement, then it is also true that 
+\begin_inset Formula $G\left(n,k\right)$
+\end_inset
+
+ will be disconnected if 
+\begin_inset Formula $n,k$
+\end_inset
+
+ are not relatively prime.
+ This is because 
+\begin_inset Formula $k$
+\end_inset
+
+ is not a generator of 
+\begin_inset Formula $\mathbb{Z}_{n}$
+\end_inset
+
+, so it cannot be possible to visit every element of 
+\begin_inset Formula $\mathbb{Z}_{n}$
+\end_inset
+
+ by repeatedly adding 
+\begin_inset Formula $k$
+\end_inset
+
+ (and thus it is not possible to visit every vertex by connecting every
+ 
+\begin_inset Formula $k$
+\end_inset
+
+ vertices).
+\end_layout
+
+\begin_layout Subsubsection*
+2)
+\end_layout
+
+\begin_layout Standard
+Graphs 
+\begin_inset Formula $G\left(n,k\right)$
+\end_inset
+
+ and 
+\begin_inset Formula $G\left(n,n-k\right)$
+\end_inset
+
+ are isomorphic.
+\end_layout
+
+\begin_layout Subsubsection*
+Terminology)
+\end_layout
+
+\begin_layout Standard
+Before we prove this, let's make sure we are clear on terminology.
+ When we say two graphs are isomorphic, we mean that the two graphs have
+ the same structure.
+ Informally, we can pair each node in the first graph with exactly one other
+ node in the second graph such that if two nodes are connected in the first
+ graph, then the corresponding nodes in the second graph must be connected,
+ and vice versa.
+ An example of two isomorphic graphs is shown below:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename C:/Users/Patrick/Desktop/Math 320/Project/Option 3 Example/Isomorphism Example.png
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Notice that in both graphs, each labeled node in the left graph is connected
+ to nodes with the exact same labels in the right graph and vice versa.
+ Also note that each node contains exactly one label and that each label
+ appears exactly once in each graph.
+ With this idea of isomorphism in mind, let's prove the theorem!
+\end_layout
+
+\begin_layout Subsubsection*
+pf)
+\end_layout
+
+\begin_layout Standard
+Suppose we use the same labeling scheme for both 
+\begin_inset Formula $G\left(n,k\right)$
+\end_inset
+
+ and 
+\begin_inset Formula $G\left(n,n-k\right)$
+\end_inset
+
+.
+ The outside nodes will contain the same connections in both graphs, as
+ both sets of outside nodes will be a cycle labeled clockwise.
+ Likewise, the connections between the outside and inside nodes will be
+ the same as these graphs will share the same labeling scheme, and thus
+ the same connection rule between the inside and outside sets of nodes.
+ What remains is to show that the inside set of nodes shares the exact same
+ connections in both graphs.
+ That is inside nodes 
+\begin_inset Formula $u,v$
+\end_inset
+
+ will be connected in the first graph iff corresponding nodes 
+\begin_inset Formula $u',v'$
+\end_inset
+
+ are connected in the second graph.
+ We know if two inside nodes in the first graph are connected, then 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+u-v\equiv_{n}k
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+or 
+\begin_inset Formula 
+\[
+v-u\equiv_{n}k
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Suppose WLOG that 
+\begin_inset Formula 
+\[
+u-v\equiv_{n}k
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+then
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+-\left(u-v\right)\equiv_{n}-k
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+v-u\equiv_{n}n-k
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Thus nodes 
+\begin_inset Formula $u',v'$
+\end_inset
+
+ must be connected in the second graph.
+ Now, suppose nodes 
+\begin_inset Formula $u',v'$
+\end_inset
+
+ are connected in the second graph.
+ That is 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+u'-v'\equiv_{n}n-k
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+or 
+\begin_inset Formula 
+\[
+v'-u'\equiv_{n}n-k
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Suppose WLOG that 
+\begin_inset Formula 
+\[
+u'-v'\equiv_{n}n-k
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+then
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+-\left(u'-v'\right)\equiv_{n}-\left(n-k\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+v'-u'\equiv_{n}k-n\equiv_{n}k
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Thus nodes 
+\begin_inset Formula $u,v$
+\end_inset
+
+ must be connected in the first graph.
+ As we have shown a connection between two the inside nodes in 
+\begin_inset Formula $G\left(n,k\right)$
+\end_inset
+
+ implies connection of the corresponding nodes in 
+\begin_inset Formula $G\left(n,n-k\right)$
+\end_inset
+
+ and vice versa, then we have proven the theorem.
+\end_layout
+
+\begin_layout Subsection*
+Conclusion
+\end_layout
+
+\begin_layout Standard
+This is just scratching the surface of the properties of these types of
+ graphs, but hopefully this provides an introduction to this family of graphs.
+ For more information about these graphs, a good place to start is on Wikipedia.
+ These proofs are my own, but more formal definitions also came from the
+ same Wikipedia page.
+\end_layout
+
+\begin_layout Standard
+https://en.wikipedia.org/wiki/Generalized_Petersen_graph
+\end_layout
+
+\end_body
+\end_document
